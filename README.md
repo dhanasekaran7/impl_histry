@@ -1,2 +1,3 @@
 ﻿# dhana history 
-# candle history 
+# candle history added - 02-sep
+
