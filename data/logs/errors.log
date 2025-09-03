@@ -1,0 +1,620 @@
+2025-08-28 08:48:13,421 - src.upstox_api_client - ERROR - upstox_api_client.py:66 - Failed to load stored token: 'UpstoxClient' object has no attribute 'headers'
+2025-08-28 08:48:13,666 - src.upstox_api_client - ERROR - upstox_api_client.py:181 - API request failed: 401, message='Unauthorized', url='https://api.upstox.com/v2/user/profile'
+2025-08-28 08:49:03,914 - src.utils.notification - ERROR - notification.py:61 - Failed to send Telegram message to 5636009404: 401
+2025-08-28 08:49:04,708 - src.utils.notification - ERROR - notification.py:61 - Failed to send Telegram message to -1002867661585: 401
+2025-08-28 08:49:13,103 - src.utils.notification - ERROR - notification.py:61 - Failed to send Telegram message to 5636009404: 401
+2025-08-28 08:49:13,719 - src.utils.notification - ERROR - notification.py:61 - Failed to send Telegram message to -1002867661585: 401
+2025-08-28 08:49:14,345 - src.utils.notification - ERROR - notification.py:61 - Failed to send Telegram message to 5636009404: 401
+2025-08-28 08:49:14,960 - src.utils.notification - ERROR - notification.py:61 - Failed to send Telegram message to -1002867661585: 401
+2025-08-28 08:49:15,762 - src.utils.notification - ERROR - notification.py:61 - Failed to send Telegram message to 5636009404: 401
+2025-08-28 08:49:16,407 - src.utils.notification - ERROR - notification.py:61 - Failed to send Telegram message to -1002867661585: 401
+2025-08-28 08:49:17,027 - src.utils.notification - ERROR - notification.py:61 - Failed to send Telegram message to 5636009404: 401
+2025-08-28 08:49:17,638 - src.utils.notification - ERROR - notification.py:61 - Failed to send Telegram message to -1002867661585: 401
+2025-08-28 08:49:18,269 - src.utils.notification - ERROR - notification.py:61 - Failed to send Telegram message to 5636009404: 401
+2025-08-28 08:49:18,891 - src.utils.notification - ERROR - notification.py:61 - Failed to send Telegram message to -1002867661585: 401
+2025-08-28 09:00:54,258 - src.websocket.websocket_manager - ERROR - websocket_manager.py:600 - Portfolio websocket error: Connection to remote host was lost.
+2025-08-28 09:00:54,259 - src.websocket.websocket_manager - ERROR - websocket_manager.py:578 - Market websocket error: Connection to remote host was lost.
+2025-08-28 09:00:54,259 - src.websocket.websocket_manager - ERROR - websocket_manager.py:578 - Market websocket error: Connection to remote host was lost.
+2025-08-28 09:00:54,259 - src.websocket.websocket_manager - ERROR - websocket_manager.py:600 - Portfolio websocket error: Connection to remote host was lost.
+2025-08-28 09:00:54,267 - websocket - ERROR - _logging.py:77 - Connection to remote host was lost. - goodbye
+2025-08-28 09:00:54,268 - websocket - ERROR - _logging.py:77 - Connection to remote host was lost. - goodbye
+2025-08-28 09:00:54,281 - websocket - ERROR - _logging.py:77 - Connection to remote host was lost. - goodbye
+2025-08-28 09:00:54,289 - websocket - ERROR - _logging.py:77 - Connection to remote host was lost. - goodbye
+2025-08-28 09:01:05,363 - src.websocket.websocket_manager - ERROR - websocket_manager.py:600 - Portfolio websocket error: [Errno 11001] getaddrinfo failed
+2025-08-28 09:01:05,363 - src.websocket.websocket_manager - ERROR - websocket_manager.py:578 - Market websocket error: [Errno 11001] getaddrinfo failed
+2025-08-28 09:01:05,363 - src.websocket.websocket_manager - ERROR - websocket_manager.py:600 - Portfolio websocket error: [Errno 11001] getaddrinfo failed
+2025-08-28 09:01:05,363 - src.websocket.websocket_manager - ERROR - websocket_manager.py:578 - Market websocket error: [Errno 11001] getaddrinfo failed
+2025-08-28 09:01:15,366 - websocket - ERROR - _logging.py:77 - [Errno 11001] getaddrinfo failed - goodbye
+2025-08-28 09:01:15,367 - src.websocket.websocket_manager - ERROR - websocket_manager.py:578 - Market websocket error: [Errno 11001] getaddrinfo failed
+2025-08-28 09:01:15,367 - websocket - ERROR - _logging.py:77 - [Errno 11001] getaddrinfo failed - goodbye
+2025-08-28 09:01:15,367 - websocket - ERROR - _logging.py:77 - [Errno 11001] getaddrinfo failed - goodbye
+2025-08-28 09:01:15,367 - websocket - ERROR - _logging.py:77 - [Errno 11001] getaddrinfo failed - goodbye
+2025-08-28 09:01:15,367 - src.websocket.websocket_manager - ERROR - websocket_manager.py:578 - Market websocket error: [Errno 11001] getaddrinfo failed
+2025-08-28 09:01:15,368 - src.websocket.websocket_manager - ERROR - websocket_manager.py:600 - Portfolio websocket error: [Errno 11001] getaddrinfo failed
+2025-08-28 09:01:15,368 - src.websocket.websocket_manager - ERROR - websocket_manager.py:600 - Portfolio websocket error: [Errno 11001] getaddrinfo failed
+2025-08-28 09:01:25,371 - websocket - ERROR - _logging.py:77 - [Errno 11001] getaddrinfo failed - goodbye
+2025-08-28 09:01:25,371 - src.websocket.websocket_manager - ERROR - websocket_manager.py:578 - Market websocket error: [Errno 11001] getaddrinfo failed
+2025-08-28 09:01:25,372 - websocket - ERROR - _logging.py:77 - [Errno 11001] getaddrinfo failed - goodbye
+2025-08-28 09:01:25,373 - websocket - ERROR - _logging.py:77 - [Errno 11001] getaddrinfo failed - goodbye
+2025-08-28 09:01:25,373 - websocket - ERROR - _logging.py:77 - [Errno 11001] getaddrinfo failed - goodbye
+2025-08-28 09:01:25,374 - src.websocket.websocket_manager - ERROR - websocket_manager.py:600 - Portfolio websocket error: [Errno 11001] getaddrinfo failed
+2025-08-28 09:01:25,374 - src.websocket.websocket_manager - ERROR - websocket_manager.py:578 - Market websocket error: [Errno 11001] getaddrinfo failed
+2025-08-28 09:01:25,374 - src.websocket.websocket_manager - ERROR - websocket_manager.py:600 - Portfolio websocket error: [Errno 11001] getaddrinfo failed
+2025-08-28 09:01:25,374 - websocket - ERROR - _logging.py:77 - [Errno 11001] getaddrinfo failed - goodbye
+2025-08-28 09:01:25,376 - websocket - ERROR - _logging.py:77 - [Errno 11001] getaddrinfo failed - goodbye
+2025-08-28 09:01:25,377 - websocket - ERROR - _logging.py:77 - [Errno 11001] getaddrinfo failed - goodbye
+2025-08-28 09:01:25,377 - websocket - ERROR - _logging.py:77 - [Errno 11001] getaddrinfo failed - goodbye
+2025-08-28 09:19:20,963 - src.websocket.websocket_manager - ERROR - websocket_manager.py:578 - Market websocket error: [Errno 11001] getaddrinfo failed
+2025-08-28 09:19:20,965 - websocket - ERROR - _logging.py:77 - [Errno 11001] getaddrinfo failed - goodbye
+2025-08-28 09:19:20,968 - src.websocket.websocket_manager - ERROR - websocket_manager.py:578 - Market websocket error: [Errno 11001] getaddrinfo failed
+2025-08-28 09:19:20,971 - src.websocket.websocket_manager - ERROR - websocket_manager.py:600 - Portfolio websocket error: [Errno 11001] getaddrinfo failed
+2025-08-28 09:19:20,972 - websocket - ERROR - _logging.py:77 - [Errno 11001] getaddrinfo failed - goodbye
+2025-08-28 09:19:20,976 - src.utils.notification - ERROR - notification.py:65 - Error sending Telegram message to 5636009404: Cannot connect to host api.telegram.org:443 ssl:default [getaddrinfo failed]
+2025-08-28 09:19:20,977 - src.websocket.websocket_manager - ERROR - websocket_manager.py:600 - Portfolio websocket error: [Errno 11001] getaddrinfo failed
+2025-08-28 09:19:20,978 - src.utils.notification - ERROR - notification.py:65 - Error sending Telegram message to -1002867661585: Cannot connect to host api.telegram.org:443 ssl:default [getaddrinfo failed]
+2025-08-28 09:19:20,980 - src.utils.notification - ERROR - notification.py:65 - Error sending Telegram message to 5636009404: Cannot connect to host api.telegram.org:443 ssl:default [getaddrinfo failed]
+2025-08-28 09:19:20,982 - src.utils.notification - ERROR - notification.py:65 - Error sending Telegram message to -1002867661585: Cannot connect to host api.telegram.org:443 ssl:default [getaddrinfo failed]
+2025-08-28 09:19:30,970 - websocket - ERROR - _logging.py:77 - [Errno 11001] getaddrinfo failed - goodbye
+2025-08-28 09:19:30,971 - src.websocket.websocket_manager - ERROR - websocket_manager.py:578 - Market websocket error: [Errno 11001] getaddrinfo failed
+2025-08-28 09:19:30,979 - websocket - ERROR - _logging.py:77 - [Errno 11001] getaddrinfo failed - goodbye
+2025-08-28 09:19:30,979 - src.websocket.websocket_manager - ERROR - websocket_manager.py:600 - Portfolio websocket error: [Errno 11001] getaddrinfo failed
+2025-08-28 09:19:40,973 - websocket - ERROR - _logging.py:77 - [Errno 11001] getaddrinfo failed - goodbye
+2025-08-28 09:19:40,973 - src.websocket.websocket_manager - ERROR - websocket_manager.py:578 - Market websocket error: [Errno 11001] getaddrinfo failed
+2025-08-28 09:19:40,974 - websocket - ERROR - _logging.py:77 - [Errno 11001] getaddrinfo failed - goodbye
+2025-08-28 09:19:40,982 - websocket - ERROR - _logging.py:77 - [Errno 11001] getaddrinfo failed - goodbye
+2025-08-28 09:19:40,982 - src.websocket.websocket_manager - ERROR - websocket_manager.py:600 - Portfolio websocket error: [Errno 11001] getaddrinfo failed
+2025-08-28 09:19:40,983 - websocket - ERROR - _logging.py:77 - [Errno 11001] getaddrinfo failed - goodbye
+2025-08-28 09:24:23,077 - src.websocket.websocket_manager - ERROR - websocket_manager.py:578 - Market websocket error: [Errno 11001] getaddrinfo failed
+2025-08-28 09:24:23,078 - websocket - ERROR - _logging.py:77 - [Errno 11001] getaddrinfo failed - goodbye
+2025-08-28 09:24:23,081 - src.websocket.websocket_manager - ERROR - websocket_manager.py:578 - Market websocket error: [Errno 11001] getaddrinfo failed
+2025-08-28 09:24:23,090 - src.utils.notification - ERROR - notification.py:65 - Error sending Telegram message to 5636009404: Cannot connect to host api.telegram.org:443 ssl:default [getaddrinfo failed]
+2025-08-28 09:24:23,093 - src.utils.notification - ERROR - notification.py:65 - Error sending Telegram message to -1002867661585: Cannot connect to host api.telegram.org:443 ssl:default [getaddrinfo failed]
+2025-08-28 09:24:23,096 - src.utils.notification - ERROR - notification.py:65 - Error sending Telegram message to 5636009404: Cannot connect to host api.telegram.org:443 ssl:default [getaddrinfo failed]
+2025-08-28 09:24:23,099 - src.websocket.websocket_manager - ERROR - websocket_manager.py:600 - Portfolio websocket error: [Errno 11001] getaddrinfo failed
+2025-08-28 09:24:23,099 - src.utils.notification - ERROR - notification.py:65 - Error sending Telegram message to -1002867661585: Cannot connect to host api.telegram.org:443 ssl:default [getaddrinfo failed]
+2025-08-28 09:24:23,100 - websocket - ERROR - _logging.py:77 - [Errno 11001] getaddrinfo failed - goodbye
+2025-08-28 09:24:23,103 - src.websocket.websocket_manager - ERROR - websocket_manager.py:600 - Portfolio websocket error: [Errno 11001] getaddrinfo failed
+2025-08-28 09:24:33,083 - websocket - ERROR - _logging.py:77 - [Errno 11001] getaddrinfo failed - goodbye
+2025-08-28 09:24:33,083 - src.websocket.websocket_manager - ERROR - websocket_manager.py:578 - Market websocket error: [Errno 11001] getaddrinfo failed
+2025-08-28 09:24:33,105 - websocket - ERROR - _logging.py:77 - [Errno 11001] getaddrinfo failed - goodbye
+2025-08-28 09:24:33,105 - src.websocket.websocket_manager - ERROR - websocket_manager.py:600 - Portfolio websocket error: [Errno 11001] getaddrinfo failed
+2025-08-28 09:24:43,086 - websocket - ERROR - _logging.py:77 - [Errno 11001] getaddrinfo failed - goodbye
+2025-08-28 09:24:43,086 - src.websocket.websocket_manager - ERROR - websocket_manager.py:578 - Market websocket error: [Errno 11001] getaddrinfo failed
+2025-08-28 09:24:43,087 - websocket - ERROR - _logging.py:77 - [Errno 11001] getaddrinfo failed - goodbye
+2025-08-28 09:24:43,107 - websocket - ERROR - _logging.py:77 - [Errno 11001] getaddrinfo failed - goodbye
+2025-08-28 09:24:43,107 - src.websocket.websocket_manager - ERROR - websocket_manager.py:600 - Portfolio websocket error: [Errno 11001] getaddrinfo failed
+2025-08-28 09:24:43,108 - websocket - ERROR - _logging.py:77 - [Errno 11001] getaddrinfo failed - goodbye
+2025-08-28 09:29:27,616 - src.utils.notification - ERROR - notification.py:61 - Failed to send Telegram message to 5636009404: 401
+2025-08-28 09:29:28,331 - src.utils.notification - ERROR - notification.py:61 - Failed to send Telegram message to -1002867661585: 401
+2025-08-28 09:29:28,926 - src.utils.notification - ERROR - notification.py:61 - Failed to send Telegram message to 5636009404: 401
+2025-08-28 09:29:29,554 - src.utils.notification - ERROR - notification.py:61 - Failed to send Telegram message to -1002867661585: 401
+2025-08-28 09:34:32,576 - src.utils.notification - ERROR - notification.py:61 - Failed to send Telegram message to 5636009404: 401
+2025-08-28 09:34:33,247 - src.utils.notification - ERROR - notification.py:61 - Failed to send Telegram message to -1002867661585: 401
+2025-08-28 09:34:33,841 - src.utils.notification - ERROR - notification.py:61 - Failed to send Telegram message to 5636009404: 401
+2025-08-28 09:34:34,457 - src.utils.notification - ERROR - notification.py:61 - Failed to send Telegram message to -1002867661585: 401
+2025-08-28 09:50:08,305 - src.upstox_api_client - ERROR - upstox_api_client.py:66 - Failed to load stored token: 'UpstoxClient' object has no attribute 'headers'
+2025-08-28 10:29:54,654 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:1528 - [ERROR] Error checking mandatory exits: name 'current_price' is not defined
+2025-08-28 10:30:52,443 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:1528 - [ERROR] Error checking mandatory exits: name 'current_price' is not defined
+2025-08-28 10:31:56,320 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:1528 - [ERROR] Error checking mandatory exits: name 'current_price' is not defined
+2025-08-28 10:33:32,028 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:1528 - [ERROR] Error checking mandatory exits: name 'current_price' is not defined
+2025-08-28 13:31:15,992 - src.upstox_api_client - ERROR - upstox_api_client.py:66 - Failed to load stored token: 'UpstoxClient' object has no attribute 'headers'
+2025-08-28 14:12:42,414 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:1528 - [ERROR] Error checking mandatory exits: name 'current_price' is not defined
+2025-08-28 14:13:48,639 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:1528 - [ERROR] Error checking mandatory exits: name 'current_price' is not defined
+2025-08-28 14:14:50,180 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:1528 - [ERROR] Error checking mandatory exits: name 'current_price' is not defined
+2025-08-28 14:35:59,093 - src.websocket.websocket_manager - ERROR - websocket_manager.py:600 - Portfolio websocket error: Connection to remote host was lost.
+2025-08-28 14:35:59,098 - websocket - ERROR - _logging.py:77 - Connection to remote host was lost. - goodbye
+2025-08-28 14:35:59,109 - src.websocket.websocket_manager - ERROR - websocket_manager.py:600 - Portfolio websocket error: Connection to remote host was lost.
+2025-08-28 14:35:59,116 - websocket - ERROR - _logging.py:77 - Connection to remote host was lost. - goodbye
+2025-08-28 14:36:02,322 - src.websocket.websocket_manager - ERROR - websocket_manager.py:578 - Market websocket error: Connection to remote host was lost.
+2025-08-28 14:36:02,324 - websocket - ERROR - _logging.py:77 - Connection to remote host was lost. - goodbye
+2025-08-28 14:36:02,337 - src.websocket.websocket_manager - ERROR - websocket_manager.py:578 - Market websocket error: Connection to remote host was lost.
+2025-08-28 14:36:02,339 - websocket - ERROR - _logging.py:77 - Connection to remote host was lost. - goodbye
+2025-08-29 00:43:08,965 - src.upstox_api_client - ERROR - upstox_api_client.py:66 - Failed to load stored token: 'UpstoxClient' object has no attribute 'headers'
+2025-08-29 02:09:26,628 - src.upstox_api_client - ERROR - upstox_api_client.py:66 - Failed to load stored token: 'UpstoxClient' object has no attribute 'headers'
+2025-08-29 09:16:17,198 - src.upstox_api_client - ERROR - upstox_api_client.py:66 - Failed to load stored token: 'UpstoxClient' object has no attribute 'headers'
+2025-08-29 09:16:19,983 - src.upstox_api_client - ERROR - upstox_api_client.py:181 - API request failed: 401, message='Unauthorized', url='https://api.upstox.com/v2/user/profile'
+2025-08-29 09:36:18,243 - src.upstox_api_client - ERROR - upstox_api_client.py:66 - Failed to load stored token: 'UpstoxClient' object has no attribute 'headers'
+2025-08-29 09:40:38,206 - src.upstox_api_client - ERROR - upstox_api_client.py:66 - Failed to load stored token: 'UpstoxClient' object has no attribute 'headers'
+2025-08-29 10:47:24,740 - src.upstox_api_client - ERROR - upstox_api_client.py:259 - API request failed with status 429
+2025-08-29 11:14:50,189 - src.upstox_api_client - ERROR - upstox_api_client.py:259 - API request failed with status 429
+2025-08-29 11:15:03,332 - src.upstox_api_client - ERROR - upstox_api_client.py:259 - API request failed with status 429
+2025-08-29 11:16:17,343 - src.upstox_api_client - ERROR - upstox_api_client.py:259 - API request failed with status 429
+2025-08-29 11:16:30,340 - src.upstox_api_client - ERROR - upstox_api_client.py:259 - API request failed with status 429
+2025-08-29 11:17:56,839 - src.upstox_api_client - ERROR - upstox_api_client.py:259 - API request failed with status 429
+2025-08-29 11:21:19,938 - src.upstox_api_client - ERROR - upstox_api_client.py:259 - API request failed with status 429
+2025-08-29 11:36:29,999 - src.websocket.websocket_manager - ERROR - websocket_manager.py:578 - Market websocket error: Connection to remote host was lost.
+2025-08-29 11:36:30,000 - src.websocket.websocket_manager - ERROR - websocket_manager.py:600 - Portfolio websocket error: Connection to remote host was lost.
+2025-08-29 11:36:30,001 - src.websocket.websocket_manager - ERROR - websocket_manager.py:600 - Portfolio websocket error: Connection to remote host was lost.
+2025-08-29 11:36:30,002 - src.websocket.websocket_manager - ERROR - websocket_manager.py:578 - Market websocket error: Connection to remote host was lost.
+2025-08-29 11:36:30,028 - websocket - ERROR - _logging.py:77 - Connection to remote host was lost. - goodbye
+2025-08-29 11:36:30,048 - websocket - ERROR - _logging.py:77 - Connection to remote host was lost. - goodbye
+2025-08-29 11:36:30,049 - websocket - ERROR - _logging.py:77 - Connection to remote host was lost. - goodbye
+2025-08-29 11:36:30,126 - websocket - ERROR - _logging.py:77 - Connection to remote host was lost. - goodbye
+2025-08-29 12:42:53,080 - src.upstox_api_client - ERROR - upstox_api_client.py:259 - API request failed with status 429
+2025-08-29 12:47:22,898 - src.websocket.websocket_manager - ERROR - websocket_manager.py:578 - Market websocket error: Connection to remote host was lost.
+2025-08-29 12:47:22,898 - src.websocket.websocket_manager - ERROR - websocket_manager.py:578 - Market websocket error: Connection to remote host was lost.
+2025-08-29 12:47:22,899 - src.websocket.websocket_manager - ERROR - websocket_manager.py:600 - Portfolio websocket error: Connection to remote host was lost.
+2025-08-29 12:47:22,900 - src.websocket.websocket_manager - ERROR - websocket_manager.py:600 - Portfolio websocket error: Connection to remote host was lost.
+2025-08-29 12:47:22,920 - websocket - ERROR - _logging.py:77 - Connection to remote host was lost. - goodbye
+2025-08-29 12:47:22,935 - websocket - ERROR - _logging.py:77 - Connection to remote host was lost. - goodbye
+2025-08-29 12:47:23,006 - websocket - ERROR - _logging.py:77 - Connection to remote host was lost. - goodbye
+2025-08-29 12:47:23,138 - websocket - ERROR - _logging.py:77 - Connection to remote host was lost. - goodbye
+2025-08-29 12:48:19,163 - src.upstox_api_client - ERROR - upstox_api_client.py:259 - API request failed with status 429
+2025-08-29 13:21:36,629 - src.upstox_api_client - ERROR - upstox_api_client.py:259 - API request failed with status 429
+2025-08-29 13:22:49,883 - src.upstox_api_client - ERROR - upstox_api_client.py:259 - API request failed with status 429
+2025-08-29 13:23:02,551 - src.upstox_api_client - ERROR - upstox_api_client.py:259 - API request failed with status 429
+2025-08-29 13:24:16,527 - src.upstox_api_client - ERROR - upstox_api_client.py:259 - API request failed with status 429
+2025-08-29 13:24:29,594 - src.upstox_api_client - ERROR - upstox_api_client.py:259 - API request failed with status 429
+2025-08-29 13:25:44,084 - src.upstox_api_client - ERROR - upstox_api_client.py:259 - API request failed with status 429
+2025-08-29 13:25:58,267 - src.upstox_api_client - ERROR - upstox_api_client.py:259 - API request failed with status 429
+2025-08-29 14:07:35,157 - src.upstox_api_client - ERROR - upstox_api_client.py:66 - Failed to load stored token: 'UpstoxClient' object has no attribute 'headers'
+2025-08-29 14:07:44,058 - src.upstox_api_client - ERROR - upstox_api_client.py:66 - Failed to load stored token: 'UpstoxClient' object has no attribute 'headers'
+2025-08-29 14:07:47,311 - src.websocket.websocket_manager - ERROR - websocket_manager.py:322 - Failed to start market stream: 'WebSocketManager' object has no attribute '_on_market_error'
+2025-08-29 14:07:48,839 - src.websocket.websocket_manager - ERROR - websocket_manager.py:322 - Failed to start market stream: 'WebSocketManager' object has no attribute '_on_market_error'
+2025-08-29 14:07:49,192 - src.websocket.websocket_manager - ERROR - websocket_manager.py:322 - Failed to start market stream: 'WebSocketManager' object has no attribute '_on_market_error'
+2025-08-29 14:07:50,632 - src.websocket.websocket_manager - ERROR - websocket_manager.py:322 - Failed to start market stream: 'WebSocketManager' object has no attribute '_on_market_error'
+2025-08-29 14:14:30,738 - src.upstox_api_client - ERROR - upstox_api_client.py:66 - Failed to load stored token: 'UpstoxClient' object has no attribute 'headers'
+2025-08-29 14:53:06,502 - strategy.option_pine_v5 - ERROR - complete_pine_script_strategy.py:522 - Error in should_exit: name 'pnl_points' is not defined
+2025-08-29 14:54:24,414 - strategy.option_pine_v5 - ERROR - complete_pine_script_strategy.py:522 - Error in should_exit: name 'pnl_points' is not defined
+2025-08-29 15:02:34,514 - strategy.option_pine_v5 - ERROR - complete_pine_script_strategy.py:522 - Error in should_exit: name 'pnl_points' is not defined
+2025-08-29 15:04:43,538 - strategy.option_pine_v5 - ERROR - complete_pine_script_strategy.py:522 - Error in should_exit: name 'pnl_points' is not defined
+2025-08-29 15:05:40,056 - src.upstox_api_client - ERROR - upstox_api_client.py:259 - API request failed with status 429
+2025-08-29 15:06:02,143 - src.upstox_api_client - ERROR - upstox_api_client.py:259 - API request failed with status 429
+2025-08-29 15:06:02,146 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:775 - Could not fetch option premium for 24450PE
+2025-08-29 15:06:14,357 - src.upstox_api_client - ERROR - upstox_api_client.py:259 - API request failed with status 429
+2025-08-29 15:06:26,004 - src.upstox_api_client - ERROR - upstox_api_client.py:259 - API request failed with status 429
+2025-08-29 15:07:09,381 - src.upstox_api_client - ERROR - upstox_api_client.py:259 - API request failed with status 429
+2025-08-29 15:07:21,298 - src.upstox_api_client - ERROR - upstox_api_client.py:259 - API request failed with status 429
+2025-08-29 15:07:34,492 - src.upstox_api_client - ERROR - upstox_api_client.py:259 - API request failed with status 429
+2025-08-29 15:07:46,208 - src.upstox_api_client - ERROR - upstox_api_client.py:259 - API request failed with status 429
+2025-08-29 15:08:29,789 - src.upstox_api_client - ERROR - upstox_api_client.py:259 - API request failed with status 429
+2025-08-29 15:08:41,755 - src.upstox_api_client - ERROR - upstox_api_client.py:259 - API request failed with status 429
+2025-08-29 15:08:54,710 - src.upstox_api_client - ERROR - upstox_api_client.py:259 - API request failed with status 429
+2025-08-29 15:09:06,367 - src.upstox_api_client - ERROR - upstox_api_client.py:259 - API request failed with status 429
+2025-08-29 15:09:49,595 - src.upstox_api_client - ERROR - upstox_api_client.py:259 - API request failed with status 429
+2025-08-29 15:10:02,059 - src.upstox_api_client - ERROR - upstox_api_client.py:259 - API request failed with status 429
+2025-08-29 15:10:15,724 - src.upstox_api_client - ERROR - upstox_api_client.py:259 - API request failed with status 429
+2025-08-29 15:10:27,794 - src.upstox_api_client - ERROR - upstox_api_client.py:259 - API request failed with status 429
+2025-08-29 15:11:11,002 - src.upstox_api_client - ERROR - upstox_api_client.py:259 - API request failed with status 429
+2025-08-29 15:11:23,575 - src.upstox_api_client - ERROR - upstox_api_client.py:259 - API request failed with status 429
+2025-08-29 15:11:38,580 - src.upstox_api_client - ERROR - upstox_api_client.py:259 - API request failed with status 429
+2025-08-29 15:11:50,549 - src.upstox_api_client - ERROR - upstox_api_client.py:259 - API request failed with status 429
+2025-08-29 15:12:33,999 - src.upstox_api_client - ERROR - upstox_api_client.py:259 - API request failed with status 429
+2025-08-29 15:12:46,074 - src.upstox_api_client - ERROR - upstox_api_client.py:259 - API request failed with status 429
+2025-08-29 15:12:59,194 - src.upstox_api_client - ERROR - upstox_api_client.py:259 - API request failed with status 429
+2025-08-29 15:13:12,532 - src.upstox_api_client - ERROR - upstox_api_client.py:259 - API request failed with status 429
+2025-08-29 15:14:00,497 - src.upstox_api_client - ERROR - upstox_api_client.py:259 - API request failed with status 429
+2025-08-29 15:14:16,876 - src.upstox_api_client - ERROR - upstox_api_client.py:259 - API request failed with status 429
+2025-08-29 15:14:33,582 - src.upstox_api_client - ERROR - upstox_api_client.py:259 - API request failed with status 429
+2025-08-29 15:14:46,208 - src.upstox_api_client - ERROR - upstox_api_client.py:259 - API request failed with status 429
+2025-08-29 15:15:31,531 - src.upstox_api_client - ERROR - upstox_api_client.py:259 - API request failed with status 429
+2025-08-29 15:15:43,908 - src.upstox_api_client - ERROR - upstox_api_client.py:259 - API request failed with status 429
+2025-08-29 15:15:56,878 - src.upstox_api_client - ERROR - upstox_api_client.py:259 - API request failed with status 429
+2025-08-29 15:16:08,789 - src.upstox_api_client - ERROR - upstox_api_client.py:259 - API request failed with status 429
+2025-08-29 15:16:51,746 - src.upstox_api_client - ERROR - upstox_api_client.py:259 - API request failed with status 429
+2025-08-29 15:17:04,123 - src.upstox_api_client - ERROR - upstox_api_client.py:259 - API request failed with status 429
+2025-08-29 15:18:55,990 - src.websocket.websocket_manager - ERROR - websocket_manager.py:600 - Portfolio websocket error: Connection to remote host was lost.
+2025-08-29 15:18:55,991 - websocket - ERROR - _logging.py:77 - Connection to remote host was lost. - goodbye
+2025-08-29 15:18:56,183 - src.websocket.websocket_manager - ERROR - websocket_manager.py:600 - Portfolio websocket error: [Errno 11001] getaddrinfo failed
+2025-08-29 15:18:57,308 - src.websocket.websocket_manager - ERROR - websocket_manager.py:578 - Market websocket error: Connection to remote host was lost.
+2025-08-29 15:18:57,309 - websocket - ERROR - _logging.py:77 - Connection to remote host was lost. - goodbye
+2025-08-29 15:18:57,382 - src.websocket.websocket_manager - ERROR - websocket_manager.py:578 - Market websocket error: [Errno 11001] getaddrinfo failed
+2025-09-01 09:48:58,609 - src.upstox_api_client - ERROR - upstox_api_client.py:66 - Failed to load stored token: 'UpstoxClient' object has no attribute 'headers'
+2025-09-01 09:48:59,121 - src.upstox_api_client - ERROR - upstox_api_client.py:181 - API request failed: 401, message='Unauthorized', url='https://api.upstox.com/v2/user/profile'
+2025-09-01 10:54:59,330 - src.upstox_api_client - ERROR - upstox_api_client.py:259 - API request failed with status 429
+2025-09-01 10:55:12,403 - src.upstox_api_client - ERROR - upstox_api_client.py:259 - API request failed with status 429
+2025-09-01 10:56:26,835 - src.upstox_api_client - ERROR - upstox_api_client.py:259 - API request failed with status 429
+2025-09-01 10:56:41,826 - src.upstox_api_client - ERROR - upstox_api_client.py:259 - API request failed with status 429
+2025-09-01 11:27:05,318 - src.upstox_api_client - ERROR - upstox_api_client.py:259 - API request failed with status 429
+2025-09-01 11:52:49,199 - src.upstox_api_client - ERROR - upstox_api_client.py:66 - Failed to load stored token: 'UpstoxClient' object has no attribute 'headers'
+2025-09-01 12:22:31,138 - src.websocket.websocket_manager - ERROR - websocket_manager.py:578 - Market websocket error: Connection to remote host was lost.
+2025-09-01 12:22:31,140 - src.websocket.websocket_manager - ERROR - websocket_manager.py:600 - Portfolio websocket error: Connection to remote host was lost.
+2025-09-01 12:22:31,140 - src.websocket.websocket_manager - ERROR - websocket_manager.py:578 - Market websocket error: Connection to remote host was lost.
+2025-09-01 12:22:31,141 - src.websocket.websocket_manager - ERROR - websocket_manager.py:600 - Portfolio websocket error: Connection to remote host was lost.
+2025-09-01 12:22:31,156 - websocket - ERROR - _logging.py:77 - Connection to remote host was lost. - goodbye
+2025-09-01 12:22:31,161 - websocket - ERROR - _logging.py:77 - Connection to remote host was lost. - goodbye
+2025-09-01 12:22:31,163 - websocket - ERROR - _logging.py:77 - Connection to remote host was lost. - goodbye
+2025-09-01 12:22:31,165 - websocket - ERROR - _logging.py:77 - Connection to remote host was lost. - goodbye
+2025-09-01 12:22:32,538 - src.websocket.websocket_manager - ERROR - websocket_manager.py:578 - Market websocket error: Handshake status 403 Forbidden -+-+- {'date': 'Mon, 01 Sep 2025 06:52:32 GMT', 'transfer-encoding': 'chunked', 'connection': 'keep-alive'} -+-+- None
+2025-09-01 12:22:42,762 - websocket - ERROR - _logging.py:77 - Handshake status 403 Forbidden -+-+- {'date': 'Mon, 01 Sep 2025 06:52:32 GMT', 'transfer-encoding': 'chunked', 'connection': 'keep-alive'} -+-+- None - goodbye
+2025-09-01 12:22:43,120 - src.websocket.websocket_manager - ERROR - websocket_manager.py:578 - Market websocket error: Handshake status 403 Forbidden -+-+- {'date': 'Mon, 01 Sep 2025 06:52:43 GMT', 'transfer-encoding': 'chunked', 'connection': 'keep-alive'} -+-+- None
+2025-09-01 12:22:53,126 - websocket - ERROR - _logging.py:77 - Handshake status 403 Forbidden -+-+- {'date': 'Mon, 01 Sep 2025 06:52:43 GMT', 'transfer-encoding': 'chunked', 'connection': 'keep-alive'} -+-+- None - goodbye
+2025-09-01 12:22:53,467 - src.websocket.websocket_manager - ERROR - websocket_manager.py:578 - Market websocket error: Handshake status 403 Forbidden -+-+- {'date': 'Mon, 01 Sep 2025 06:52:53 GMT', 'transfer-encoding': 'chunked', 'connection': 'keep-alive'} -+-+- None
+2025-09-01 12:22:53,469 - websocket - ERROR - _logging.py:77 - Handshake status 403 Forbidden -+-+- {'date': 'Mon, 01 Sep 2025 06:52:53 GMT', 'transfer-encoding': 'chunked', 'connection': 'keep-alive'} -+-+- None - goodbye
+2025-09-01 13:03:55,517 - src.upstox_api_client - ERROR - upstox_api_client.py:66 - Failed to load stored token: 'UpstoxClient' object has no attribute 'headers'
+2025-09-01 13:08:20,360 - src.websocket.websocket_manager - ERROR - websocket_manager.py:600 - Portfolio websocket error: Connection to remote host was lost.
+2025-09-01 13:08:20,360 - src.websocket.websocket_manager - ERROR - websocket_manager.py:600 - Portfolio websocket error: Connection to remote host was lost.
+2025-09-01 13:08:20,397 - websocket - ERROR - _logging.py:77 - Connection to remote host was lost. - goodbye
+2025-09-01 13:08:20,399 - websocket - ERROR - _logging.py:77 - Connection to remote host was lost. - goodbye
+2025-09-01 13:08:23,472 - src.websocket.websocket_manager - ERROR - websocket_manager.py:578 - Market websocket error: Connection to remote host was lost.
+2025-09-01 13:08:23,473 - websocket - ERROR - _logging.py:77 - Connection to remote host was lost. - goodbye
+2025-09-01 13:08:24,070 - src.websocket.websocket_manager - ERROR - websocket_manager.py:578 - Market websocket error: Connection to remote host was lost.
+2025-09-01 13:08:24,074 - websocket - ERROR - _logging.py:77 - Connection to remote host was lost. - goodbye
+2025-09-01 13:42:41,774 - src.upstox_api_client - ERROR - upstox_api_client.py:66 - Failed to load stored token: 'UpstoxClient' object has no attribute 'headers'
+2025-09-01 15:02:18,703 - src.utils.notification - ERROR - notification.py:65 - Error sending Telegram message to 5636009404: Cannot connect to host api.telegram.org:443 ssl:default [getaddrinfo failed]
+2025-09-01 15:02:18,708 - src.utils.notification - ERROR - notification.py:65 - Error sending Telegram message to -1002867661585: Cannot connect to host api.telegram.org:443 ssl:default [getaddrinfo failed]
+2025-09-01 15:02:26,894 - src.websocket.websocket_manager - ERROR - websocket_manager.py:600 - Portfolio websocket error: Connection to remote host was lost.
+2025-09-01 15:02:26,900 - websocket - ERROR - _logging.py:77 - Connection to remote host was lost. - goodbye
+2025-09-01 15:02:28,648 - src.websocket.websocket_manager - ERROR - websocket_manager.py:600 - Portfolio websocket error: [Errno 11001] getaddrinfo failed
+2025-09-01 15:02:28,663 - src.websocket.websocket_manager - ERROR - websocket_manager.py:578 - Market websocket error: [Errno 11001] getaddrinfo failed
+2025-09-01 15:02:28,663 - src.websocket.websocket_manager - ERROR - websocket_manager.py:600 - Portfolio websocket error: [Errno 11001] getaddrinfo failed
+2025-09-01 15:02:28,685 - websocket - ERROR - _logging.py:77 - [Errno 11001] getaddrinfo failed - goodbye
+2025-09-01 15:02:28,693 - websocket - ERROR - _logging.py:77 - [Errno 11001] getaddrinfo failed - goodbye
+2025-09-01 15:02:35,753 - src.websocket.websocket_manager - ERROR - websocket_manager.py:578 - Market websocket error: Connection to remote host was lost.
+2025-09-01 15:02:35,754 - websocket - ERROR - _logging.py:77 - Connection to remote host was lost. - goodbye
+2025-09-01 15:02:38,717 - websocket - ERROR - _logging.py:77 - [Errno 11001] getaddrinfo failed - goodbye
+2025-09-01 15:02:51,675 - src.websocket.websocket_manager - ERROR - websocket_manager.py:578 - Market websocket error: Connection to remote host was lost.
+2025-09-01 15:02:51,675 - src.websocket.websocket_manager - ERROR - websocket_manager.py:578 - Market websocket error: Connection to remote host was lost.
+2025-09-01 15:02:51,675 - src.websocket.websocket_manager - ERROR - websocket_manager.py:600 - Portfolio websocket error: Connection to remote host was lost.
+2025-09-01 15:02:51,676 - src.websocket.websocket_manager - ERROR - websocket_manager.py:600 - Portfolio websocket error: Connection to remote host was lost.
+2025-09-01 15:02:51,686 - websocket - ERROR - _logging.py:77 - Connection to remote host was lost. - goodbye
+2025-09-01 15:02:51,686 - websocket - ERROR - _logging.py:77 - Connection to remote host was lost. - goodbye
+2025-09-01 15:02:51,687 - websocket - ERROR - _logging.py:77 - Connection to remote host was lost. - goodbye
+2025-09-01 15:02:51,687 - websocket - ERROR - _logging.py:77 - Connection to remote host was lost. - goodbye
+2025-09-01 15:02:51,814 - src.websocket.websocket_manager - ERROR - websocket_manager.py:578 - Market websocket error: [Errno 11001] getaddrinfo failed
+2025-09-01 15:02:51,823 - src.websocket.websocket_manager - ERROR - websocket_manager.py:578 - Market websocket error: [Errno 11001] getaddrinfo failed
+2025-09-01 15:02:51,842 - src.websocket.websocket_manager - ERROR - websocket_manager.py:600 - Portfolio websocket error: [Errno 11001] getaddrinfo failed
+2025-09-01 15:02:51,843 - src.websocket.websocket_manager - ERROR - websocket_manager.py:600 - Portfolio websocket error: [Errno 11001] getaddrinfo failed
+2025-09-01 15:03:01,854 - websocket - ERROR - _logging.py:77 - [Errno 11001] getaddrinfo failed - goodbye
+2025-09-01 15:03:01,856 - websocket - ERROR - _logging.py:77 - [Errno 11001] getaddrinfo failed - goodbye
+2025-09-01 15:03:01,860 - src.websocket.websocket_manager - ERROR - websocket_manager.py:578 - Market websocket error: [Errno 11001] getaddrinfo failed
+2025-09-01 15:03:01,861 - src.websocket.websocket_manager - ERROR - websocket_manager.py:578 - Market websocket error: [Errno 11001] getaddrinfo failed
+2025-09-01 15:03:01,871 - websocket - ERROR - _logging.py:77 - [Errno 11001] getaddrinfo failed - goodbye
+2025-09-01 15:03:01,877 - websocket - ERROR - _logging.py:77 - [Errno 11001] getaddrinfo failed - goodbye
+2025-09-01 15:03:02,015 - src.websocket.websocket_manager - ERROR - websocket_manager.py:600 - Portfolio websocket error: [Errno 11001] getaddrinfo failed
+2025-09-01 15:03:02,016 - src.websocket.websocket_manager - ERROR - websocket_manager.py:600 - Portfolio websocket error: [Errno 11001] getaddrinfo failed
+2025-09-01 15:03:11,864 - websocket - ERROR - _logging.py:77 - [Errno 11001] getaddrinfo failed - goodbye
+2025-09-01 15:03:11,868 - websocket - ERROR - _logging.py:77 - [Errno 11001] getaddrinfo failed - goodbye
+2025-09-01 15:03:12,044 - websocket - ERROR - _logging.py:77 - [Errno 11001] getaddrinfo failed - goodbye
+2025-09-01 15:03:12,045 - websocket - ERROR - _logging.py:77 - [Errno 11001] getaddrinfo failed - goodbye
+2025-09-01 18:02:12,735 - src.upstox_api_client - ERROR - upstox_api_client.py:106 - Failed to load stored token: 'UpstoxClient' object has no attribute 'headers'
+2025-09-01 18:07:15,862 - src.upstox_api_client - ERROR - upstox_api_client.py:106 - Failed to load stored token: 'UpstoxClient' object has no attribute 'headers'
+2025-09-01 18:18:19,341 - src.upstox_api_client - ERROR - upstox_api_client.py:106 - Failed to load stored token: 'UpstoxClient' object has no attribute 'headers'
+2025-09-01 18:18:24,611 - __main__ - ERROR - main.py:181 - [ERROR] No strategies were successfully loaded
+2025-09-01 18:35:41,584 - src.websocket.websocket_manager - ERROR - websocket_manager.py:578 - Market websocket error: Connection to remote host was lost.
+2025-09-01 18:35:41,585 - websocket - ERROR - _logging.py:77 - Connection to remote host was lost. - goodbye
+2025-09-01 19:19:38,468 - src.websocket.websocket_manager - ERROR - websocket_manager.py:578 - Market websocket error: Connection to remote host was lost.
+2025-09-01 19:19:38,469 - websocket - ERROR - _logging.py:77 - Connection to remote host was lost. - goodbye
+2025-09-01 19:19:38,468 - src.websocket.websocket_manager - ERROR - websocket_manager.py:578 - Market websocket error: Connection to remote host was lost.
+2025-09-01 19:19:38,469 - src.websocket.websocket_manager - ERROR - websocket_manager.py:600 - Portfolio websocket error: Connection to remote host was lost.
+2025-09-01 19:19:38,471 - websocket - ERROR - _logging.py:77 - Connection to remote host was lost. - goodbye
+2025-09-01 19:19:38,471 - websocket - ERROR - _logging.py:77 - Connection to remote host was lost. - goodbye
+2025-09-01 19:19:38,585 - src.websocket.websocket_manager - ERROR - websocket_manager.py:578 - Market websocket error: [Errno 11001] getaddrinfo failed
+2025-09-01 19:19:38,586 - src.websocket.websocket_manager - ERROR - websocket_manager.py:600 - Portfolio websocket error: [Errno 11001] getaddrinfo failed
+2025-09-01 19:19:38,588 - src.websocket.websocket_manager - ERROR - websocket_manager.py:578 - Market websocket error: [Errno 11001] getaddrinfo failed
+2025-09-01 19:19:40,836 - src.websocket.websocket_manager - ERROR - websocket_manager.py:600 - Portfolio websocket error: Connection to remote host was lost.
+2025-09-01 19:19:40,836 - src.websocket.websocket_manager - ERROR - websocket_manager.py:578 - Market websocket error: Connection to remote host was lost.
+2025-09-01 19:19:40,837 - src.websocket.websocket_manager - ERROR - websocket_manager.py:578 - Market websocket error: Connection to remote host was lost.
+2025-09-01 19:19:40,836 - src.websocket.websocket_manager - ERROR - websocket_manager.py:600 - Portfolio websocket error: Connection to remote host was lost.
+2025-09-01 19:19:40,837 - websocket - ERROR - _logging.py:77 - Connection to remote host was lost. - goodbye
+2025-09-01 19:19:40,837 - src.websocket.websocket_manager - ERROR - websocket_manager.py:600 - Portfolio websocket error: Connection to remote host was lost.
+2025-09-01 19:19:40,839 - websocket - ERROR - _logging.py:77 - Connection to remote host was lost. - goodbye
+2025-09-01 19:19:40,838 - websocket - ERROR - _logging.py:77 - Connection to remote host was lost. - goodbye
+2025-09-01 19:19:40,839 - websocket - ERROR - _logging.py:77 - Connection to remote host was lost. - goodbye
+2025-09-01 19:19:40,839 - websocket - ERROR - _logging.py:77 - Connection to remote host was lost. - goodbye
+2025-09-01 19:19:40,847 - src.websocket.websocket_manager - ERROR - websocket_manager.py:600 - Portfolio websocket error: [Errno 11001] getaddrinfo failed
+2025-09-01 19:19:40,848 - src.websocket.websocket_manager - ERROR - websocket_manager.py:578 - Market websocket error: [Errno 11001] getaddrinfo failed
+2025-09-01 19:19:40,847 - src.websocket.websocket_manager - ERROR - websocket_manager.py:578 - Market websocket error: [Errno 11001] getaddrinfo failed
+2025-09-01 19:19:40,852 - src.websocket.websocket_manager - ERROR - websocket_manager.py:600 - Portfolio websocket error: [Errno 11001] getaddrinfo failed
+2025-09-01 19:19:40,854 - src.websocket.websocket_manager - ERROR - websocket_manager.py:600 - Portfolio websocket error: [Errno 11001] getaddrinfo failed
+2025-09-01 19:19:48,593 - websocket - ERROR - _logging.py:77 - [Errno 11001] getaddrinfo failed - goodbye
+2025-09-01 19:19:48,593 - websocket - ERROR - _logging.py:77 - [Errno 11001] getaddrinfo failed - goodbye
+2025-09-01 19:19:48,593 - src.websocket.websocket_manager - ERROR - websocket_manager.py:578 - Market websocket error: [Errno 11001] getaddrinfo failed
+2025-09-01 19:19:48,593 - src.websocket.websocket_manager - ERROR - websocket_manager.py:578 - Market websocket error: [Errno 11001] getaddrinfo failed
+2025-09-01 19:19:48,594 - websocket - ERROR - _logging.py:77 - [Errno 11001] getaddrinfo failed - goodbye
+2025-09-01 19:19:48,594 - src.websocket.websocket_manager - ERROR - websocket_manager.py:600 - Portfolio websocket error: [Errno 11001] getaddrinfo failed
+2025-09-01 19:19:50,852 - websocket - ERROR - _logging.py:77 - [Errno 11001] getaddrinfo failed - goodbye
+2025-09-01 19:19:50,852 - websocket - ERROR - _logging.py:77 - [Errno 11001] getaddrinfo failed - goodbye
+2025-09-01 19:19:50,852 - src.websocket.websocket_manager - ERROR - websocket_manager.py:600 - Portfolio websocket error: [Errno 11001] getaddrinfo failed
+2025-09-01 19:19:50,852 - src.websocket.websocket_manager - ERROR - websocket_manager.py:578 - Market websocket error: [Errno 11001] getaddrinfo failed
+2025-09-01 19:19:50,854 - websocket - ERROR - _logging.py:77 - [Errno 11001] getaddrinfo failed - goodbye
+2025-09-01 19:19:50,856 - src.websocket.websocket_manager - ERROR - websocket_manager.py:578 - Market websocket error: [Errno 11001] getaddrinfo failed
+2025-09-01 19:19:50,860 - websocket - ERROR - _logging.py:77 - [Errno 11001] getaddrinfo failed - goodbye
+2025-09-01 19:19:50,861 - src.websocket.websocket_manager - ERROR - websocket_manager.py:600 - Portfolio websocket error: [Errno 11001] getaddrinfo failed
+2025-09-01 19:19:50,862 - websocket - ERROR - _logging.py:77 - [Errno 11001] getaddrinfo failed - goodbye
+2025-09-01 19:19:50,862 - src.websocket.websocket_manager - ERROR - websocket_manager.py:600 - Portfolio websocket error: [Errno 11001] getaddrinfo failed
+2025-09-01 19:19:58,597 - websocket - ERROR - _logging.py:77 - [Errno 11001] getaddrinfo failed - goodbye
+2025-09-01 19:19:58,597 - src.websocket.websocket_manager - ERROR - websocket_manager.py:578 - Market websocket error: [Errno 11001] getaddrinfo failed
+2025-09-01 19:19:58,599 - websocket - ERROR - _logging.py:77 - [Errno 11001] getaddrinfo failed - goodbye
+2025-09-01 19:19:58,600 - websocket - ERROR - _logging.py:77 - [Errno 11001] getaddrinfo failed - goodbye
+2025-09-01 19:19:58,600 - websocket - ERROR - _logging.py:77 - [Errno 11001] getaddrinfo failed - goodbye
+2025-09-01 19:19:58,600 - src.websocket.websocket_manager - ERROR - websocket_manager.py:578 - Market websocket error: [Errno 11001] getaddrinfo failed
+2025-09-01 19:19:58,600 - src.websocket.websocket_manager - ERROR - websocket_manager.py:600 - Portfolio websocket error: [Errno 11001] getaddrinfo failed
+2025-09-01 19:19:58,602 - websocket - ERROR - _logging.py:77 - [Errno 11001] getaddrinfo failed - goodbye
+2025-09-01 19:19:58,602 - websocket - ERROR - _logging.py:77 - [Errno 11001] getaddrinfo failed - goodbye
+2025-09-01 19:20:00,858 - websocket - ERROR - _logging.py:77 - [Errno 11001] getaddrinfo failed - goodbye
+2025-09-01 19:20:00,859 - src.websocket.websocket_manager - ERROR - websocket_manager.py:600 - Portfolio websocket error: [Errno 11001] getaddrinfo failed
+2025-09-01 19:20:00,861 - websocket - ERROR - _logging.py:77 - [Errno 11001] getaddrinfo failed - goodbye
+2025-09-01 19:20:00,861 - websocket - ERROR - _logging.py:77 - [Errno 11001] getaddrinfo failed - goodbye
+2025-09-01 19:20:00,861 - src.websocket.websocket_manager - ERROR - websocket_manager.py:578 - Market websocket error: [Errno 11001] getaddrinfo failed
+2025-09-01 19:20:00,862 - websocket - ERROR - _logging.py:77 - [Errno 11001] getaddrinfo failed - goodbye
+2025-09-01 19:20:00,863 - websocket - ERROR - _logging.py:77 - [Errno 11001] getaddrinfo failed - goodbye
+2025-09-01 19:20:00,864 - src.websocket.websocket_manager - ERROR - websocket_manager.py:578 - Market websocket error: [Errno 11001] getaddrinfo failed
+2025-09-01 19:20:00,865 - websocket - ERROR - _logging.py:77 - [Errno 11001] getaddrinfo failed - goodbye
+2025-09-01 19:20:00,867 - websocket - ERROR - _logging.py:77 - [Errno 11001] getaddrinfo failed - goodbye
+2025-09-01 19:20:00,867 - src.websocket.websocket_manager - ERROR - websocket_manager.py:600 - Portfolio websocket error: [Errno 11001] getaddrinfo failed
+2025-09-01 19:20:00,868 - websocket - ERROR - _logging.py:77 - [Errno 11001] getaddrinfo failed - goodbye
+2025-09-01 19:20:00,868 - websocket - ERROR - _logging.py:77 - [Errno 11001] getaddrinfo failed - goodbye
+2025-09-01 19:20:00,869 - src.websocket.websocket_manager - ERROR - websocket_manager.py:600 - Portfolio websocket error: [Errno 11001] getaddrinfo failed
+2025-09-01 19:20:00,870 - websocket - ERROR - _logging.py:77 - [Errno 11001] getaddrinfo failed - goodbye
+2025-09-01 19:27:12,163 - src.upstox_api_client - ERROR - upstox_api_client.py:106 - Failed to load stored token: 'UpstoxClient' object has no attribute 'headers'
+2025-09-01 19:33:25,222 - src.upstox_api_client - ERROR - upstox_api_client.py:106 - Failed to load stored token: 'UpstoxClient' object has no attribute 'headers'
+2025-09-01 20:28:04,199 - src.upstox_api_client - ERROR - upstox_api_client.py:106 - Failed to load stored token: 'UpstoxClient' object has no attribute 'headers'
+2025-09-01 20:35:01,980 - src.upstox_api_client - ERROR - upstox_api_client.py:106 - Failed to load stored token: 'UpstoxClient' object has no attribute 'headers'
+2025-09-01 20:35:01,994 - src.upstox_api_client - ERROR - upstox_api_client.py:254 - API request failed: Cannot connect to host api.upstox.com:443 ssl:default [getaddrinfo failed]
+2025-09-02 01:03:44,984 - src.upstox_api_client - ERROR - upstox_api_client.py:106 - Failed to load stored token: 'UpstoxClient' object has no attribute 'headers'
+2025-09-02 01:05:57,975 - src.upstox_api_client - ERROR - upstox_api_client.py:106 - Failed to load stored token: 'UpstoxClient' object has no attribute 'headers'
+2025-09-02 02:42:28,969 - src.websocket.websocket_manager - ERROR - websocket_manager.py:578 - Market websocket error: Handshake status 403 Forbidden -+-+- {'date': 'Mon, 01 Sep 2025 21:12:28 GMT', 'transfer-encoding': 'chunked', 'connection': 'keep-alive'} -+-+- None
+2025-09-02 02:42:28,970 - websocket - ERROR - _logging.py:77 - Handshake status 403 Forbidden -+-+- {'date': 'Mon, 01 Sep 2025 21:12:28 GMT', 'transfer-encoding': 'chunked', 'connection': 'keep-alive'} -+-+- None - goodbye
+2025-09-02 02:42:29,320 - src.websocket.websocket_manager - ERROR - websocket_manager.py:578 - Market websocket error: Handshake status 403 Forbidden -+-+- {'date': 'Mon, 01 Sep 2025 21:12:29 GMT', 'transfer-encoding': 'chunked', 'connection': 'keep-alive'} -+-+- None
+2025-09-02 02:42:39,323 - websocket - ERROR - _logging.py:77 - Handshake status 403 Forbidden -+-+- {'date': 'Mon, 01 Sep 2025 21:12:29 GMT', 'transfer-encoding': 'chunked', 'connection': 'keep-alive'} -+-+- None - goodbye
+2025-09-02 02:42:39,810 - src.websocket.websocket_manager - ERROR - websocket_manager.py:578 - Market websocket error: Handshake status 403 Forbidden -+-+- {'date': 'Mon, 01 Sep 2025 21:12:39 GMT', 'transfer-encoding': 'chunked', 'connection': 'keep-alive'} -+-+- None
+2025-09-02 02:42:49,812 - websocket - ERROR - _logging.py:77 - Handshake status 403 Forbidden -+-+- {'date': 'Mon, 01 Sep 2025 21:12:39 GMT', 'transfer-encoding': 'chunked', 'connection': 'keep-alive'} -+-+- None - goodbye
+2025-09-02 02:42:50,142 - src.websocket.websocket_manager - ERROR - websocket_manager.py:578 - Market websocket error: Handshake status 403 Forbidden -+-+- {'date': 'Mon, 01 Sep 2025 21:12:50 GMT', 'transfer-encoding': 'chunked', 'connection': 'keep-alive'} -+-+- None
+2025-09-02 02:42:50,143 - websocket - ERROR - _logging.py:77 - Handshake status 403 Forbidden -+-+- {'date': 'Mon, 01 Sep 2025 21:12:50 GMT', 'transfer-encoding': 'chunked', 'connection': 'keep-alive'} -+-+- None - goodbye
+2025-09-02 02:43:30,843 - src.websocket.websocket_manager - ERROR - websocket_manager.py:578 - Market websocket error: Handshake status 403 Forbidden -+-+- {'date': 'Mon, 01 Sep 2025 21:13:30 GMT', 'transfer-encoding': 'chunked', 'connection': 'keep-alive'} -+-+- None
+2025-09-02 02:43:30,844 - websocket - ERROR - _logging.py:77 - Handshake status 403 Forbidden -+-+- {'date': 'Mon, 01 Sep 2025 21:13:30 GMT', 'transfer-encoding': 'chunked', 'connection': 'keep-alive'} -+-+- None - goodbye
+2025-09-02 02:43:31,201 - src.websocket.websocket_manager - ERROR - websocket_manager.py:578 - Market websocket error: Handshake status 403 Forbidden -+-+- {'date': 'Mon, 01 Sep 2025 21:13:31 GMT', 'transfer-encoding': 'chunked', 'connection': 'keep-alive'} -+-+- None
+2025-09-02 02:43:41,202 - websocket - ERROR - _logging.py:77 - Handshake status 403 Forbidden -+-+- {'date': 'Mon, 01 Sep 2025 21:13:31 GMT', 'transfer-encoding': 'chunked', 'connection': 'keep-alive'} -+-+- None - goodbye
+2025-09-02 02:43:41,646 - src.websocket.websocket_manager - ERROR - websocket_manager.py:578 - Market websocket error: Handshake status 403 Forbidden -+-+- {'date': 'Mon, 01 Sep 2025 21:13:41 GMT', 'transfer-encoding': 'chunked', 'connection': 'keep-alive'} -+-+- None
+2025-09-02 02:43:51,648 - websocket - ERROR - _logging.py:77 - Handshake status 403 Forbidden -+-+- {'date': 'Mon, 01 Sep 2025 21:13:41 GMT', 'transfer-encoding': 'chunked', 'connection': 'keep-alive'} -+-+- None - goodbye
+2025-09-02 09:18:05,455 - src.upstox_api_client - ERROR - upstox_api_client.py:262 - HTTP error 401: 401, message='Unauthorized', url='https://api.upstox.com/v2/user/profile'
+2025-09-02 10:29:29,786 - strategy.option_pine_v5 - ERROR - complete_pine_script_strategy.py:137 - Error calculating trend line: 'close'
+2025-09-02 10:30:29,808 - strategy.option_pine_v5 - ERROR - complete_pine_script_strategy.py:137 - Error calculating trend line: 'close'
+2025-09-02 10:31:29,823 - strategy.option_pine_v5 - ERROR - complete_pine_script_strategy.py:137 - Error calculating trend line: 'close'
+2025-09-02 10:32:29,871 - strategy.option_pine_v5 - ERROR - complete_pine_script_strategy.py:137 - Error calculating trend line: 'close'
+2025-09-02 10:34:02,070 - strategy.option_pine_v5 - ERROR - complete_pine_script_strategy.py:137 - Error calculating trend line: 'close'
+2025-09-02 10:35:02,093 - strategy.option_pine_v5 - ERROR - complete_pine_script_strategy.py:137 - Error calculating trend line: 'close'
+2025-09-02 10:36:02,121 - strategy.option_pine_v5 - ERROR - complete_pine_script_strategy.py:137 - Error calculating trend line: 'close'
+2025-09-02 10:37:02,162 - strategy.option_pine_v5 - ERROR - complete_pine_script_strategy.py:137 - Error calculating trend line: 'close'
+2025-09-02 10:38:02,186 - strategy.option_pine_v5 - ERROR - complete_pine_script_strategy.py:137 - Error calculating trend line: 'close'
+2025-09-02 10:39:04,349 - strategy.option_pine_v5 - ERROR - complete_pine_script_strategy.py:137 - Error calculating trend line: 'close'
+2025-09-02 10:40:04,370 - strategy.option_pine_v5 - ERROR - complete_pine_script_strategy.py:137 - Error calculating trend line: 'close'
+2025-09-02 10:41:04,420 - strategy.option_pine_v5 - ERROR - complete_pine_script_strategy.py:137 - Error calculating trend line: 'close'
+2025-09-02 10:42:04,437 - strategy.option_pine_v5 - ERROR - complete_pine_script_strategy.py:137 - Error calculating trend line: 'close'
+2025-09-02 10:43:04,464 - strategy.option_pine_v5 - ERROR - complete_pine_script_strategy.py:137 - Error calculating trend line: 'close'
+2025-09-02 10:44:06,650 - strategy.option_pine_v5 - ERROR - complete_pine_script_strategy.py:137 - Error calculating trend line: 'close'
+2025-09-02 10:45:06,668 - strategy.option_pine_v5 - ERROR - complete_pine_script_strategy.py:137 - Error calculating trend line: 'close'
+2025-09-02 10:46:06,686 - strategy.option_pine_v5 - ERROR - complete_pine_script_strategy.py:137 - Error calculating trend line: 'close'
+2025-09-02 10:47:06,710 - strategy.option_pine_v5 - ERROR - complete_pine_script_strategy.py:137 - Error calculating trend line: 'close'
+2025-09-02 10:48:06,735 - strategy.option_pine_v5 - ERROR - complete_pine_script_strategy.py:137 - Error calculating trend line: 'close'
+2025-09-02 10:49:08,891 - strategy.option_pine_v5 - ERROR - complete_pine_script_strategy.py:137 - Error calculating trend line: 'close'
+2025-09-02 10:50:08,908 - strategy.option_pine_v5 - ERROR - complete_pine_script_strategy.py:137 - Error calculating trend line: 'close'
+2025-09-02 10:51:08,935 - strategy.option_pine_v5 - ERROR - complete_pine_script_strategy.py:137 - Error calculating trend line: 'close'
+2025-09-02 10:52:08,967 - strategy.option_pine_v5 - ERROR - complete_pine_script_strategy.py:137 - Error calculating trend line: 'close'
+2025-09-02 10:53:08,996 - strategy.option_pine_v5 - ERROR - complete_pine_script_strategy.py:137 - Error calculating trend line: 'close'
+2025-09-02 10:54:11,146 - strategy.option_pine_v5 - ERROR - complete_pine_script_strategy.py:137 - Error calculating trend line: 'close'
+2025-09-02 10:55:11,162 - strategy.option_pine_v5 - ERROR - complete_pine_script_strategy.py:137 - Error calculating trend line: 'close'
+2025-09-02 10:56:11,192 - strategy.option_pine_v5 - ERROR - complete_pine_script_strategy.py:137 - Error calculating trend line: 'close'
+2025-09-02 10:57:11,213 - strategy.option_pine_v5 - ERROR - complete_pine_script_strategy.py:137 - Error calculating trend line: 'close'
+2025-09-02 10:58:11,232 - strategy.option_pine_v5 - ERROR - complete_pine_script_strategy.py:137 - Error calculating trend line: 'close'
+2025-09-02 10:59:13,362 - strategy.option_pine_v5 - ERROR - complete_pine_script_strategy.py:137 - Error calculating trend line: 'close'
+2025-09-02 11:00:13,379 - strategy.option_pine_v5 - ERROR - complete_pine_script_strategy.py:137 - Error calculating trend line: 'close'
+2025-09-02 11:01:13,403 - strategy.option_pine_v5 - ERROR - complete_pine_script_strategy.py:137 - Error calculating trend line: 'close'
+2025-09-02 11:02:13,429 - strategy.option_pine_v5 - ERROR - complete_pine_script_strategy.py:137 - Error calculating trend line: 'close'
+2025-09-02 11:03:13,462 - strategy.option_pine_v5 - ERROR - complete_pine_script_strategy.py:137 - Error calculating trend line: 'close'
+2025-09-02 11:04:16,390 - strategy.option_pine_v5 - ERROR - complete_pine_script_strategy.py:137 - Error calculating trend line: 'close'
+2025-09-02 11:05:16,445 - strategy.option_pine_v5 - ERROR - complete_pine_script_strategy.py:137 - Error calculating trend line: 'close'
+2025-09-02 11:06:16,471 - strategy.option_pine_v5 - ERROR - complete_pine_script_strategy.py:137 - Error calculating trend line: 'close'
+2025-09-02 11:07:16,498 - strategy.option_pine_v5 - ERROR - complete_pine_script_strategy.py:137 - Error calculating trend line: 'close'
+2025-09-02 11:08:16,538 - strategy.option_pine_v5 - ERROR - complete_pine_script_strategy.py:137 - Error calculating trend line: 'close'
+2025-09-02 11:09:18,802 - strategy.option_pine_v5 - ERROR - complete_pine_script_strategy.py:137 - Error calculating trend line: 'close'
+2025-09-02 11:10:18,812 - strategy.option_pine_v5 - ERROR - complete_pine_script_strategy.py:137 - Error calculating trend line: 'close'
+2025-09-02 11:11:18,839 - strategy.option_pine_v5 - ERROR - complete_pine_script_strategy.py:137 - Error calculating trend line: 'close'
+2025-09-02 11:12:18,857 - strategy.option_pine_v5 - ERROR - complete_pine_script_strategy.py:137 - Error calculating trend line: 'close'
+2025-09-02 11:13:18,880 - strategy.option_pine_v5 - ERROR - complete_pine_script_strategy.py:137 - Error calculating trend line: 'close'
+2025-09-02 11:14:22,735 - strategy.option_pine_v5 - ERROR - complete_pine_script_strategy.py:137 - Error calculating trend line: 'close'
+2025-09-02 11:15:22,751 - strategy.option_pine_v5 - ERROR - complete_pine_script_strategy.py:137 - Error calculating trend line: 'close'
+2025-09-02 11:16:22,786 - strategy.option_pine_v5 - ERROR - complete_pine_script_strategy.py:137 - Error calculating trend line: 'close'
+2025-09-02 11:17:22,817 - strategy.option_pine_v5 - ERROR - complete_pine_script_strategy.py:137 - Error calculating trend line: 'close'
+2025-09-02 11:18:22,836 - strategy.option_pine_v5 - ERROR - complete_pine_script_strategy.py:137 - Error calculating trend line: 'close'
+2025-09-02 11:37:18,314 - strategy.option_pine_v5 - ERROR - complete_pine_script_strategy.py:307 - Error calculating ADX: 'high'
+2025-09-02 11:37:18,315 - __main__ - ERROR - main.py:146 - ADX calculation failed
+2025-09-02 11:52:03,387 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:933 - Error in enhanced should_enter: 'close'
+2025-09-02 11:53:05,540 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:933 - Error in enhanced should_enter: 'close'
+2025-09-02 11:54:05,584 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:933 - Error in enhanced should_enter: 'close'
+2025-09-02 11:55:05,612 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:933 - Error in enhanced should_enter: 'close'
+2025-09-02 11:56:05,633 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:933 - Error in enhanced should_enter: 'close'
+2025-09-02 11:57:05,655 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:933 - Error in enhanced should_enter: 'close'
+2025-09-02 11:58:07,791 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:933 - Error in enhanced should_enter: 'close'
+2025-09-02 11:59:07,814 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:933 - Error in enhanced should_enter: 'close'
+2025-09-02 12:00:07,847 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:933 - Error in enhanced should_enter: 'close'
+2025-09-02 12:01:07,865 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:933 - Error in enhanced should_enter: 'close'
+2025-09-02 12:02:07,893 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:933 - Error in enhanced should_enter: 'close'
+2025-09-02 12:03:10,053 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:933 - Error in enhanced should_enter: 'close'
+2025-09-02 12:04:10,088 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:933 - Error in enhanced should_enter: 'close'
+2025-09-02 12:05:10,117 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:933 - Error in enhanced should_enter: 'close'
+2025-09-02 12:06:10,138 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:933 - Error in enhanced should_enter: 'close'
+2025-09-02 12:07:10,159 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:933 - Error in enhanced should_enter: 'close'
+2025-09-02 12:08:12,299 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:933 - Error in enhanced should_enter: 'close'
+2025-09-02 12:09:12,324 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:933 - Error in enhanced should_enter: 'close'
+2025-09-02 12:10:12,347 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:933 - Error in enhanced should_enter: 'close'
+2025-09-02 12:11:12,375 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:933 - Error in enhanced should_enter: 'close'
+2025-09-02 12:12:12,402 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:933 - Error in enhanced should_enter: 'close'
+2025-09-02 12:13:14,550 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:933 - Error in enhanced should_enter: 'close'
+2025-09-02 12:14:14,576 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:933 - Error in enhanced should_enter: 'close'
+2025-09-02 12:15:14,594 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:933 - Error in enhanced should_enter: 'close'
+2025-09-02 12:16:14,610 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:933 - Error in enhanced should_enter: 'close'
+2025-09-02 12:17:14,630 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:933 - Error in enhanced should_enter: 'close'
+2025-09-02 12:18:16,783 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:933 - Error in enhanced should_enter: 'close'
+2025-09-02 12:19:16,812 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:933 - Error in enhanced should_enter: 'close'
+2025-09-02 12:20:16,836 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:933 - Error in enhanced should_enter: 'close'
+2025-09-02 12:21:16,875 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:933 - Error in enhanced should_enter: 'close'
+2025-09-02 12:22:16,895 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:933 - Error in enhanced should_enter: 'close'
+2025-09-02 12:23:19,037 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:933 - Error in enhanced should_enter: 'close'
+2025-09-02 12:24:19,058 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:933 - Error in enhanced should_enter: 'close'
+2025-09-02 12:25:19,077 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:933 - Error in enhanced should_enter: 'close'
+2025-09-02 12:26:19,117 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:933 - Error in enhanced should_enter: 'close'
+2025-09-02 12:27:19,152 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:933 - Error in enhanced should_enter: 'close'
+2025-09-02 12:28:21,298 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:933 - Error in enhanced should_enter: 'close'
+2025-09-02 12:29:21,326 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:933 - Error in enhanced should_enter: 'close'
+2025-09-02 12:30:21,344 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:933 - Error in enhanced should_enter: 'close'
+2025-09-02 12:31:21,374 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:933 - Error in enhanced should_enter: 'close'
+2025-09-02 12:32:21,468 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:933 - Error in enhanced should_enter: 'close'
+2025-09-02 12:33:23,781 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:933 - Error in enhanced should_enter: 'close'
+2025-09-02 12:34:23,800 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:933 - Error in enhanced should_enter: 'close'
+2025-09-02 12:35:23,824 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:933 - Error in enhanced should_enter: 'close'
+2025-09-02 12:36:23,914 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:933 - Error in enhanced should_enter: 'close'
+2025-09-02 12:37:23,941 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:933 - Error in enhanced should_enter: 'close'
+2025-09-02 12:38:27,927 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:933 - Error in enhanced should_enter: 'close'
+2025-09-02 12:39:05,418 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:933 - Error in enhanced should_enter: 'close'
+2025-09-02 12:40:11,755 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:933 - Error in enhanced should_enter: 'close'
+2025-09-02 12:41:11,788 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:933 - Error in enhanced should_enter: 'close'
+2025-09-02 12:42:11,806 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:933 - Error in enhanced should_enter: 'close'
+2025-09-02 12:43:11,826 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:933 - Error in enhanced should_enter: 'close'
+2025-09-02 12:45:14,372 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:933 - Error in enhanced should_enter: 'close'
+2025-09-02 12:46:14,406 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:933 - Error in enhanced should_enter: 'close'
+2025-09-02 12:47:14,427 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:933 - Error in enhanced should_enter: 'close'
+2025-09-02 12:48:14,471 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:933 - Error in enhanced should_enter: 'close'
+2025-09-02 12:50:16,630 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:933 - Error in enhanced should_enter: 'close'
+2025-09-02 12:51:16,698 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:933 - Error in enhanced should_enter: 'close'
+2025-09-02 12:52:16,718 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:933 - Error in enhanced should_enter: 'close'
+2025-09-02 12:53:16,752 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:933 - Error in enhanced should_enter: 'close'
+2025-09-02 12:55:18,962 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:933 - Error in enhanced should_enter: 'close'
+2025-09-02 12:56:18,991 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:933 - Error in enhanced should_enter: 'close'
+2025-09-02 12:57:19,031 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:933 - Error in enhanced should_enter: 'close'
+2025-09-02 12:58:19,063 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:933 - Error in enhanced should_enter: 'close'
+2025-09-02 13:00:21,259 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:933 - Error in enhanced should_enter: 'close'
+2025-09-02 13:01:21,308 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:933 - Error in enhanced should_enter: 'close'
+2025-09-02 13:02:21,343 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:933 - Error in enhanced should_enter: 'close'
+2025-09-02 13:03:21,374 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:933 - Error in enhanced should_enter: 'close'
+2025-09-02 13:05:23,605 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:933 - Error in enhanced should_enter: 'close'
+2025-09-02 13:06:23,629 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:933 - Error in enhanced should_enter: 'close'
+2025-09-02 13:07:23,643 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:933 - Error in enhanced should_enter: 'close'
+2025-09-02 13:08:23,668 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:933 - Error in enhanced should_enter: 'close'
+2025-09-02 13:10:22,479 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:933 - Error in enhanced should_enter: 'close'
+2025-09-02 13:10:25,859 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:933 - Error in enhanced should_enter: 'close'
+2025-09-02 13:11:25,882 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:933 - Error in enhanced should_enter: 'close'
+2025-09-02 13:11:27,977 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:933 - Error in enhanced should_enter: 'close'
+2025-09-02 13:12:25,904 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:933 - Error in enhanced should_enter: 'close'
+2025-09-02 13:12:28,166 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:933 - Error in enhanced should_enter: 'close'
+2025-09-02 13:13:25,927 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:933 - Error in enhanced should_enter: 'close'
+2025-09-02 13:13:28,242 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:933 - Error in enhanced should_enter: 'close'
+2025-09-02 13:14:28,278 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:933 - Error in enhanced should_enter: 'close'
+2025-09-02 13:15:28,111 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:933 - Error in enhanced should_enter: 'close'
+2025-09-02 13:16:00,451 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:933 - Error in enhanced should_enter: 'close'
+2025-09-02 13:16:28,133 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:933 - Error in enhanced should_enter: 'close'
+2025-09-02 13:17:00,474 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:933 - Error in enhanced should_enter: 'close'
+2025-09-02 13:17:28,149 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:933 - Error in enhanced should_enter: 'close'
+2025-09-02 13:18:28,173 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:933 - Error in enhanced should_enter: 'close'
+2025-09-02 13:18:30,503 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:933 - Error in enhanced should_enter: 'close'
+2025-09-02 13:19:00,517 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:933 - Error in enhanced should_enter: 'close'
+2025-09-02 13:20:00,333 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:933 - Error in enhanced should_enter: 'close'
+2025-09-02 13:20:00,792 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:933 - Error in enhanced should_enter: 'close'
+2025-09-02 13:21:00,358 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:933 - Error in enhanced should_enter: 'close'
+2025-09-02 13:21:02,976 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:933 - Error in enhanced should_enter: 'close'
+2025-09-02 13:22:00,374 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:933 - Error in enhanced should_enter: 'close'
+2025-09-02 13:22:03,003 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:933 - Error in enhanced should_enter: 'close'
+2025-09-02 13:23:00,407 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:933 - Error in enhanced should_enter: 'close'
+2025-09-02 13:23:03,034 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:933 - Error in enhanced should_enter: 'close'
+2025-09-02 13:24:00,434 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:933 - Error in enhanced should_enter: 'close'
+2025-09-02 13:24:03,070 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:933 - Error in enhanced should_enter: 'close'
+2025-09-02 13:25:02,614 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:933 - Error in enhanced should_enter: 'close'
+2025-09-02 13:25:03,105 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:933 - Error in enhanced should_enter: 'close'
+2025-09-02 13:26:02,635 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:933 - Error in enhanced should_enter: 'close'
+2025-09-02 13:26:05,267 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:933 - Error in enhanced should_enter: 'close'
+2025-09-02 13:27:02,682 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:933 - Error in enhanced should_enter: 'close'
+2025-09-02 13:27:05,295 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:933 - Error in enhanced should_enter: 'close'
+2025-09-02 13:28:02,704 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:933 - Error in enhanced should_enter: 'close'
+2025-09-02 13:28:05,322 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:933 - Error in enhanced should_enter: 'close'
+2025-09-02 13:29:02,744 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:933 - Error in enhanced should_enter: 'close'
+2025-09-02 13:29:05,343 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:933 - Error in enhanced should_enter: 'close'
+2025-09-02 13:30:04,924 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:933 - Error in enhanced should_enter: 'close'
+2025-09-02 13:30:05,386 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:933 - Error in enhanced should_enter: 'close'
+2025-09-02 13:31:04,954 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:933 - Error in enhanced should_enter: 'close'
+2025-09-02 13:31:07,559 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:933 - Error in enhanced should_enter: 'close'
+2025-09-02 13:32:04,983 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:933 - Error in enhanced should_enter: 'close'
+2025-09-02 13:32:07,789 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:933 - Error in enhanced should_enter: 'close'
+2025-09-02 13:33:05,467 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:933 - Error in enhanced should_enter: 'close'
+2025-09-02 13:33:07,928 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:933 - Error in enhanced should_enter: 'close'
+2025-09-02 13:34:05,490 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:933 - Error in enhanced should_enter: 'close'
+2025-09-02 13:34:07,970 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:933 - Error in enhanced should_enter: 'close'
+2025-09-02 13:35:07,622 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:933 - Error in enhanced should_enter: 'close'
+2025-09-02 13:35:07,995 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:933 - Error in enhanced should_enter: 'close'
+2025-09-02 13:36:07,658 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:933 - Error in enhanced should_enter: 'close'
+2025-09-02 13:36:10,210 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:933 - Error in enhanced should_enter: 'close'
+2025-09-02 13:37:07,685 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:933 - Error in enhanced should_enter: 'close'
+2025-09-02 13:37:10,245 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:933 - Error in enhanced should_enter: 'close'
+2025-09-02 13:38:07,764 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:933 - Error in enhanced should_enter: 'close'
+2025-09-02 13:38:10,264 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:933 - Error in enhanced should_enter: 'close'
+2025-09-02 13:39:07,806 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:933 - Error in enhanced should_enter: 'close'
+2025-09-02 13:39:10,289 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:933 - Error in enhanced should_enter: 'close'
+2025-09-02 13:40:10,309 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:933 - Error in enhanced should_enter: 'close'
+2025-09-02 13:40:11,734 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:933 - Error in enhanced should_enter: 'close'
+2025-09-02 13:41:11,756 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:933 - Error in enhanced should_enter: 'close'
+2025-09-02 13:41:12,449 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:933 - Error in enhanced should_enter: 'close'
+2025-09-02 13:42:11,776 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:933 - Error in enhanced should_enter: 'close'
+2025-09-02 13:42:12,474 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:933 - Error in enhanced should_enter: 'close'
+2025-09-02 13:43:11,802 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:933 - Error in enhanced should_enter: 'close'
+2025-09-02 13:43:12,493 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:933 - Error in enhanced should_enter: 'close'
+2025-09-02 13:44:11,826 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:933 - Error in enhanced should_enter: 'close'
+2025-09-02 13:44:12,511 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:933 - Error in enhanced should_enter: 'close'
+2025-09-02 13:45:12,532 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:933 - Error in enhanced should_enter: 'close'
+2025-09-02 13:45:13,985 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:933 - Error in enhanced should_enter: 'close'
+2025-09-02 13:46:14,047 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:933 - Error in enhanced should_enter: 'close'
+2025-09-02 13:46:14,702 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:933 - Error in enhanced should_enter: 'close'
+2025-09-02 13:47:14,154 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:933 - Error in enhanced should_enter: 'close'
+2025-09-02 13:47:14,853 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:933 - Error in enhanced should_enter: 'close'
+2025-09-02 13:48:14,188 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:933 - Error in enhanced should_enter: 'close'
+2025-09-02 13:48:14,893 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:933 - Error in enhanced should_enter: 'close'
+2025-09-02 13:49:14,225 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:933 - Error in enhanced should_enter: 'close'
+2025-09-02 13:49:14,968 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:933 - Error in enhanced should_enter: 'close'
+2025-09-02 13:50:15,277 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:933 - Error in enhanced should_enter: 'close'
+2025-09-02 13:50:16,414 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:933 - Error in enhanced should_enter: 'close'
+2025-09-02 13:51:16,697 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:933 - Error in enhanced should_enter: 'close'
+2025-09-02 13:51:18,359 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:933 - Error in enhanced should_enter: 'close'
+2025-09-02 13:55:03,932 - strategy.option_pine_v5 - ERROR - complete_pine_script_strategy.py:566 - Error in should_exit: 'close'
+2025-09-02 13:55:11,783 - strategy.option_pine_v5 - ERROR - complete_pine_script_strategy.py:566 - Error in should_exit: 'close'
+2025-09-02 14:02:06,272 - strategy.option_pine_v5 - ERROR - complete_pine_script_strategy.py:566 - Error in should_exit: 'close'
+2025-09-02 14:02:13,872 - strategy.option_pine_v5 - ERROR - complete_pine_script_strategy.py:566 - Error in should_exit: 'close'
+2025-09-02 14:05:59,742 - strategy.option_pine_v5 - ERROR - complete_pine_script_strategy.py:566 - Error in should_exit: 'close'
+2025-09-02 14:06:45,111 - strategy.option_pine_v5 - ERROR - complete_pine_script_strategy.py:566 - Error in should_exit: 'close'
+2025-09-02 14:07:23,354 - strategy.option_pine_v5 - ERROR - complete_pine_script_strategy.py:566 - Error in should_exit: 'close'
+2025-09-02 14:09:21,350 - strategy.option_pine_v5 - ERROR - complete_pine_script_strategy.py:566 - Error in should_exit: 'close'
+2025-09-02 14:10:36,620 - strategy.option_pine_v5 - ERROR - complete_pine_script_strategy.py:566 - Error in should_exit: 'close'
+2025-09-02 14:13:02,076 - strategy.option_pine_v5 - ERROR - complete_pine_script_strategy.py:566 - Error in should_exit: 'close'
+2025-09-02 14:13:10,118 - strategy.option_pine_v5 - ERROR - complete_pine_script_strategy.py:566 - Error in should_exit: 'close'
+2025-09-02 14:14:27,466 - strategy.option_pine_v5 - ERROR - complete_pine_script_strategy.py:566 - Error in should_exit: 'close'
+2025-09-02 14:15:43,010 - strategy.option_pine_v5 - ERROR - complete_pine_script_strategy.py:566 - Error in should_exit: 'close'
+2025-09-02 14:17:30,772 - strategy.option_pine_v5 - ERROR - complete_pine_script_strategy.py:566 - Error in should_exit: 'close'
+2025-09-02 14:18:10,200 - strategy.option_pine_v5 - ERROR - complete_pine_script_strategy.py:566 - Error in should_exit: 'close'
+2025-09-02 14:18:48,592 - strategy.option_pine_v5 - ERROR - complete_pine_script_strategy.py:566 - Error in should_exit: 'close'
+2025-09-02 14:21:48,670 - strategy.option_pine_v5 - ERROR - complete_pine_script_strategy.py:566 - Error in should_exit: 'close'
+2025-09-02 14:23:12,735 - strategy.option_pine_v5 - ERROR - complete_pine_script_strategy.py:566 - Error in should_exit: 'close'
+2025-09-02 14:27:44,386 - strategy.option_pine_v5 - ERROR - complete_pine_script_strategy.py:566 - Error in should_exit: 'close'
+2025-09-02 14:28:29,335 - strategy.option_pine_v5 - ERROR - complete_pine_script_strategy.py:566 - Error in should_exit: 'close'
+2025-09-02 14:29:44,912 - strategy.option_pine_v5 - ERROR - complete_pine_script_strategy.py:566 - Error in should_exit: 'close'
+2025-09-02 14:31:32,191 - strategy.option_pine_v5 - ERROR - complete_pine_script_strategy.py:566 - Error in should_exit: 'close'
+2025-09-02 14:32:17,507 - strategy.option_pine_v5 - ERROR - complete_pine_script_strategy.py:566 - Error in should_exit: 'close'
+2025-09-02 14:34:45,558 - strategy.option_pine_v5 - ERROR - complete_pine_script_strategy.py:566 - Error in should_exit: 'close'
+2025-09-02 14:36:01,060 - src.websocket.websocket_manager - ERROR - websocket_manager.py:669 - Portfolio websocket error: Connection to remote host was lost.
+2025-09-02 14:36:01,061 - websocket - ERROR - _logging.py:77 - Connection to remote host was lost. - goodbye
+2025-09-02 14:36:03,783 - src.websocket.websocket_manager - ERROR - websocket_manager.py:647 - Market websocket error: Connection to remote host was lost.
+2025-09-02 14:36:03,784 - websocket - ERROR - _logging.py:77 - Connection to remote host was lost. - goodbye
+2025-09-02 14:36:09,337 - strategy.option_pine_v5 - ERROR - complete_pine_script_strategy.py:566 - Error in should_exit: 'close'
+2025-09-02 14:39:07,709 - strategy.option_pine_v5 - ERROR - complete_pine_script_strategy.py:566 - Error in should_exit: 'close'
+2025-09-02 14:39:14,807 - strategy.option_pine_v5 - ERROR - complete_pine_script_strategy.py:566 - Error in should_exit: 'close'
+2025-09-02 14:41:15,290 - strategy.option_pine_v5 - ERROR - complete_pine_script_strategy.py:566 - Error in should_exit: 'close'
+2025-09-02 14:42:29,463 - strategy.option_pine_v5 - ERROR - complete_pine_script_strategy.py:566 - Error in should_exit: 'close'
+2025-09-02 14:43:46,841 - strategy.option_pine_v5 - ERROR - complete_pine_script_strategy.py:566 - Error in should_exit: 'close'
+2025-09-02 14:44:24,689 - strategy.option_pine_v5 - ERROR - complete_pine_script_strategy.py:566 - Error in should_exit: 'close'
+2025-09-02 14:49:40,062 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:1003 - Could not fetch option premium for 24900CE
+2025-09-02 15:30:13,446 - src.trading_bot - ERROR - trading_bot.py:2337 - Bot error: 'TradingBot' object has no attribute 'send_end_of_day_summary'
+2025-09-02 19:10:25,775 - src.upstox_api_client - ERROR - upstox_api_client.py:262 - HTTP error 401: 401, message='Unauthorized', url='https://api.upstox.com/v2/user/profile'
+2025-09-03 09:11:03,754 - src.upstox_api_client - ERROR - upstox_api_client.py:262 - HTTP error 401: 401, message='Unauthorized', url='https://api.upstox.com/v2/user/profile'
+2025-09-03 09:55:35,766 - src.websocket.websocket_manager - ERROR - websocket_manager.py:669 - Portfolio websocket error: Connection to remote host was lost.
+2025-09-03 09:55:35,767 - src.websocket.websocket_manager - ERROR - websocket_manager.py:669 - Portfolio websocket error: Connection to remote host was lost.
+2025-09-03 09:55:35,767 - src.websocket.websocket_manager - ERROR - websocket_manager.py:647 - Market websocket error: Connection to remote host was lost.
+2025-09-03 09:55:35,768 - src.websocket.websocket_manager - ERROR - websocket_manager.py:647 - Market websocket error: Connection to remote host was lost.
+2025-09-03 09:55:35,783 - websocket - ERROR - _logging.py:77 - Connection to remote host was lost. - goodbye
+2025-09-03 09:55:35,784 - websocket - ERROR - _logging.py:77 - Connection to remote host was lost. - goodbye
+2025-09-03 09:55:35,785 - websocket - ERROR - _logging.py:77 - Connection to remote host was lost. - goodbye
+2025-09-03 09:55:35,794 - websocket - ERROR - _logging.py:77 - Connection to remote host was lost. - goodbye
+2025-09-03 10:36:01,723 - src.websocket.websocket_manager - ERROR - websocket_manager.py:669 - Portfolio websocket error: Connection to remote host was lost.
+2025-09-03 10:36:01,724 - websocket - ERROR - _logging.py:77 - Connection to remote host was lost. - goodbye
+2025-09-03 10:36:01,988 - src.websocket.websocket_manager - ERROR - websocket_manager.py:669 - Portfolio websocket error: Connection to remote host was lost.
+2025-09-03 10:36:01,988 - websocket - ERROR - _logging.py:77 - Connection to remote host was lost. - goodbye
+2025-09-03 10:36:03,038 - src.websocket.websocket_manager - ERROR - websocket_manager.py:647 - Market websocket error: Connection to remote host was lost.
+2025-09-03 10:36:03,039 - websocket - ERROR - _logging.py:77 - Connection to remote host was lost. - goodbye
+2025-09-03 10:36:03,054 - src.websocket.websocket_manager - ERROR - websocket_manager.py:647 - Market websocket error: Connection to remote host was lost.
+2025-09-03 10:36:03,055 - websocket - ERROR - _logging.py:77 - Connection to remote host was lost. - goodbye
