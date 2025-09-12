@@ -238,3 +238,221 @@
 2025-09-02 15:19:09,611 - trading - INFO - trading_bot.py:1622 - Investment: Rs.4,826.25
 2025-09-02 15:20:20,069 - trading - INFO - trading_bot.py:1618 - PAPER TRADE - SELL 3 lot of 24600PE @ Rs.17.85
 2025-09-02 15:20:20,069 - trading - INFO - trading_bot.py:1622 - Investment: Rs.4,016.25
+2025-09-04 11:42:44,022 - trading - INFO - trading_bot.py:1634 - PAPER TRADE - BUY 1 lot of 24800CE @ Rs.136.00
+2025-09-04 11:42:44,023 - trading - INFO - trading_bot.py:1638 - Investment: Rs.10,200.00
+2025-09-04 12:15:31,905 - trading - INFO - trading_bot.py:1634 - PAPER TRADE - BUY 1 lot of 24800CE @ Rs.119.50
+2025-09-04 12:15:31,906 - trading - INFO - trading_bot.py:1638 - Investment: Rs.8,962.50
+2025-09-04 12:55:36,164 - trading - INFO - trading_bot.py:1634 - PAPER TRADE - BUY 1 lot of 24800CE @ Rs.128.35
+2025-09-04 12:55:36,164 - trading - INFO - trading_bot.py:1638 - Investment: Rs.9,626.25
+2025-09-04 12:55:46,490 - trading - INFO - trading_bot.py:1634 - PAPER TRADE - SELL 1 lot of 24800CE @ Rs.129.35
+2025-09-04 12:55:46,490 - trading - INFO - trading_bot.py:1638 - Investment: Rs.9,701.25
+2025-09-04 13:00:56,110 - trading - INFO - trading_bot.py:1634 - PAPER TRADE - BUY 1 lot of 24850CE @ Rs.112.05
+2025-09-04 13:00:56,110 - trading - INFO - trading_bot.py:1638 - Investment: Rs.8,403.75
+2025-09-04 13:01:06,430 - trading - INFO - trading_bot.py:1634 - PAPER TRADE - SELL 1 lot of 24850CE @ Rs.107.35
+2025-09-04 13:01:06,430 - trading - INFO - trading_bot.py:1638 - Investment: Rs.8,051.25
+2025-09-04 13:01:44,921 - trading - INFO - trading_bot.py:1634 - PAPER TRADE - BUY 1 lot of 24850CE @ Rs.109.70
+2025-09-04 13:01:44,922 - trading - INFO - trading_bot.py:1638 - Investment: Rs.8,227.50
+2025-09-04 13:10:31,702 - trading - INFO - trading_bot.py:1634 - PAPER TRADE - SELL 1 lot of 24850CE @ Rs.103.80
+2025-09-04 13:10:31,702 - trading - INFO - trading_bot.py:1638 - Investment: Rs.7,785.00
+2025-09-04 13:13:39,819 - trading - INFO - trading_bot.py:1634 - PAPER TRADE - BUY 2 lot of 24800PE @ Rs.85.30
+2025-09-04 13:13:39,819 - trading - INFO - trading_bot.py:1638 - Investment: Rs.12,795.00
+2025-09-04 13:42:36,273 - trading - INFO - trading_bot.py:1634 - PAPER TRADE - BUY 2 lot of 24800PE @ Rs.92.95
+2025-09-04 13:42:36,274 - trading - INFO - trading_bot.py:1638 - Investment: Rs.13,942.50
+2025-09-04 14:23:25,870 - trading - INFO - trading_bot.py:1634 - PAPER TRADE - SELL 2 lot of 24800PE @ Rs.122.40
+2025-09-04 14:23:25,870 - trading - INFO - trading_bot.py:1638 - Investment: Rs.18,360.00
+2025-09-04 14:25:56,910 - trading - INFO - trading_bot.py:1634 - PAPER TRADE - BUY 2 lot of 24700PE @ Rs.80.80
+2025-09-04 14:25:56,910 - trading - INFO - trading_bot.py:1638 - Investment: Rs.12,120.00
+2025-09-04 14:32:25,164 - trading - INFO - trading_bot.py:1634 - PAPER TRADE - SELL 2 lot of 24700PE @ Rs.67.25
+2025-09-04 14:32:25,164 - trading - INFO - trading_bot.py:1638 - Investment: Rs.10,087.50
+2025-09-04 14:40:29,973 - trading - INFO - trading_bot.py:1634 - PAPER TRADE - BUY 2 lot of 24750PE @ Rs.94.05
+2025-09-04 14:40:29,973 - trading - INFO - trading_bot.py:1638 - Investment: Rs.14,107.50
+2025-09-04 15:20:14,947 - trading - INFO - trading_bot.py:1634 - PAPER TRADE - SELL 2 lot of 24750PE @ Rs.90.85
+2025-09-04 15:20:14,947 - trading - INFO - trading_bot.py:1638 - Investment: Rs.13,627.50
+2025-09-04 15:21:47,830 - trading - INFO - trading_bot.py:1634 - PAPER TRADE - BUY 1 lot of 24750CE @ Rs.111.90
+2025-09-04 15:21:47,831 - trading - INFO - trading_bot.py:1638 - Investment: Rs.8,392.50
+2025-09-04 15:21:56,538 - trading - INFO - trading_bot.py:1634 - PAPER TRADE - SELL 1 lot of 24750CE @ Rs.107.55
+2025-09-04 15:21:56,538 - trading - INFO - trading_bot.py:1638 - Investment: Rs.8,066.25
+2025-09-04 15:26:30,324 - trading - INFO - trading_bot.py:1634 - PAPER TRADE - BUY 1 lot of 24750CE @ Rs.108.55
+2025-09-04 15:26:30,324 - trading - INFO - trading_bot.py:1638 - Investment: Rs.8,141.25
+2025-09-04 15:26:39,016 - trading - INFO - trading_bot.py:1634 - PAPER TRADE - SELL 1 lot of 24750CE @ Rs.106.90
+2025-09-04 15:26:39,017 - trading - INFO - trading_bot.py:1638 - Investment: Rs.8,017.50
+2025-09-05 10:29:49,483 - trading - INFO - trading_bot.py:1634 - PAPER TRADE - BUY 1 lot of 24700CE @ Rs.118.00
+2025-09-05 10:29:49,484 - trading - INFO - trading_bot.py:1638 - Investment: Rs.8,850.00
+2025-09-05 10:31:05,879 - trading - INFO - trading_bot.py:1634 - PAPER TRADE - BUY 2 lot of 24750CE @ Rs.87.75
+2025-09-05 10:31:05,879 - trading - INFO - trading_bot.py:1638 - Investment: Rs.13,162.50
+2025-09-05 10:36:58,383 - trading - INFO - trading_bot.py:1634 - PAPER TRADE - BUY 2 lot of 24700PE @ Rs.89.90
+2025-09-05 10:36:58,383 - trading - INFO - trading_bot.py:1638 - Investment: Rs.13,485.00
+2025-09-05 10:59:12,994 - trading - INFO - trading_bot.py:1634 - PAPER TRADE - SELL 1 lot of 24700CE @ Rs.93.15
+2025-09-05 10:59:12,994 - trading - INFO - trading_bot.py:1638 - Investment: Rs.6,986.25
+2025-09-05 11:00:19,449 - trading - INFO - trading_bot.py:1634 - PAPER TRADE - SELL 2 lot of 24750CE @ Rs.70.05
+2025-09-05 11:00:19,449 - trading - INFO - trading_bot.py:1638 - Investment: Rs.10,507.50
+2025-09-05 11:02:41,684 - trading - INFO - trading_bot.py:1634 - PAPER TRADE - BUY 2 lot of 24700CE @ Rs.94.20
+2025-09-05 11:02:41,684 - trading - INFO - trading_bot.py:1638 - Investment: Rs.14,130.00
+2025-09-05 11:06:05,762 - trading - INFO - trading_bot.py:1634 - PAPER TRADE - BUY 2 lot of 24700CE @ Rs.99.75
+2025-09-05 11:06:05,763 - trading - INFO - trading_bot.py:1638 - Investment: Rs.14,962.50
+2025-09-05 11:07:19,483 - trading - INFO - trading_bot.py:1634 - PAPER TRADE - BUY 1 lot of 24700CE @ Rs.100.10
+2025-09-05 11:07:19,484 - trading - INFO - trading_bot.py:1638 - Investment: Rs.7,507.50
+2025-09-05 11:08:17,072 - trading - INFO - trading_bot.py:1634 - PAPER TRADE - BUY 2 lot of 24700CE @ Rs.99.35
+2025-09-05 11:08:17,072 - trading - INFO - trading_bot.py:1638 - Investment: Rs.14,902.50
+2025-09-05 11:27:36,305 - trading - INFO - trading_bot.py:1634 - PAPER TRADE - BUY 2 lot of 24700PE @ Rs.86.30
+2025-09-05 11:27:36,305 - trading - INFO - trading_bot.py:1638 - Investment: Rs.12,945.00
+2025-09-05 11:28:47,267 - trading - INFO - trading_bot.py:1634 - PAPER TRADE - BUY 2 lot of 24700CE @ Rs.96.85
+2025-09-05 11:28:47,267 - trading - INFO - trading_bot.py:1638 - Investment: Rs.14,527.50
+2025-09-05 11:29:30,750 - trading - INFO - trading_bot.py:1634 - PAPER TRADE - BUY 2 lot of 24700CE @ Rs.97.75
+2025-09-05 11:29:30,750 - trading - INFO - trading_bot.py:1638 - Investment: Rs.14,662.50
+2025-09-05 11:30:30,234 - trading - INFO - trading_bot.py:1634 - PAPER TRADE - BUY 2 lot of 24700PE @ Rs.83.35
+2025-09-05 11:30:30,234 - trading - INFO - trading_bot.py:1638 - Investment: Rs.12,502.50
+2025-09-05 11:31:14,257 - trading - INFO - trading_bot.py:1634 - PAPER TRADE - BUY 2 lot of 24700PE @ Rs.84.00
+2025-09-05 11:31:14,257 - trading - INFO - trading_bot.py:1638 - Investment: Rs.12,600.00
+2025-09-05 11:32:54,015 - trading - INFO - trading_bot.py:1634 - PAPER TRADE - BUY 1 lot of 24700CE @ Rs.104.50
+2025-09-05 11:32:54,015 - trading - INFO - trading_bot.py:1638 - Investment: Rs.7,837.50
+2025-09-05 12:10:36,005 - trading - INFO - trading_bot.py:1634 - PAPER TRADE - BUY 1 lot of 24650CE @ Rs.111.80
+2025-09-05 12:10:36,005 - trading - INFO - trading_bot.py:1638 - Investment: Rs.8,385.00
+2025-09-05 12:14:54,679 - trading - INFO - trading_bot.py:1634 - PAPER TRADE - BUY 2 lot of 24650PE @ Rs.80.85
+2025-09-05 12:14:54,679 - trading - INFO - trading_bot.py:1638 - Investment: Rs.12,127.50
+2025-09-05 12:15:50,276 - trading - INFO - trading_bot.py:1634 - PAPER TRADE - BUY 2 lot of 24650PE @ Rs.82.00
+2025-09-05 12:15:50,277 - trading - INFO - trading_bot.py:1638 - Investment: Rs.12,300.00
+2025-09-05 12:16:37,190 - trading - INFO - trading_bot.py:1634 - PAPER TRADE - BUY 2 lot of 24650PE @ Rs.77.95
+2025-09-05 12:16:37,190 - trading - INFO - trading_bot.py:1638 - Investment: Rs.11,692.50
+2025-09-05 12:19:36,936 - trading - INFO - trading_bot.py:1634 - PAPER TRADE - BUY 2 lot of 24650PE @ Rs.82.10
+2025-09-05 12:19:36,937 - trading - INFO - trading_bot.py:1638 - Investment: Rs.12,315.00
+2025-09-05 12:41:01,952 - trading - INFO - trading_bot.py:1634 - PAPER TRADE - BUY 2 lot of 24650PE @ Rs.83.05
+2025-09-05 12:41:01,953 - trading - INFO - trading_bot.py:1638 - Investment: Rs.12,457.50
+2025-09-05 12:41:52,297 - trading - INFO - trading_bot.py:1634 - PAPER TRADE - BUY 2 lot of 24650PE @ Rs.84.95
+2025-09-05 12:41:52,297 - trading - INFO - trading_bot.py:1638 - Investment: Rs.12,742.50
+2025-09-05 12:42:40,769 - trading - INFO - trading_bot.py:1634 - PAPER TRADE - BUY 2 lot of 24650PE @ Rs.88.40
+2025-09-05 12:42:40,769 - trading - INFO - trading_bot.py:1638 - Investment: Rs.13,260.00
+2025-09-05 12:43:31,833 - trading - INFO - trading_bot.py:1634 - PAPER TRADE - BUY 2 lot of 24650PE @ Rs.85.15
+2025-09-05 12:43:31,833 - trading - INFO - trading_bot.py:1638 - Investment: Rs.12,772.50
+2025-09-05 12:44:57,672 - trading - INFO - trading_bot.py:1634 - PAPER TRADE - BUY 2 lot of 24650CE @ Rs.92.50
+2025-09-05 12:44:57,673 - trading - INFO - trading_bot.py:1638 - Investment: Rs.13,875.00
+2025-09-05 12:46:04,475 - trading - INFO - trading_bot.py:1634 - PAPER TRADE - BUY 2 lot of 24650PE @ Rs.87.40
+2025-09-05 12:46:04,475 - trading - INFO - trading_bot.py:1638 - Investment: Rs.13,110.00
+2025-09-05 13:11:04,685 - trading - INFO - trading_bot.py:1634 - PAPER TRADE - BUY 2 lot of 24650CE @ Rs.100.00
+2025-09-05 13:11:04,686 - trading - INFO - trading_bot.py:1638 - Investment: Rs.15,000.00
+2025-09-05 13:12:05,833 - trading - INFO - trading_bot.py:1634 - PAPER TRADE - BUY 1 lot of 24650CE @ Rs.103.45
+2025-09-05 13:12:05,833 - trading - INFO - trading_bot.py:1638 - Investment: Rs.7,758.75
+2025-09-05 13:13:05,964 - trading - INFO - trading_bot.py:1634 - PAPER TRADE - BUY 1 lot of 24650CE @ Rs.104.90
+2025-09-05 13:13:05,964 - trading - INFO - trading_bot.py:1638 - Investment: Rs.7,867.50
+2025-09-05 13:13:30,138 - trading - INFO - trading_bot.py:1634 - PAPER TRADE - SELL 2 lot of 24650PE @ Rs.69.50
+2025-09-05 13:13:30,138 - trading - INFO - trading_bot.py:1638 - Investment: Rs.10,425.00
+2025-09-05 13:14:26,325 - trading - INFO - trading_bot.py:1634 - PAPER TRADE - BUY 2 lot of 24650PE @ Rs.70.60
+2025-09-05 13:14:26,325 - trading - INFO - trading_bot.py:1638 - Investment: Rs.10,590.00
+2025-09-05 13:15:18,705 - trading - INFO - trading_bot.py:1634 - PAPER TRADE - BUY 2 lot of 24650PE @ Rs.68.85
+2025-09-05 13:15:18,706 - trading - INFO - trading_bot.py:1638 - Investment: Rs.10,327.50
+2025-09-05 13:16:32,328 - trading - INFO - trading_bot.py:1634 - PAPER TRADE - BUY 1 lot of 24650CE @ Rs.115.30
+2025-09-05 13:16:32,328 - trading - INFO - trading_bot.py:1638 - Investment: Rs.8,647.50
+2025-09-05 13:17:27,872 - trading - INFO - trading_bot.py:1634 - PAPER TRADE - BUY 1 lot of 24650CE @ Rs.111.35
+2025-09-05 13:17:27,872 - trading - INFO - trading_bot.py:1638 - Investment: Rs.8,351.25
+2025-09-05 13:40:43,535 - trading - INFO - trading_bot.py:1634 - PAPER TRADE - BUY 2 lot of 24700CE @ Rs.95.35
+2025-09-05 13:40:43,535 - trading - INFO - trading_bot.py:1638 - Investment: Rs.14,302.50
+2025-09-05 13:41:59,137 - trading - INFO - trading_bot.py:1634 - PAPER TRADE - BUY 2 lot of 24700PE @ Rs.76.65
+2025-09-05 13:41:59,137 - trading - INFO - trading_bot.py:1638 - Investment: Rs.11,497.50
+2025-09-05 13:43:00,554 - trading - INFO - trading_bot.py:1634 - PAPER TRADE - BUY 3 lot of 24650PE @ Rs.59.45
+2025-09-05 13:43:00,555 - trading - INFO - trading_bot.py:1638 - Investment: Rs.13,376.25
+2025-09-05 13:44:01,806 - trading - INFO - trading_bot.py:1634 - PAPER TRADE - BUY 3 lot of 24650PE @ Rs.57.55
+2025-09-05 13:44:01,806 - trading - INFO - trading_bot.py:1638 - Investment: Rs.12,948.75
+2025-09-05 13:45:40,590 - trading - INFO - trading_bot.py:1634 - PAPER TRADE - BUY 1 lot of 24700CE @ Rs.110.00
+2025-09-05 13:45:40,590 - trading - INFO - trading_bot.py:1638 - Investment: Rs.8,250.00
+2025-09-05 14:14:50,702 - trading - INFO - trading_bot.py:1634 - PAPER TRADE - BUY 1 lot of 24750CE @ Rs.101.10
+2025-09-05 14:14:50,702 - trading - INFO - trading_bot.py:1638 - Investment: Rs.7,582.50
+2025-09-05 14:21:03,439 - trading - INFO - trading_bot.py:1634 - PAPER TRADE - BUY 1 lot of 24750CE @ Rs.102.20
+2025-09-05 14:21:03,439 - trading - INFO - trading_bot.py:1638 - Investment: Rs.7,665.00
+2025-09-05 14:56:05,105 - trading - INFO - trading_bot.py:1634 - PAPER TRADE - BUY 1 lot of NIFTY25SEP24750CE @ Rs.20.00
+2025-09-05 14:56:05,106 - trading - INFO - trading_bot.py:1638 - Investment: Rs.1,500.00
+2025-09-05 15:08:42,428 - trading - INFO - trading_bot.py:1634 - PAPER TRADE - BUY 2 lot of 24750CE @ Rs.88.40
+2025-09-05 15:08:42,428 - trading - INFO - trading_bot.py:1638 - Investment: Rs.13,260.00
+2025-09-05 15:20:54,939 - trading - INFO - trading_bot.py:1634 - PAPER TRADE - SELL 2 lot of 24750CE @ Rs.97.45
+2025-09-05 15:20:54,940 - trading - INFO - trading_bot.py:1638 - Investment: Rs.14,617.50
+2025-09-05 15:20:59,169 - trading - INFO - trading_bot.py:1634 - PAPER TRADE - SELL 1 lot of NoneNone @ Rs.20.00
+2025-09-05 15:20:59,170 - trading - INFO - trading_bot.py:1638 - Investment: Rs.1,500.00
+2025-09-05 15:26:00,901 - trading - INFO - trading_bot.py:1634 - PAPER TRADE - BUY 2 lot of 24750CE @ Rs.93.55
+2025-09-05 15:26:00,901 - trading - INFO - trading_bot.py:1638 - Investment: Rs.14,032.50
+2025-09-05 15:26:10,059 - trading - INFO - trading_bot.py:1634 - PAPER TRADE - SELL 2 lot of 24750CE @ Rs.94.95
+2025-09-05 15:26:10,059 - trading - INFO - trading_bot.py:1638 - Investment: Rs.14,242.50
+2025-09-05 15:28:33,245 - trading - INFO - trading_bot.py:1634 - PAPER TRADE - BUY 1 lot of NIFTY25SEP24750PE @ Rs.32.56
+2025-09-05 15:28:33,245 - trading - INFO - trading_bot.py:1638 - Investment: Rs.2,442.19
+2025-09-05 15:28:50,431 - trading - INFO - trading_bot.py:1634 - PAPER TRADE - SELL 1 lot of NoneNone @ Rs.32.56
+2025-09-05 15:28:50,431 - trading - INFO - trading_bot.py:1638 - Investment: Rs.2,442.19
+2025-09-08 09:22:50,882 - trading - INFO - trading_bot.py:1634 - PAPER TRADE - BUY 2 lot of 24800CE @ Rs.72.85
+2025-09-08 09:22:51,754 - trading - INFO - trading_bot.py:1638 - Investment: Rs.10,927.50
+2025-09-08 09:31:07,384 - trading - INFO - trading_bot.py:1634 - PAPER TRADE - BUY 2 lot of 24800CE @ Rs.75.45
+2025-09-08 09:31:07,385 - trading - INFO - trading_bot.py:1638 - Investment: Rs.11,317.50
+2025-09-08 09:36:48,514 - trading - INFO - trading_bot.py:1634 - PAPER TRADE - BUY 2 lot of 24800CE @ Rs.86.05
+2025-09-08 09:36:48,514 - trading - INFO - trading_bot.py:1638 - Investment: Rs.12,907.50
+2025-09-08 09:37:42,273 - trading - INFO - trading_bot.py:1634 - PAPER TRADE - BUY 2 lot of 24850CE @ Rs.68.20
+2025-09-08 09:37:42,273 - trading - INFO - trading_bot.py:1638 - Investment: Rs.10,230.00
+2025-09-08 09:38:34,009 - trading - INFO - trading_bot.py:1634 - PAPER TRADE - BUY 3 lot of 24850CE @ Rs.60.20
+2025-09-08 09:38:34,010 - trading - INFO - trading_bot.py:1638 - Investment: Rs.13,545.00
+2025-09-08 09:47:11,836 - trading - INFO - trading_bot.py:1634 - PAPER TRADE - BUY 2 lot of 24850PE @ Rs.69.70
+2025-09-08 09:47:11,836 - trading - INFO - trading_bot.py:1638 - Investment: Rs.10,455.00
+2025-09-08 09:48:01,140 - trading - INFO - trading_bot.py:1634 - PAPER TRADE - BUY 2 lot of 24850PE @ Rs.70.85
+2025-09-08 09:48:01,140 - trading - INFO - trading_bot.py:1638 - Investment: Rs.10,627.50
+2025-09-08 09:49:49,240 - trading - INFO - trading_bot.py:1634 - PAPER TRADE - BUY 2 lot of 24850PE @ Rs.68.30
+2025-09-08 09:49:49,240 - trading - INFO - trading_bot.py:1638 - Investment: Rs.10,245.00
+2025-09-08 10:16:40,332 - trading - INFO - trading_bot.py:1634 - PAPER TRADE - SELL 3 lot of 24850CE @ Rs.47.25
+2025-09-08 10:16:40,332 - trading - INFO - trading_bot.py:1638 - Investment: Rs.10,631.25
+2025-09-08 10:17:33,106 - trading - INFO - trading_bot.py:1634 - PAPER TRADE - BUY 3 lot of 24850CE @ Rs.49.75
+2025-09-08 10:17:33,106 - trading - INFO - trading_bot.py:1638 - Investment: Rs.11,193.75
+2025-09-08 10:18:25,045 - trading - INFO - trading_bot.py:1634 - PAPER TRADE - BUY 3 lot of 24850CE @ Rs.53.35
+2025-09-08 10:18:25,045 - trading - INFO - trading_bot.py:1638 - Investment: Rs.12,003.75
+2025-09-08 10:21:46,547 - trading - INFO - trading_bot.py:1634 - PAPER TRADE - BUY 3 lot of 24800PE @ Rs.53.90
+2025-09-08 10:21:46,548 - trading - INFO - trading_bot.py:1638 - Investment: Rs.12,127.50
+2025-09-08 10:47:23,150 - trading - INFO - trading_bot.py:1634 - PAPER TRADE - BUY 3 lot of 24800PE @ Rs.47.20
+2025-09-08 10:47:23,150 - trading - INFO - trading_bot.py:1638 - Investment: Rs.10,620.00
+2025-09-08 10:51:41,550 - trading - INFO - trading_bot.py:1634 - PAPER TRADE - BUY 3 lot of 24800PE @ Rs.54.60
+2025-09-08 10:51:41,551 - trading - INFO - trading_bot.py:1638 - Investment: Rs.12,285.00
+2025-09-08 11:17:13,694 - trading - INFO - trading_bot.py:1634 - PAPER TRADE - BUY 2 lot of 24800CE @ Rs.78.25
+2025-09-08 11:17:13,694 - trading - INFO - trading_bot.py:1638 - Investment: Rs.11,737.50
+2025-09-08 11:18:12,039 - trading - INFO - trading_bot.py:1634 - PAPER TRADE - SELL 3 lot of 24800PE @ Rs.43.00
+2025-09-08 11:18:12,039 - trading - INFO - trading_bot.py:1638 - Investment: Rs.9,675.00
+2025-09-08 11:18:44,243 - trading - INFO - trading_bot.py:1634 - PAPER TRADE - BUY 2 lot of 24800CE @ Rs.82.45
+2025-09-08 11:18:44,243 - trading - INFO - trading_bot.py:1638 - Investment: Rs.12,367.50
+2025-09-08 11:19:37,095 - trading - INFO - trading_bot.py:1634 - PAPER TRADE - BUY 2 lot of 24800CE @ Rs.78.00
+2025-09-08 11:19:37,095 - trading - INFO - trading_bot.py:1638 - Investment: Rs.11,700.00
+2025-09-08 11:20:34,132 - trading - INFO - trading_bot.py:1634 - PAPER TRADE - BUY 2 lot of 24800CE @ Rs.81.40
+2025-09-08 11:20:34,133 - trading - INFO - trading_bot.py:1638 - Investment: Rs.12,210.00
+2025-09-08 11:22:24,479 - trading - INFO - trading_bot.py:1634 - PAPER TRADE - BUY 2 lot of 24800CE @ Rs.78.55
+2025-09-08 11:22:24,479 - trading - INFO - trading_bot.py:1638 - Investment: Rs.11,782.50
+2025-09-08 11:23:40,314 - trading - INFO - trading_bot.py:1634 - PAPER TRADE - BUY 2 lot of 24800CE @ Rs.76.00
+2025-09-08 11:23:40,314 - trading - INFO - trading_bot.py:1638 - Investment: Rs.11,400.00
+2025-09-08 11:47:53,380 - trading - INFO - trading_bot.py:1634 - PAPER TRADE - BUY 3 lot of 24800PE @ Rs.40.40
+2025-09-08 11:47:53,380 - trading - INFO - trading_bot.py:1638 - Investment: Rs.9,090.00
+2025-09-08 11:53:23,890 - trading - INFO - trading_bot.py:1634 - PAPER TRADE - BUY 2 lot of 24800CE @ Rs.82.95
+2025-09-08 11:53:23,890 - trading - INFO - trading_bot.py:1638 - Investment: Rs.12,442.50
+2025-09-08 11:54:32,014 - trading - INFO - trading_bot.py:1634 - PAPER TRADE - BUY 2 lot of 24800CE @ Rs.78.55
+2025-09-08 11:54:32,014 - trading - INFO - trading_bot.py:1638 - Investment: Rs.11,782.50
+2025-09-08 13:30:35,063 - trading - INFO - trading_bot.py:1634 - PAPER TRADE - BUY 2 lot of 24850CE @ Rs.74.95
+2025-09-08 13:30:35,095 - trading - INFO - trading_bot.py:1638 - Investment: Rs.11,242.50
+2025-09-08 13:32:02,616 - trading - INFO - trading_bot.py:1634 - PAPER TRADE - BUY 2 lot of 24850CE @ Rs.77.75
+2025-09-08 13:32:02,616 - trading - INFO - trading_bot.py:1638 - Investment: Rs.11,662.50
+2025-09-08 13:32:42,792 - trading - INFO - trading_bot.py:1634 - PAPER TRADE - BUY 2 lot of 24850CE @ Rs.73.25
+2025-09-08 13:32:42,792 - trading - INFO - trading_bot.py:1638 - Investment: Rs.10,987.50
+2025-09-08 13:36:06,573 - trading - INFO - trading_bot.py:1634 - PAPER TRADE - BUY 2 lot of 24850CE @ Rs.71.10
+2025-09-08 13:36:06,573 - trading - INFO - trading_bot.py:1638 - Investment: Rs.10,665.00
+2025-09-08 13:44:35,765 - trading - INFO - trading_bot.py:1634 - PAPER TRADE - BUY 2 lot of 24850CE @ Rs.68.15
+2025-09-08 13:44:35,766 - trading - INFO - trading_bot.py:1638 - Investment: Rs.10,222.50
+2025-09-08 13:47:24,722 - trading - INFO - trading_bot.py:1634 - PAPER TRADE - SELL 2 lot of 24850CE @ Rs.61.95
+2025-09-08 13:47:24,723 - trading - INFO - trading_bot.py:1638 - Investment: Rs.9,292.50
+2025-09-08 14:06:10,984 - trading - INFO - trading_bot.py:1634 - PAPER TRADE - BUY 3 lot of 24850PE @ Rs.54.55
+2025-09-08 14:06:10,985 - trading - INFO - trading_bot.py:1638 - Investment: Rs.12,273.75
+2025-09-08 14:33:01,276 - trading - INFO - trading_bot.py:1634 - PAPER TRADE - BUY 2 lot of 24850CE @ Rs.78.85
+2025-09-08 14:33:01,315 - trading - INFO - trading_bot.py:1638 - Investment: Rs.11,827.50
+2025-09-08 14:33:46,247 - trading - INFO - trading_bot.py:1634 - PAPER TRADE - BUY 2 lot of 24850CE @ Rs.78.00
+2025-09-08 14:33:46,247 - trading - INFO - trading_bot.py:1638 - Investment: Rs.11,700.00
+2025-09-08 14:34:33,947 - trading - INFO - trading_bot.py:1634 - PAPER TRADE - BUY 3 lot of 24900CE @ Rs.52.00
+2025-09-08 14:34:33,947 - trading - INFO - trading_bot.py:1638 - Investment: Rs.11,700.00
+2025-09-08 14:35:55,282 - trading - INFO - trading_bot.py:1634 - PAPER TRADE - BUY 3 lot of 24900CE @ Rs.51.00
+2025-09-08 14:35:55,282 - trading - INFO - trading_bot.py:1638 - Investment: Rs.11,475.00
+2025-09-08 14:38:08,411 - trading - INFO - trading_bot.py:1634 - PAPER TRADE - BUY 3 lot of 24900CE @ Rs.47.95
+2025-09-08 14:38:08,411 - trading - INFO - trading_bot.py:1638 - Investment: Rs.10,788.75
+2025-09-08 14:46:58,117 - trading - INFO - trading_bot.py:1634 - PAPER TRADE - SELL 2 lot of 24850CE @ Rs.61.55
+2025-09-08 14:46:58,117 - trading - INFO - trading_bot.py:1638 - Investment: Rs.9,232.50
+2025-09-08 14:47:16,302 - trading - INFO - trading_bot.py:1634 - PAPER TRADE - SELL 3 lot of 24900CE @ Rs.37.35
+2025-09-08 14:47:16,302 - trading - INFO - trading_bot.py:1638 - Investment: Rs.8,403.75
+2025-09-08 14:48:15,492 - trading - INFO - trading_bot.py:1634 - PAPER TRADE - BUY 3 lot of 24900CE @ Rs.35.95
+2025-09-08 14:48:15,492 - trading - INFO - trading_bot.py:1638 - Investment: Rs.8,088.75
+2025-09-08 14:48:27,367 - trading - INFO - trading_bot.py:1634 - PAPER TRADE - SELL 3 lot of 24900CE @ Rs.29.70
+2025-09-08 14:48:27,367 - trading - INFO - trading_bot.py:1638 - Investment: Rs.6,682.50
+2025-09-08 14:49:00,587 - trading - INFO - trading_bot.py:1634 - PAPER TRADE - BUY 3 lot of 24900CE @ Rs.28.75
+2025-09-08 14:49:00,587 - trading - INFO - trading_bot.py:1638 - Investment: Rs.6,468.75

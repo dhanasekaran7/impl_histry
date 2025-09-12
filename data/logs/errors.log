@@ -618,3 +618,651 @@
 2025-09-03 10:36:03,039 - websocket - ERROR - _logging.py:77 - Connection to remote host was lost. - goodbye
 2025-09-03 10:36:03,054 - src.websocket.websocket_manager - ERROR - websocket_manager.py:647 - Market websocket error: Connection to remote host was lost.
 2025-09-03 10:36:03,055 - websocket - ERROR - _logging.py:77 - Connection to remote host was lost. - goodbye
+2025-09-03 15:13:19,321 - src.websocket.websocket_manager - ERROR - websocket_manager.py:647 - Market websocket error: Connection to remote host was lost.
+2025-09-03 15:13:19,321 - src.websocket.websocket_manager - ERROR - websocket_manager.py:647 - Market websocket error: Connection to remote host was lost.
+2025-09-03 15:13:19,324 - websocket - ERROR - _logging.py:77 - Connection to remote host was lost. - goodbye
+2025-09-03 15:13:19,321 - src.websocket.websocket_manager - ERROR - websocket_manager.py:669 - Portfolio websocket error: Connection to remote host was lost.
+2025-09-03 15:13:19,323 - websocket - ERROR - _logging.py:77 - Connection to remote host was lost. - goodbye
+2025-09-03 15:13:19,321 - src.websocket.websocket_manager - ERROR - websocket_manager.py:669 - Portfolio websocket error: Connection to remote host was lost.
+2025-09-03 15:13:19,333 - websocket - ERROR - _logging.py:77 - Connection to remote host was lost. - goodbye
+2025-09-03 15:13:19,338 - websocket - ERROR - _logging.py:77 - Connection to remote host was lost. - goodbye
+2025-09-03 15:13:33,939 - src.websocket.websocket_manager - ERROR - websocket_manager.py:647 - Market websocket error: Connection to remote host was lost.
+2025-09-03 15:13:33,939 - src.websocket.websocket_manager - ERROR - websocket_manager.py:669 - Portfolio websocket error: Connection to remote host was lost.
+2025-09-03 15:13:33,940 - src.websocket.websocket_manager - ERROR - websocket_manager.py:669 - Portfolio websocket error: Connection to remote host was lost.
+2025-09-03 15:13:33,940 - src.websocket.websocket_manager - ERROR - websocket_manager.py:647 - Market websocket error: Connection to remote host was lost.
+2025-09-03 15:13:33,966 - websocket - ERROR - _logging.py:77 - Connection to remote host was lost. - goodbye
+2025-09-03 15:13:33,977 - websocket - ERROR - _logging.py:77 - Connection to remote host was lost. - goodbye
+2025-09-03 15:13:33,978 - websocket - ERROR - _logging.py:77 - Connection to remote host was lost. - goodbye
+2025-09-03 15:13:33,979 - websocket - ERROR - _logging.py:77 - Connection to remote host was lost. - goodbye
+2025-09-03 15:13:34,209 - src.websocket.websocket_manager - ERROR - websocket_manager.py:647 - Market websocket error: [Errno 11001] getaddrinfo failed
+2025-09-03 15:13:34,213 - src.websocket.websocket_manager - ERROR - websocket_manager.py:669 - Portfolio websocket error: [Errno 11001] getaddrinfo failed
+2025-09-03 15:13:34,288 - src.websocket.websocket_manager - ERROR - websocket_manager.py:669 - Portfolio websocket error: [Errno 11001] getaddrinfo failed
+2025-09-03 15:13:34,289 - src.websocket.websocket_manager - ERROR - websocket_manager.py:647 - Market websocket error: [Errno 11001] getaddrinfo failed
+2025-09-03 15:13:44,216 - websocket - ERROR - _logging.py:77 - [Errno 11001] getaddrinfo failed - goodbye
+2025-09-03 15:13:44,284 - websocket - ERROR - _logging.py:77 - [Errno 11001] getaddrinfo failed - goodbye
+2025-09-03 15:13:44,332 - websocket - ERROR - _logging.py:77 - [Errno 11001] getaddrinfo failed - goodbye
+2025-09-03 15:13:44,337 - websocket - ERROR - _logging.py:77 - [Errno 11001] getaddrinfo failed - goodbye
+2025-09-03 15:13:44,786 - src.websocket.websocket_manager - ERROR - websocket_manager.py:647 - Market websocket error: Handshake status 403 Forbidden -+-+- {'date': 'Wed, 03 Sep 2025 09:43:44 GMT', 'transfer-encoding': 'chunked', 'connection': 'keep-alive'} -+-+- None
+2025-09-03 15:13:55,066 - websocket - ERROR - _logging.py:77 - Handshake status 403 Forbidden -+-+- {'date': 'Wed, 03 Sep 2025 09:43:44 GMT', 'transfer-encoding': 'chunked', 'connection': 'keep-alive'} -+-+- None - goodbye
+2025-09-03 15:30:11,922 - src.trading_bot - ERROR - trading_bot.py:2337 - Bot error: 'TradingBot' object has no attribute 'send_end_of_day_summary'
+2025-09-04 09:18:22,883 - src.upstox_api_client - ERROR - upstox_api_client.py:262 - HTTP error 401: 401, message='Unauthorized', url='https://api.upstox.com/v2/user/profile'
+2025-09-04 10:22:08,260 - src.websocket.websocket_manager - ERROR - websocket_manager.py:647 - Market websocket error: Connection to remote host was lost.
+2025-09-04 10:22:08,261 - src.websocket.websocket_manager - ERROR - websocket_manager.py:647 - Market websocket error: Connection to remote host was lost.
+2025-09-04 10:22:08,261 - src.websocket.websocket_manager - ERROR - websocket_manager.py:669 - Portfolio websocket error: Connection to remote host was lost.
+2025-09-04 10:22:08,261 - src.websocket.websocket_manager - ERROR - websocket_manager.py:669 - Portfolio websocket error: Connection to remote host was lost.
+2025-09-04 10:22:08,279 - websocket - ERROR - _logging.py:77 - Connection to remote host was lost. - goodbye
+2025-09-04 10:22:08,299 - websocket - ERROR - _logging.py:77 - Connection to remote host was lost. - goodbye
+2025-09-04 10:22:08,301 - websocket - ERROR - _logging.py:77 - Connection to remote host was lost. - goodbye
+2025-09-04 10:22:08,469 - websocket - ERROR - _logging.py:77 - Connection to remote host was lost. - goodbye
+2025-09-04 10:22:25,072 - src.websocket.websocket_manager - ERROR - websocket_manager.py:669 - Portfolio websocket error: Connection to remote host was lost.
+2025-09-04 10:22:25,073 - src.websocket.websocket_manager - ERROR - websocket_manager.py:669 - Portfolio websocket error: Connection to remote host was lost.
+2025-09-04 10:22:25,073 - src.websocket.websocket_manager - ERROR - websocket_manager.py:647 - Market websocket error: Connection to remote host was lost.
+2025-09-04 10:22:25,073 - src.websocket.websocket_manager - ERROR - websocket_manager.py:647 - Market websocket error: Connection to remote host was lost.
+2025-09-04 10:22:25,125 - websocket - ERROR - _logging.py:77 - Connection to remote host was lost. - goodbye
+2025-09-04 10:22:25,125 - websocket - ERROR - _logging.py:77 - Connection to remote host was lost. - goodbye
+2025-09-04 10:22:25,141 - websocket - ERROR - _logging.py:77 - Connection to remote host was lost. - goodbye
+2025-09-04 10:22:25,142 - websocket - ERROR - _logging.py:77 - Connection to remote host was lost. - goodbye
+2025-09-04 10:22:25,296 - src.websocket.websocket_manager - ERROR - websocket_manager.py:669 - Portfolio websocket error: [Errno 11001] getaddrinfo failed
+2025-09-04 10:22:25,296 - src.websocket.websocket_manager - ERROR - websocket_manager.py:669 - Portfolio websocket error: [Errno 11001] getaddrinfo failed
+2025-09-04 10:22:25,335 - src.websocket.websocket_manager - ERROR - websocket_manager.py:647 - Market websocket error: [Errno 11001] getaddrinfo failed
+2025-09-04 10:22:25,343 - src.websocket.websocket_manager - ERROR - websocket_manager.py:647 - Market websocket error: [Errno 11001] getaddrinfo failed
+2025-09-04 10:22:35,305 - websocket - ERROR - _logging.py:77 - [Errno 11001] getaddrinfo failed - goodbye
+2025-09-04 10:22:35,328 - websocket - ERROR - _logging.py:77 - [Errno 11001] getaddrinfo failed - goodbye
+2025-09-04 10:22:35,348 - websocket - ERROR - _logging.py:77 - [Errno 11001] getaddrinfo failed - goodbye
+2025-09-04 10:22:35,436 - websocket - ERROR - _logging.py:77 - [Errno 11001] getaddrinfo failed - goodbye
+2025-09-04 10:22:35,831 - src.websocket.websocket_manager - ERROR - websocket_manager.py:647 - Market websocket error: Handshake status 403 Forbidden -+-+- {'date': 'Thu, 04 Sep 2025 04:52:35 GMT', 'transfer-encoding': 'chunked', 'connection': 'keep-alive'} -+-+- None
+2025-09-04 10:22:45,834 - websocket - ERROR - _logging.py:77 - Handshake status 403 Forbidden -+-+- {'date': 'Thu, 04 Sep 2025 04:52:35 GMT', 'transfer-encoding': 'chunked', 'connection': 'keep-alive'} -+-+- None - goodbye
+2025-09-04 11:38:34,514 - strategy.option_pine_v5 - ERROR - complete_pine_script_strategy.py:339 - ADX values are invalid!
+2025-09-04 11:38:34,520 - __main__ - ERROR - main.py:169 - ADX calculation still invalid
+2025-09-04 12:07:23,682 - strategy.option_pine_v5 - ERROR - complete_pine_script_strategy.py:339 - ADX values are invalid!
+2025-09-04 12:07:23,692 - __main__ - ERROR - main.py:169 - ADX calculation still invalid
+2025-09-04 12:15:40,509 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:217 - Error in relaxed Pine Script exit: CompletePineScriptStrategy.calculate_trend_line() takes 1 positional argument but 2 were given
+2025-09-04 12:16:24,524 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:217 - Error in relaxed Pine Script exit: CompletePineScriptStrategy.calculate_trend_line() takes 1 positional argument but 2 were given
+2025-09-04 12:18:11,737 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:217 - Error in relaxed Pine Script exit: CompletePineScriptStrategy.calculate_trend_line() takes 1 positional argument but 2 were given
+2025-09-04 12:19:26,320 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:217 - Error in relaxed Pine Script exit: CompletePineScriptStrategy.calculate_trend_line() takes 1 positional argument but 2 were given
+2025-09-04 12:20:10,984 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:217 - Error in relaxed Pine Script exit: CompletePineScriptStrategy.calculate_trend_line() takes 1 positional argument but 2 were given
+2025-09-04 12:21:25,400 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:217 - Error in relaxed Pine Script exit: CompletePineScriptStrategy.calculate_trend_line() takes 1 positional argument but 2 were given
+2025-09-04 12:23:12,136 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:217 - Error in relaxed Pine Script exit: CompletePineScriptStrategy.calculate_trend_line() takes 1 positional argument but 2 were given
+2025-09-04 12:24:27,289 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:217 - Error in relaxed Pine Script exit: CompletePineScriptStrategy.calculate_trend_line() takes 1 positional argument but 2 were given
+2025-09-04 12:25:13,918 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:217 - Error in relaxed Pine Script exit: CompletePineScriptStrategy.calculate_trend_line() takes 1 positional argument but 2 were given
+2025-09-04 12:26:27,487 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:217 - Error in relaxed Pine Script exit: CompletePineScriptStrategy.calculate_trend_line() takes 1 positional argument but 2 were given
+2025-09-04 12:28:13,327 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:217 - Error in relaxed Pine Script exit: CompletePineScriptStrategy.calculate_trend_line() takes 1 positional argument but 2 were given
+2025-09-04 12:29:29,151 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:217 - Error in relaxed Pine Script exit: CompletePineScriptStrategy.calculate_trend_line() takes 1 positional argument but 2 were given
+2025-09-04 12:30:19,615 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:217 - Error in relaxed Pine Script exit: CompletePineScriptStrategy.calculate_trend_line() takes 1 positional argument but 2 were given
+2025-09-04 12:31:37,507 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:217 - Error in relaxed Pine Script exit: CompletePineScriptStrategy.calculate_trend_line() takes 1 positional argument but 2 were given
+2025-09-04 12:32:16,292 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:217 - Error in relaxed Pine Script exit: CompletePineScriptStrategy.calculate_trend_line() takes 1 positional argument but 2 were given
+2025-09-04 12:33:37,160 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:217 - Error in relaxed Pine Script exit: CompletePineScriptStrategy.calculate_trend_line() takes 1 positional argument but 2 were given
+2025-09-04 12:34:24,490 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:217 - Error in relaxed Pine Script exit: CompletePineScriptStrategy.calculate_trend_line() takes 1 positional argument but 2 were given
+2025-09-04 12:35:41,758 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:217 - Error in relaxed Pine Script exit: CompletePineScriptStrategy.calculate_trend_line() takes 1 positional argument but 2 were given
+2025-09-04 12:36:20,433 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:217 - Error in relaxed Pine Script exit: CompletePineScriptStrategy.calculate_trend_line() takes 1 positional argument but 2 were given
+2025-09-04 12:37:38,121 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:217 - Error in relaxed Pine Script exit: CompletePineScriptStrategy.calculate_trend_line() takes 1 positional argument but 2 were given
+2025-09-04 12:39:35,995 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:217 - Error in relaxed Pine Script exit: CompletePineScriptStrategy.calculate_trend_line() takes 1 positional argument but 2 were given
+2025-09-04 12:40:14,703 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:217 - Error in relaxed Pine Script exit: CompletePineScriptStrategy.calculate_trend_line() takes 1 positional argument but 2 were given
+2025-09-04 12:41:31,955 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:217 - Error in relaxed Pine Script exit: CompletePineScriptStrategy.calculate_trend_line() takes 1 positional argument but 2 were given
+2025-09-04 12:43:24,743 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:217 - Error in relaxed Pine Script exit: CompletePineScriptStrategy.calculate_trend_line() takes 1 positional argument but 2 were given
+2025-09-04 12:44:05,995 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:217 - Error in relaxed Pine Script exit: CompletePineScriptStrategy.calculate_trend_line() takes 1 positional argument but 2 were given
+2025-09-04 12:44:47,518 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:217 - Error in relaxed Pine Script exit: CompletePineScriptStrategy.calculate_trend_line() takes 1 positional argument but 2 were given
+2025-09-04 12:46:45,651 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:217 - Error in relaxed Pine Script exit: CompletePineScriptStrategy.calculate_trend_line() takes 1 positional argument but 2 were given
+2025-09-04 12:47:22,726 - strategy.option_pine_v5 - ERROR - complete_pine_script_strategy.py:339 - ADX values are invalid!
+2025-09-04 12:47:22,739 - __main__ - ERROR - main.py:169 - ADX calculation still invalid
+2025-09-04 13:28:30,025 - strategy.option_pine_v5 - ERROR - complete_pine_script_strategy.py:339 - ADX values are invalid!
+2025-09-04 13:28:30,057 - __main__ - ERROR - main.py:169 - ADX calculation still invalid
+2025-09-04 13:29:50,842 - strategy.option_pine_v5 - ERROR - complete_pine_script_strategy.py:339 - ADX values are invalid!
+2025-09-04 13:29:50,849 - __main__ - ERROR - main.py:169 - ADX calculation still invalid
+2025-09-04 15:30:12,938 - src.trading_bot - ERROR - trading_bot.py:2353 - Bot error: 'TradingBot' object has no attribute 'send_end_of_day_summary'
+2025-09-05 09:22:01,478 - src.upstox_api_client - ERROR - upstox_api_client.py:262 - HTTP error 401: 401, message='Unauthorized', url='https://api.upstox.com/v2/user/profile'
+2025-09-05 10:43:11,827 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:1178 - Could not fetch option premium for 24700CE
+2025-09-05 10:57:09,838 - src.upstox_api_client - ERROR - upstox_api_client.py:276 - API request failed: Cannot connect to host api.upstox.com:443 ssl:default [getaddrinfo failed]
+2025-09-05 10:57:09,841 - src.options.option_chain_manager - ERROR - option_chain_manager.py:132 - [ERROR] ALL spot price methods failed
+2025-09-05 10:57:09,841 - src.options.option_chain_manager - ERROR - option_chain_manager.py:64 - [ERROR] CRITICAL: Could not fetch spot price with ANY method
+2025-09-05 10:57:14,282 - src.websocket.websocket_manager - ERROR - websocket_manager.py:669 - Portfolio websocket error: Connection to remote host was lost.
+2025-09-05 10:57:14,283 - src.websocket.websocket_manager - ERROR - websocket_manager.py:647 - Market websocket error: Connection to remote host was lost.
+2025-09-05 10:57:14,283 - src.websocket.websocket_manager - ERROR - websocket_manager.py:647 - Market websocket error: Connection to remote host was lost.
+2025-09-05 10:57:14,420 - websocket - ERROR - _logging.py:77 - Connection to remote host was lost. - goodbye
+2025-09-05 10:57:14,315 - websocket - ERROR - _logging.py:77 - Connection to remote host was lost. - goodbye
+2025-09-05 10:57:14,397 - websocket - ERROR - _logging.py:77 - Connection to remote host was lost. - goodbye
+2025-09-05 10:57:14,284 - src.websocket.websocket_manager - ERROR - websocket_manager.py:669 - Portfolio websocket error: Connection to remote host was lost.
+2025-09-05 10:57:14,466 - websocket - ERROR - _logging.py:77 - Connection to remote host was lost. - goodbye
+2025-09-05 10:57:32,017 - src.websocket.websocket_manager - ERROR - websocket_manager.py:669 - Portfolio websocket error: Connection to remote host was lost.
+2025-09-05 10:57:32,018 - src.websocket.websocket_manager - ERROR - websocket_manager.py:647 - Market websocket error: Connection to remote host was lost.
+2025-09-05 10:57:32,019 - src.websocket.websocket_manager - ERROR - websocket_manager.py:669 - Portfolio websocket error: Connection to remote host was lost.
+2025-09-05 10:57:32,019 - src.websocket.websocket_manager - ERROR - websocket_manager.py:647 - Market websocket error: Connection to remote host was lost.
+2025-09-05 10:57:32,085 - websocket - ERROR - _logging.py:77 - Connection to remote host was lost. - goodbye
+2025-09-05 10:57:32,267 - websocket - ERROR - _logging.py:77 - Connection to remote host was lost. - goodbye
+2025-09-05 10:57:32,429 - websocket - ERROR - _logging.py:77 - Connection to remote host was lost. - goodbye
+2025-09-05 10:57:32,455 - websocket - ERROR - _logging.py:77 - Connection to remote host was lost. - goodbye
+2025-09-05 10:57:32,691 - src.websocket.websocket_manager - ERROR - websocket_manager.py:669 - Portfolio websocket error: [Errno 11001] getaddrinfo failed
+2025-09-05 10:57:32,693 - src.websocket.websocket_manager - ERROR - websocket_manager.py:647 - Market websocket error: [Errno 11001] getaddrinfo failed
+2025-09-05 10:57:32,693 - src.websocket.websocket_manager - ERROR - websocket_manager.py:647 - Market websocket error: [Errno 11001] getaddrinfo failed
+2025-09-05 10:57:32,693 - src.websocket.websocket_manager - ERROR - websocket_manager.py:669 - Portfolio websocket error: [Errno 11001] getaddrinfo failed
+2025-09-05 10:57:32,958 - src.upstox_api_client - ERROR - upstox_api_client.py:380 - Error fetching option LTP: Cannot connect to host api.upstox.com:443 ssl:default [getaddrinfo failed]
+2025-09-05 10:57:32,963 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:1178 - Could not fetch option premium for 24700CE
+2025-09-05 10:57:33,151 - src.upstox_api_client - ERROR - upstox_api_client.py:380 - Error fetching option LTP: Cannot connect to host api.upstox.com:443 ssl:default [getaddrinfo failed]
+2025-09-05 10:57:33,431 - src.upstox_api_client - ERROR - upstox_api_client.py:380 - Error fetching option LTP: Cannot connect to host api.upstox.com:443 ssl:default [getaddrinfo failed]
+2025-09-05 10:57:33,988 - src.upstox_api_client - ERROR - upstox_api_client.py:380 - Error fetching option LTP: Cannot connect to host api.upstox.com:443 ssl:default [getaddrinfo failed]
+2025-09-05 10:57:34,234 - src.upstox_api_client - ERROR - upstox_api_client.py:380 - Error fetching option LTP: Cannot connect to host api.upstox.com:443 ssl:default [getaddrinfo failed]
+2025-09-05 10:57:34,409 - src.upstox_api_client - ERROR - upstox_api_client.py:380 - Error fetching option LTP: Cannot connect to host api.upstox.com:443 ssl:default [getaddrinfo failed]
+2025-09-05 10:57:34,594 - src.upstox_api_client - ERROR - upstox_api_client.py:380 - Error fetching option LTP: Cannot connect to host api.upstox.com:443 ssl:default [getaddrinfo failed]
+2025-09-05 10:57:34,939 - src.upstox_api_client - ERROR - upstox_api_client.py:380 - Error fetching option LTP: Cannot connect to host api.upstox.com:443 ssl:default [getaddrinfo failed]
+2025-09-05 10:57:34,942 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:1178 - Could not fetch option premium for 24700PE
+2025-09-05 10:57:35,123 - src.upstox_api_client - ERROR - upstox_api_client.py:380 - Error fetching option LTP: Cannot connect to host api.upstox.com:443 ssl:default [getaddrinfo failed]
+2025-09-05 10:57:35,299 - src.upstox_api_client - ERROR - upstox_api_client.py:380 - Error fetching option LTP: Cannot connect to host api.upstox.com:443 ssl:default [getaddrinfo failed]
+2025-09-05 10:57:35,732 - src.upstox_api_client - ERROR - upstox_api_client.py:380 - Error fetching option LTP: Cannot connect to host api.upstox.com:443 ssl:default [getaddrinfo failed]
+2025-09-05 10:57:36,047 - src.upstox_api_client - ERROR - upstox_api_client.py:380 - Error fetching option LTP: Cannot connect to host api.upstox.com:443 ssl:default [getaddrinfo failed]
+2025-09-05 10:57:36,051 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:1178 - Could not fetch option premium for 24700PE
+2025-09-05 10:57:36,206 - src.upstox_api_client - ERROR - upstox_api_client.py:380 - Error fetching option LTP: Cannot connect to host api.upstox.com:443 ssl:default [getaddrinfo failed]
+2025-09-05 10:57:36,371 - src.upstox_api_client - ERROR - upstox_api_client.py:380 - Error fetching option LTP: Cannot connect to host api.upstox.com:443 ssl:default [getaddrinfo failed]
+2025-09-05 10:57:36,554 - src.upstox_api_client - ERROR - upstox_api_client.py:380 - Error fetching option LTP: Cannot connect to host api.upstox.com:443 ssl:default [getaddrinfo failed]
+2025-09-05 10:57:36,891 - src.upstox_api_client - ERROR - upstox_api_client.py:380 - Error fetching option LTP: Cannot connect to host api.upstox.com:443 ssl:default [getaddrinfo failed]
+2025-09-05 10:57:36,893 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:1178 - Could not fetch option premium for 24700PE
+2025-09-05 10:57:37,057 - src.upstox_api_client - ERROR - upstox_api_client.py:380 - Error fetching option LTP: Cannot connect to host api.upstox.com:443 ssl:default [getaddrinfo failed]
+2025-09-05 10:57:37,227 - src.upstox_api_client - ERROR - upstox_api_client.py:380 - Error fetching option LTP: Cannot connect to host api.upstox.com:443 ssl:default [getaddrinfo failed]
+2025-09-05 10:57:37,429 - src.upstox_api_client - ERROR - upstox_api_client.py:380 - Error fetching option LTP: Cannot connect to host api.upstox.com:443 ssl:default [getaddrinfo failed]
+2025-09-05 10:57:37,764 - src.upstox_api_client - ERROR - upstox_api_client.py:380 - Error fetching option LTP: Cannot connect to host api.upstox.com:443 ssl:default [getaddrinfo failed]
+2025-09-05 10:57:37,765 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:1178 - Could not fetch option premium for 24700PE
+2025-09-05 10:57:37,942 - src.upstox_api_client - ERROR - upstox_api_client.py:380 - Error fetching option LTP: Cannot connect to host api.upstox.com:443 ssl:default [getaddrinfo failed]
+2025-09-05 10:57:38,119 - src.upstox_api_client - ERROR - upstox_api_client.py:380 - Error fetching option LTP: Cannot connect to host api.upstox.com:443 ssl:default [getaddrinfo failed]
+2025-09-05 10:57:38,287 - src.upstox_api_client - ERROR - upstox_api_client.py:380 - Error fetching option LTP: Cannot connect to host api.upstox.com:443 ssl:default [getaddrinfo failed]
+2025-09-05 10:57:38,899 - src.upstox_api_client - ERROR - upstox_api_client.py:380 - Error fetching option LTP: Cannot connect to host api.upstox.com:443 ssl:default [getaddrinfo failed]
+2025-09-05 10:57:38,900 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:1178 - Could not fetch option premium for 24650PE
+2025-09-05 10:57:39,135 - src.upstox_api_client - ERROR - upstox_api_client.py:380 - Error fetching option LTP: Cannot connect to host api.upstox.com:443 ssl:default [getaddrinfo failed]
+2025-09-05 10:57:39,306 - src.upstox_api_client - ERROR - upstox_api_client.py:380 - Error fetching option LTP: Cannot connect to host api.upstox.com:443 ssl:default [getaddrinfo failed]
+2025-09-05 10:57:39,692 - src.upstox_api_client - ERROR - upstox_api_client.py:380 - Error fetching option LTP: Cannot connect to host api.upstox.com:443 ssl:default [getaddrinfo failed]
+2025-09-05 10:57:40,069 - src.upstox_api_client - ERROR - upstox_api_client.py:380 - Error fetching option LTP: Cannot connect to host api.upstox.com:443 ssl:default [getaddrinfo failed]
+2025-09-05 10:57:40,071 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:1178 - Could not fetch option premium for 24650PE
+2025-09-05 10:57:40,203 - src.upstox_api_client - ERROR - upstox_api_client.py:380 - Error fetching option LTP: Cannot connect to host api.upstox.com:443 ssl:default [getaddrinfo failed]
+2025-09-05 10:57:40,511 - src.upstox_api_client - ERROR - upstox_api_client.py:380 - Error fetching option LTP: Cannot connect to host api.upstox.com:443 ssl:default [getaddrinfo failed]
+2025-09-05 10:57:40,689 - src.upstox_api_client - ERROR - upstox_api_client.py:380 - Error fetching option LTP: Cannot connect to host api.upstox.com:443 ssl:default [getaddrinfo failed]
+2025-09-05 10:57:40,881 - src.upstox_api_client - ERROR - upstox_api_client.py:380 - Error fetching option LTP: Cannot connect to host api.upstox.com:443 ssl:default [getaddrinfo failed]
+2025-09-05 10:57:41,033 - src.upstox_api_client - ERROR - upstox_api_client.py:380 - Error fetching option LTP: Cannot connect to host api.upstox.com:443 ssl:default [getaddrinfo failed]
+2025-09-05 10:57:41,184 - src.upstox_api_client - ERROR - upstox_api_client.py:380 - Error fetching option LTP: Cannot connect to host api.upstox.com:443 ssl:default [getaddrinfo failed]
+2025-09-05 10:57:41,384 - src.upstox_api_client - ERROR - upstox_api_client.py:380 - Error fetching option LTP: Cannot connect to host api.upstox.com:443 ssl:default [getaddrinfo failed]
+2025-09-05 10:57:41,534 - src.upstox_api_client - ERROR - upstox_api_client.py:380 - Error fetching option LTP: Cannot connect to host api.upstox.com:443 ssl:default [getaddrinfo failed]
+2025-09-05 10:57:41,687 - src.upstox_api_client - ERROR - upstox_api_client.py:380 - Error fetching option LTP: Cannot connect to host api.upstox.com:443 ssl:default [getaddrinfo failed]
+2025-09-05 10:57:42,714 - websocket - ERROR - _logging.py:77 - [Errno 11001] getaddrinfo failed - goodbye
+2025-09-05 10:57:42,714 - src.websocket.websocket_manager - ERROR - websocket_manager.py:669 - Portfolio websocket error: [Errno 11001] getaddrinfo failed
+2025-09-05 10:57:42,719 - websocket - ERROR - _logging.py:77 - [Errno 11001] getaddrinfo failed - goodbye
+2025-09-05 10:57:42,719 - src.websocket.websocket_manager - ERROR - websocket_manager.py:647 - Market websocket error: [Errno 11001] getaddrinfo failed
+2025-09-05 10:57:42,727 - websocket - ERROR - _logging.py:77 - [Errno 11001] getaddrinfo failed - goodbye
+2025-09-05 10:57:42,728 - src.websocket.websocket_manager - ERROR - websocket_manager.py:647 - Market websocket error: [Errno 11001] getaddrinfo failed
+2025-09-05 10:57:42,732 - websocket - ERROR - _logging.py:77 - [Errno 11001] getaddrinfo failed - goodbye
+2025-09-05 10:57:42,732 - src.websocket.websocket_manager - ERROR - websocket_manager.py:669 - Portfolio websocket error: [Errno 11001] getaddrinfo failed
+2025-09-05 10:57:52,717 - websocket - ERROR - _logging.py:77 - [Errno 11001] getaddrinfo failed - goodbye
+2025-09-05 10:57:52,717 - src.websocket.websocket_manager - ERROR - websocket_manager.py:669 - Portfolio websocket error: [Errno 11001] getaddrinfo failed
+2025-09-05 10:57:52,718 - websocket - ERROR - _logging.py:77 - [Errno 11001] getaddrinfo failed - goodbye
+2025-09-05 10:57:52,721 - websocket - ERROR - _logging.py:77 - [Errno 11001] getaddrinfo failed - goodbye
+2025-09-05 10:57:52,722 - src.websocket.websocket_manager - ERROR - websocket_manager.py:647 - Market websocket error: [Errno 11001] getaddrinfo failed
+2025-09-05 10:57:52,723 - websocket - ERROR - _logging.py:77 - [Errno 11001] getaddrinfo failed - goodbye
+2025-09-05 10:57:52,729 - websocket - ERROR - _logging.py:77 - [Errno 11001] getaddrinfo failed - goodbye
+2025-09-05 10:57:52,730 - src.websocket.websocket_manager - ERROR - websocket_manager.py:647 - Market websocket error: [Errno 11001] getaddrinfo failed
+2025-09-05 10:57:52,731 - websocket - ERROR - _logging.py:77 - [Errno 11001] getaddrinfo failed - goodbye
+2025-09-05 10:57:52,735 - websocket - ERROR - _logging.py:77 - [Errno 11001] getaddrinfo failed - goodbye
+2025-09-05 10:57:52,735 - src.websocket.websocket_manager - ERROR - websocket_manager.py:669 - Portfolio websocket error: [Errno 11001] getaddrinfo failed
+2025-09-05 10:57:52,736 - websocket - ERROR - _logging.py:77 - [Errno 11001] getaddrinfo failed - goodbye
+2025-09-05 11:17:43,446 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:1178 - Could not fetch option premium for 24700CE
+2025-09-05 11:21:36,655 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:1178 - Could not fetch option premium for 24700PE
+2025-09-05 11:23:39,826 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:1178 - Could not fetch option premium for 24700PE
+2025-09-05 11:25:50,584 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:1178 - Could not fetch option premium for 24700PE
+2025-09-05 11:36:22,088 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:1178 - Could not fetch option premium for 24700CE
+2025-09-05 11:38:25,649 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:1178 - Could not fetch option premium for 24700CE
+2025-09-05 11:41:47,180 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:1178 - Could not fetch option premium for 24700PE
+2025-09-05 11:45:11,409 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:1178 - Could not fetch option premium for 24700CE
+2025-09-05 11:50:53,257 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:1178 - Could not fetch option premium for 24500PE
+2025-09-05 12:35:45,172 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:1178 - Could not fetch option premium for 24650CE
+2025-09-05 12:39:18,106 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:1178 - Could not fetch option premium for 24650PE
+2025-09-05 12:56:06,949 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:1178 - Could not fetch option premium for 24650PE
+2025-09-05 13:03:48,246 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:1178 - Could not fetch option premium for 24650CE
+2025-09-05 13:07:52,835 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:1178 - Could not fetch option premium for 24650CE
+2025-09-05 13:10:08,615 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:1178 - Could not fetch option premium for 24650CE
+2025-09-05 13:19:05,348 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:1178 - Could not fetch option premium for 24650CE
+2025-09-05 13:22:41,559 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:1178 - Could not fetch option premium for 24650CE
+2025-09-05 13:24:52,679 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:1178 - Could not fetch option premium for 24650CE
+2025-09-05 13:27:14,915 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:1178 - Could not fetch option premium for 24650CE
+2025-09-05 13:29:31,094 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:1178 - Could not fetch option premium for 24650CE
+2025-09-05 13:31:39,038 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:1178 - Could not fetch option premium for 24650CE
+2025-09-05 13:33:48,509 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:1178 - Could not fetch option premium for 24700CE
+2025-09-05 13:35:55,444 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:1178 - Could not fetch option premium for 24700CE
+2025-09-05 13:39:26,232 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:1178 - Could not fetch option premium for 24700CE
+2025-09-05 13:47:06,361 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:1178 - Could not fetch option premium for 24700CE
+2025-09-05 13:50:32,503 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:1178 - Could not fetch option premium for 24700CE
+2025-09-05 13:54:23,095 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:1178 - Could not fetch option premium for 24500PE
+2025-09-05 13:57:37,112 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:1178 - Could not fetch option premium for 24750CE
+2025-09-05 13:59:11,432 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:1178 - Could not fetch option premium for 24750CE
+2025-09-05 13:59:58,434 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:1178 - Could not fetch option premium for 24750CE
+2025-09-05 14:16:36,979 - src.utils.optimized_option_manager - ERROR - optimized_option_manager.py:28 - Could not get option chain
+2025-09-05 14:18:25,833 - src.utils.optimized_option_manager - ERROR - optimized_option_manager.py:28 - Could not get option chain
+2025-09-05 14:20:20,378 - src.utils.optimized_option_manager - ERROR - optimized_option_manager.py:28 - Could not get option chain
+2025-09-05 14:22:05,183 - src.utils.optimized_option_manager - ERROR - optimized_option_manager.py:28 - Could not get option chain
+2025-09-05 14:23:45,129 - src.utils.optimized_option_manager - ERROR - optimized_option_manager.py:28 - Could not get option chain
+2025-09-05 14:25:39,687 - src.utils.optimized_option_manager - ERROR - optimized_option_manager.py:28 - Could not get option chain
+2025-09-05 14:27:35,999 - src.utils.optimized_option_manager - ERROR - optimized_option_manager.py:28 - Could not get option chain
+2025-09-05 14:29:24,275 - src.utils.optimized_option_manager - ERROR - optimized_option_manager.py:28 - Could not get option chain
+2025-09-05 14:30:27,870 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:1165 - Could not get option chain for order creation
+2025-09-05 14:30:41,198 - src.upstox_api_client - ERROR - upstox_api_client.py:262 - HTTP error 400: 400, message='Bad Request', url='https://api.upstox.com/v2/portfolio/long-term-positions'
+2025-09-05 14:32:12,973 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:1165 - Could not get option chain for order creation
+2025-09-05 14:40:30,498 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:1165 - Could not get option chain for order creation
+2025-09-05 14:46:09,827 - src.utils.optimized_option_manager - ERROR - optimized_option_manager.py:95 - option_chain_manager not found in upstox_client
+2025-09-05 14:46:13,895 - src.upstox_api_client - ERROR - upstox_api_client.py:262 - HTTP error 400: 400, message='Bad Request', url='https://api.upstox.com/v2/portfolio/long-term-positions'
+2025-09-05 14:56:05,008 - src.utils.optimized_option_manager - ERROR - optimized_option_manager.py:95 - option_chain_manager not found in upstox_client
+2025-09-05 14:57:08,165 - src.utils.optimized_option_manager - ERROR - optimized_option_manager.py:95 - option_chain_manager not found in upstox_client
+2025-09-05 14:57:08,165 - src.utils.optimized_option_manager - ERROR - optimized_option_manager.py:28 - Could not get option chain
+2025-09-05 14:59:15,330 - src.utils.optimized_option_manager - ERROR - optimized_option_manager.py:95 - option_chain_manager not found in upstox_client
+2025-09-05 14:59:15,330 - src.utils.optimized_option_manager - ERROR - optimized_option_manager.py:28 - Could not get option chain
+2025-09-05 15:01:31,328 - src.utils.optimized_option_manager - ERROR - optimized_option_manager.py:95 - option_chain_manager not found in upstox_client
+2025-09-05 15:01:31,329 - src.utils.optimized_option_manager - ERROR - optimized_option_manager.py:28 - Could not get option chain
+2025-09-05 15:03:02,149 - src.utils.optimized_option_manager - ERROR - optimized_option_manager.py:95 - option_chain_manager not found in upstox_client
+2025-09-05 15:03:02,155 - src.utils.optimized_option_manager - ERROR - optimized_option_manager.py:28 - Could not get option chain
+2025-09-05 15:04:24,901 - src.upstox_api_client - ERROR - upstox_api_client.py:262 - HTTP error 400: 400, message='Bad Request', url='https://api.upstox.com/v2/portfolio/long-term-positions'
+2025-09-05 15:05:06,116 - src.utils.optimized_option_manager - ERROR - optimized_option_manager.py:95 - option_chain_manager not found in upstox_client
+2025-09-05 15:05:06,116 - src.utils.optimized_option_manager - ERROR - optimized_option_manager.py:28 - Could not get option chain
+2025-09-05 15:07:22,193 - src.utils.optimized_option_manager - ERROR - optimized_option_manager.py:95 - option_chain_manager not found in upstox_client
+2025-09-05 15:07:22,194 - src.utils.optimized_option_manager - ERROR - optimized_option_manager.py:28 - Could not get option chain
+2025-09-05 15:09:32,158 - src.utils.optimized_option_manager - ERROR - optimized_option_manager.py:95 - option_chain_manager not found in upstox_client
+2025-09-05 15:09:32,159 - src.utils.optimized_option_manager - ERROR - optimized_option_manager.py:28 - Could not get option chain
+2025-09-05 15:09:37,469 - src.utils.optimized_option_manager - ERROR - optimized_option_manager.py:95 - option_chain_manager not found in upstox_client
+2025-09-05 15:09:37,469 - src.utils.optimized_option_manager - ERROR - optimized_option_manager.py:28 - Could not get option chain
+2025-09-05 15:11:03,594 - src.utils.optimized_option_manager - ERROR - optimized_option_manager.py:95 - option_chain_manager not found in upstox_client
+2025-09-05 15:11:03,594 - src.utils.optimized_option_manager - ERROR - optimized_option_manager.py:28 - Could not get option chain
+2025-09-05 15:12:38,264 - src.utils.optimized_option_manager - ERROR - optimized_option_manager.py:95 - option_chain_manager not found in upstox_client
+2025-09-05 15:12:38,265 - src.utils.optimized_option_manager - ERROR - optimized_option_manager.py:28 - Could not get option chain
+2025-09-05 15:13:20,798 - src.utils.optimized_option_manager - ERROR - optimized_option_manager.py:95 - option_chain_manager not found in upstox_client
+2025-09-05 15:13:20,798 - src.utils.optimized_option_manager - ERROR - optimized_option_manager.py:28 - Could not get option chain
+2025-09-05 15:15:23,089 - src.utils.optimized_option_manager - ERROR - optimized_option_manager.py:95 - option_chain_manager not found in upstox_client
+2025-09-05 15:15:23,090 - src.utils.optimized_option_manager - ERROR - optimized_option_manager.py:28 - Could not get option chain
+2025-09-05 15:16:40,104 - src.utils.optimized_option_manager - ERROR - optimized_option_manager.py:95 - option_chain_manager not found in upstox_client
+2025-09-05 15:16:40,104 - src.utils.optimized_option_manager - ERROR - optimized_option_manager.py:28 - Could not get option chain
+2025-09-05 15:17:38,872 - src.utils.optimized_option_manager - ERROR - optimized_option_manager.py:95 - option_chain_manager not found in upstox_client
+2025-09-05 15:17:38,872 - src.utils.optimized_option_manager - ERROR - optimized_option_manager.py:28 - Could not get option chain
+2025-09-05 15:18:42,763 - src.utils.optimized_option_manager - ERROR - optimized_option_manager.py:95 - option_chain_manager not found in upstox_client
+2025-09-05 15:18:42,764 - src.utils.optimized_option_manager - ERROR - optimized_option_manager.py:28 - Could not get option chain
+2025-09-05 15:19:38,828 - src.utils.optimized_option_manager - ERROR - optimized_option_manager.py:95 - option_chain_manager not found in upstox_client
+2025-09-05 15:19:38,828 - src.utils.optimized_option_manager - ERROR - optimized_option_manager.py:28 - Could not get option chain
+2025-09-05 15:20:38,632 - src.utils.optimized_option_manager - ERROR - optimized_option_manager.py:95 - option_chain_manager not found in upstox_client
+2025-09-05 15:20:38,633 - src.utils.optimized_option_manager - ERROR - optimized_option_manager.py:28 - Could not get option chain
+2025-09-05 15:28:33,236 - src.utils.optimized_option_manager - ERROR - optimized_option_manager.py:95 - option_chain_manager not found in upstox_client
+2025-09-05 15:30:22,170 - src.trading_bot - ERROR - trading_bot.py:2387 - Bot error: 'TradingBot' object has no attribute 'send_end_of_day_summary'
+2025-09-05 15:30:43,982 - src.trading_bot - ERROR - trading_bot.py:2387 - Bot error: 'TradingBot' object has no attribute 'send_end_of_day_summary'
+2025-09-05 15:32:09,551 - src.websocket.websocket_manager - ERROR - websocket_manager.py:647 - Market websocket error: Connection to remote host was lost.
+2025-09-05 15:32:09,553 - websocket - ERROR - _logging.py:77 - Connection to remote host was lost. - goodbye
+2025-09-05 15:32:10,192 - src.websocket.websocket_manager - ERROR - websocket_manager.py:669 - Portfolio websocket error: Connection to remote host was lost.
+2025-09-05 15:32:10,192 - src.websocket.websocket_manager - ERROR - websocket_manager.py:647 - Market websocket error: Connection to remote host was lost.
+2025-09-05 15:32:10,193 - websocket - ERROR - _logging.py:77 - Connection to remote host was lost. - goodbye
+2025-09-05 15:32:10,194 - websocket - ERROR - _logging.py:77 - Connection to remote host was lost. - goodbye
+2025-09-05 15:32:10,260 - src.websocket.websocket_manager - ERROR - websocket_manager.py:647 - Market websocket error: [Errno 11001] getaddrinfo failed
+2025-09-05 15:32:10,261 - src.websocket.websocket_manager - ERROR - websocket_manager.py:669 - Portfolio websocket error: Connection to remote host was lost.
+2025-09-05 15:32:10,265 - src.websocket.websocket_manager - ERROR - websocket_manager.py:669 - Portfolio websocket error: [Errno 11001] getaddrinfo failed
+2025-09-05 15:32:10,309 - src.websocket.websocket_manager - ERROR - websocket_manager.py:647 - Market websocket error: [Errno 11001] getaddrinfo failed
+2025-09-05 15:32:10,378 - websocket - ERROR - _logging.py:77 - Connection to remote host was lost. - goodbye
+2025-09-05 15:32:10,561 - src.websocket.websocket_manager - ERROR - websocket_manager.py:669 - Portfolio websocket error: [Errno 11001] getaddrinfo failed
+2025-09-05 15:32:20,353 - websocket - ERROR - _logging.py:77 - [Errno 11001] getaddrinfo failed - goodbye
+2025-09-05 15:32:20,353 - src.websocket.websocket_manager - ERROR - websocket_manager.py:647 - Market websocket error: [Errno 11001] getaddrinfo failed
+2025-09-05 15:32:20,485 - websocket - ERROR - _logging.py:77 - [Errno 11001] getaddrinfo failed - goodbye
+2025-09-05 15:32:20,485 - src.websocket.websocket_manager - ERROR - websocket_manager.py:669 - Portfolio websocket error: [Errno 11001] getaddrinfo failed
+2025-09-05 15:32:20,486 - websocket - ERROR - _logging.py:77 - [Errno 11001] getaddrinfo failed - goodbye
+2025-09-05 15:32:20,486 - src.websocket.websocket_manager - ERROR - websocket_manager.py:647 - Market websocket error: [Errno 11001] getaddrinfo failed
+2025-09-05 15:32:20,565 - websocket - ERROR - _logging.py:77 - [Errno 11001] getaddrinfo failed - goodbye
+2025-09-05 15:32:20,565 - src.websocket.websocket_manager - ERROR - websocket_manager.py:669 - Portfolio websocket error: [Errno 11001] getaddrinfo failed
+2025-09-05 15:32:30,356 - websocket - ERROR - _logging.py:77 - [Errno 11001] getaddrinfo failed - goodbye
+2025-09-05 15:32:30,356 - src.websocket.websocket_manager - ERROR - websocket_manager.py:647 - Market websocket error: [Errno 11001] getaddrinfo failed
+2025-09-05 15:32:30,357 - websocket - ERROR - _logging.py:77 - [Errno 11001] getaddrinfo failed - goodbye
+2025-09-05 15:32:30,487 - websocket - ERROR - _logging.py:77 - [Errno 11001] getaddrinfo failed - goodbye
+2025-09-05 15:32:30,487 - src.websocket.websocket_manager - ERROR - websocket_manager.py:669 - Portfolio websocket error: [Errno 11001] getaddrinfo failed
+2025-09-05 15:32:30,488 - websocket - ERROR - _logging.py:77 - [Errno 11001] getaddrinfo failed - goodbye
+2025-09-08 09:15:38,663 - src.upstox_api_client - ERROR - upstox_api_client.py:262 - HTTP error 401: 401, message='Unauthorized', url='https://api.upstox.com/v2/user/profile'
+2025-09-08 09:16:59,849 - src.upstox_api_client - ERROR - upstox_api_client.py:262 - HTTP error 400: 400, message='Bad Request', url='https://api.upstox.com/v2/portfolio/long-term-positions'
+2025-09-08 09:23:54,694 - src.utils.optimized_option_manager - ERROR - optimized_option_manager.py:95 - option_chain_manager not found in upstox_client
+2025-09-08 09:23:54,695 - src.utils.optimized_option_manager - ERROR - optimized_option_manager.py:28 - Could not get option chain
+2025-09-08 09:25:38,593 - src.utils.optimized_option_manager - ERROR - optimized_option_manager.py:95 - option_chain_manager not found in upstox_client
+2025-09-08 09:25:38,593 - src.utils.optimized_option_manager - ERROR - optimized_option_manager.py:28 - Could not get option chain
+2025-09-08 09:27:29,862 - src.utils.optimized_option_manager - ERROR - optimized_option_manager.py:95 - option_chain_manager not found in upstox_client
+2025-09-08 09:27:29,862 - src.utils.optimized_option_manager - ERROR - optimized_option_manager.py:28 - Could not get option chain
+2025-09-08 09:29:28,712 - src.utils.optimized_option_manager - ERROR - optimized_option_manager.py:95 - option_chain_manager not found in upstox_client
+2025-09-08 09:29:28,713 - src.utils.optimized_option_manager - ERROR - optimized_option_manager.py:28 - Could not get option chain
+2025-09-08 09:32:11,260 - src.utils.optimized_option_manager - ERROR - optimized_option_manager.py:95 - option_chain_manager not found in upstox_client
+2025-09-08 09:32:11,261 - src.utils.optimized_option_manager - ERROR - optimized_option_manager.py:28 - Could not get option chain
+2025-09-08 09:34:03,699 - src.utils.optimized_option_manager - ERROR - optimized_option_manager.py:95 - option_chain_manager not found in upstox_client
+2025-09-08 09:34:03,699 - src.utils.optimized_option_manager - ERROR - optimized_option_manager.py:28 - Could not get option chain
+2025-09-08 09:35:58,423 - src.utils.optimized_option_manager - ERROR - optimized_option_manager.py:95 - option_chain_manager not found in upstox_client
+2025-09-08 09:35:58,423 - src.utils.optimized_option_manager - ERROR - optimized_option_manager.py:28 - Could not get option chain
+2025-09-08 09:43:08,865 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:1343 - Could not fetch option premium for 24850CE
+2025-09-08 09:45:14,199 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:1343 - Could not fetch option premium for 24850CE
+2025-09-08 09:51:38,149 - src.utils.optimized_option_manager - ERROR - optimized_option_manager.py:95 - option_chain_manager not found in upstox_client
+2025-09-08 09:51:38,150 - src.utils.optimized_option_manager - ERROR - optimized_option_manager.py:28 - Could not get option chain
+2025-09-08 09:54:13,945 - src.utils.optimized_option_manager - ERROR - optimized_option_manager.py:95 - option_chain_manager not found in upstox_client
+2025-09-08 09:54:13,946 - src.utils.optimized_option_manager - ERROR - optimized_option_manager.py:28 - Could not get option chain
+2025-09-08 09:57:13,470 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:1343 - Could not fetch option premium for 24800PE
+2025-09-08 09:59:52,057 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:1343 - Could not fetch option premium for 24800PE
+2025-09-08 10:02:32,316 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:1343 - Could not fetch option premium for 24800PE
+2025-09-08 10:13:33,539 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:1343 - Could not fetch option premium for 24800CE
+2025-09-08 10:16:26,184 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:1343 - Could not fetch option premium for 24800CE
+2025-09-08 10:23:35,476 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:1343 - Could not fetch option premium for 24800PE
+2025-09-08 10:26:56,187 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:1343 - Could not fetch option premium for 24800PE
+2025-09-08 10:30:14,953 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:1343 - Could not fetch option premium for 24800PE
+2025-09-08 10:36:06,684 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:1343 - Could not fetch option premium for 24800CE
+2025-09-08 10:42:00,947 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:1343 - Could not fetch option premium for 24800PE
+2025-09-08 10:45:38,462 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:1343 - Could not fetch option premium for 24800PE
+2025-09-08 10:52:55,368 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:1343 - Could not fetch option premium for 24800PE
+2025-09-08 10:56:19,526 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:1343 - Could not fetch option premium for 24800PE
+2025-09-08 10:59:39,182 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:1343 - Could not fetch option premium for 24800PE
+2025-09-08 11:11:35,109 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:1343 - Could not fetch option premium for 24750PE
+2025-09-08 11:29:03,002 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:1343 - Could not fetch option premium for 24800PE
+2025-09-08 11:32:03,847 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:1343 - Could not fetch option premium for 24800PE
+2025-09-08 11:35:09,598 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:1343 - Could not fetch option premium for 24800PE
+2025-09-08 11:36:29,563 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:1384 - Could not fetch option premium for 24450PE
+2025-09-08 11:36:41,809 - src.upstox_api_client - ERROR - upstox_api_client.py:262 - HTTP error 400: 400, message='Bad Request', url='https://api.upstox.com/v2/portfolio/long-term-positions'
+2025-09-08 11:42:37,774 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:1343 - Could not fetch option premium for 24800PE
+2025-09-08 11:42:54,571 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:1384 - Could not fetch option premium for 24800CE
+2025-09-08 11:44:36,933 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:1384 - Could not fetch option premium for 24800CE
+2025-09-08 11:45:14,462 - src.websocket.websocket_manager - ERROR - websocket_manager.py:647 - Market websocket error: Connection to remote host was lost.
+2025-09-08 11:45:14,463 - src.websocket.websocket_manager - ERROR - websocket_manager.py:669 - Portfolio websocket error: Connection to remote host was lost.
+2025-09-08 11:45:14,463 - src.websocket.websocket_manager - ERROR - websocket_manager.py:669 - Portfolio websocket error: Connection to remote host was lost.
+2025-09-08 11:45:14,710 - src.websocket.websocket_manager - ERROR - websocket_manager.py:647 - Market websocket error: Connection to remote host was lost.
+2025-09-08 11:45:14,710 - websocket - ERROR - _logging.py:77 - Connection to remote host was lost. - goodbye
+2025-09-08 11:45:14,713 - websocket - ERROR - _logging.py:77 - Connection to remote host was lost. - goodbye
+2025-09-08 11:45:14,739 - websocket - ERROR - _logging.py:77 - Connection to remote host was lost. - goodbye
+2025-09-08 11:45:14,739 - websocket - ERROR - _logging.py:77 - Connection to remote host was lost. - goodbye
+2025-09-08 11:45:14,826 - src.websocket.websocket_manager - ERROR - websocket_manager.py:647 - Market websocket error: [Errno 11001] getaddrinfo failed
+2025-09-08 11:45:14,829 - src.websocket.websocket_manager - ERROR - websocket_manager.py:669 - Portfolio websocket error: [Errno 11001] getaddrinfo failed
+2025-09-08 11:45:14,831 - src.upstox_api_client - ERROR - upstox_api_client.py:380 - Error fetching option LTP: Cannot connect to host api.upstox.com:443 ssl:default [getaddrinfo failed]
+2025-09-08 11:45:14,843 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:1384 - Could not fetch option premium for 24850CE
+2025-09-08 11:45:14,853 - src.websocket.websocket_manager - ERROR - websocket_manager.py:669 - Portfolio websocket error: [Errno 11001] getaddrinfo failed
+2025-09-08 11:45:14,861 - src.websocket.websocket_manager - ERROR - websocket_manager.py:647 - Market websocket error: [Errno 11001] getaddrinfo failed
+2025-09-08 11:45:15,025 - src.upstox_api_client - ERROR - upstox_api_client.py:276 - API request failed: Cannot connect to host api.upstox.com:443 ssl:default [getaddrinfo failed]
+2025-09-08 11:45:15,027 - src.options.option_chain_manager - ERROR - option_chain_manager.py:132 - [ERROR] ALL spot price methods failed
+2025-09-08 11:45:15,029 - src.options.option_chain_manager - ERROR - option_chain_manager.py:64 - [ERROR] CRITICAL: Could not fetch spot price with ANY method
+2025-09-08 11:45:15,072 - src.upstox_api_client - ERROR - upstox_api_client.py:276 - API request failed: Cannot connect to host api.upstox.com:443 ssl:default [getaddrinfo failed]
+2025-09-08 11:45:15,077 - src.options.option_chain_manager - ERROR - option_chain_manager.py:132 - [ERROR] ALL spot price methods failed
+2025-09-08 11:45:15,081 - src.options.option_chain_manager - ERROR - option_chain_manager.py:64 - [ERROR] CRITICAL: Could not fetch spot price with ANY method
+2025-09-08 11:45:15,111 - src.upstox_api_client - ERROR - upstox_api_client.py:276 - API request failed: Cannot connect to host api.upstox.com:443 ssl:default [getaddrinfo failed]
+2025-09-08 11:45:15,112 - src.options.option_chain_manager - ERROR - option_chain_manager.py:132 - [ERROR] ALL spot price methods failed
+2025-09-08 11:45:15,112 - src.options.option_chain_manager - ERROR - option_chain_manager.py:64 - [ERROR] CRITICAL: Could not fetch spot price with ANY method
+2025-09-08 11:45:15,130 - src.upstox_api_client - ERROR - upstox_api_client.py:276 - API request failed: Cannot connect to host api.upstox.com:443 ssl:default [getaddrinfo failed]
+2025-09-08 11:45:15,131 - src.options.option_chain_manager - ERROR - option_chain_manager.py:132 - [ERROR] ALL spot price methods failed
+2025-09-08 11:45:15,132 - src.options.option_chain_manager - ERROR - option_chain_manager.py:64 - [ERROR] CRITICAL: Could not fetch spot price with ANY method
+2025-09-08 11:45:15,135 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:1384 - Could not fetch option premium for 24900CE
+2025-09-08 11:45:15,411 - src.websocket.websocket_manager - ERROR - websocket_manager.py:647 - Market websocket error: Connection to remote host was lost.
+2025-09-08 11:45:15,412 - src.websocket.websocket_manager - ERROR - websocket_manager.py:647 - Market websocket error: Connection to remote host was lost.
+2025-09-08 11:45:15,412 - src.websocket.websocket_manager - ERROR - websocket_manager.py:669 - Portfolio websocket error: Connection to remote host was lost.
+2025-09-08 11:45:15,412 - src.websocket.websocket_manager - ERROR - websocket_manager.py:669 - Portfolio websocket error: Connection to remote host was lost.
+2025-09-08 11:45:15,520 - websocket - ERROR - _logging.py:77 - Connection to remote host was lost. - goodbye
+2025-09-08 11:45:15,520 - websocket - ERROR - _logging.py:77 - Connection to remote host was lost. - goodbye
+2025-09-08 11:45:15,522 - websocket - ERROR - _logging.py:77 - Connection to remote host was lost. - goodbye
+2025-09-08 11:45:15,676 - websocket - ERROR - _logging.py:77 - Connection to remote host was lost. - goodbye
+2025-09-08 11:45:16,962 - src.websocket.websocket_manager - ERROR - websocket_manager.py:647 - Market websocket error: [Errno 11001] getaddrinfo failed
+2025-09-08 11:45:16,962 - src.websocket.websocket_manager - ERROR - websocket_manager.py:647 - Market websocket error: [Errno 11001] getaddrinfo failed
+2025-09-08 11:45:17,154 - src.websocket.websocket_manager - ERROR - websocket_manager.py:669 - Portfolio websocket error: [Errno 11001] getaddrinfo failed
+2025-09-08 11:45:17,154 - src.websocket.websocket_manager - ERROR - websocket_manager.py:669 - Portfolio websocket error: [Errno 11001] getaddrinfo failed
+2025-09-08 11:45:18,384 - src.upstox_api_client - ERROR - upstox_api_client.py:380 - Error fetching option LTP: Cannot connect to host api.upstox.com:443 ssl:default [getaddrinfo failed]
+2025-09-08 11:45:18,448 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:1343 - Could not fetch option premium for 24800PE
+2025-09-08 11:45:18,697 - src.upstox_api_client - ERROR - upstox_api_client.py:380 - Error fetching option LTP: Cannot connect to host api.upstox.com:443 ssl:default [getaddrinfo failed]
+2025-09-08 11:45:18,908 - src.upstox_api_client - ERROR - upstox_api_client.py:380 - Error fetching option LTP: Cannot connect to host api.upstox.com:443 ssl:default [getaddrinfo failed]
+2025-09-08 11:45:18,987 - src.upstox_api_client - ERROR - upstox_api_client.py:380 - Error fetching option LTP: Cannot connect to host api.upstox.com:443 ssl:default [getaddrinfo failed]
+2025-09-08 11:45:19,157 - src.upstox_api_client - ERROR - upstox_api_client.py:380 - Error fetching option LTP: Cannot connect to host api.upstox.com:443 ssl:default [getaddrinfo failed]
+2025-09-08 11:45:19,158 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:1343 - Could not fetch option premium for 24800PE
+2025-09-08 11:45:19,302 - src.upstox_api_client - ERROR - upstox_api_client.py:380 - Error fetching option LTP: Cannot connect to host api.upstox.com:443 ssl:default [getaddrinfo failed]
+2025-09-08 11:45:19,380 - src.upstox_api_client - ERROR - upstox_api_client.py:380 - Error fetching option LTP: Cannot connect to host api.upstox.com:443 ssl:default [getaddrinfo failed]
+2025-09-08 11:45:19,455 - src.upstox_api_client - ERROR - upstox_api_client.py:380 - Error fetching option LTP: Cannot connect to host api.upstox.com:443 ssl:default [getaddrinfo failed]
+2025-09-08 11:45:20,195 - src.upstox_api_client - ERROR - upstox_api_client.py:276 - API request failed: Cannot connect to host api.upstox.com:443 ssl:default [getaddrinfo failed]
+2025-09-08 11:45:20,201 - src.options.option_chain_manager - ERROR - option_chain_manager.py:132 - [ERROR] ALL spot price methods failed
+2025-09-08 11:45:20,286 - src.options.option_chain_manager - ERROR - option_chain_manager.py:64 - [ERROR] CRITICAL: Could not fetch spot price with ANY method
+2025-09-08 11:45:20,297 - src.upstox_api_client - ERROR - upstox_api_client.py:276 - API request failed: Cannot connect to host api.upstox.com:443 ssl:default [getaddrinfo failed]
+2025-09-08 11:45:20,297 - src.options.option_chain_manager - ERROR - option_chain_manager.py:132 - [ERROR] ALL spot price methods failed
+2025-09-08 11:45:20,298 - src.options.option_chain_manager - ERROR - option_chain_manager.py:64 - [ERROR] CRITICAL: Could not fetch spot price with ANY method
+2025-09-08 11:45:20,314 - src.upstox_api_client - ERROR - upstox_api_client.py:276 - API request failed: Cannot connect to host api.upstox.com:443 ssl:default [getaddrinfo failed]
+2025-09-08 11:45:20,314 - src.options.option_chain_manager - ERROR - option_chain_manager.py:132 - [ERROR] ALL spot price methods failed
+2025-09-08 11:45:20,315 - src.options.option_chain_manager - ERROR - option_chain_manager.py:64 - [ERROR] CRITICAL: Could not fetch spot price with ANY method
+2025-09-08 11:45:20,323 - src.upstox_api_client - ERROR - upstox_api_client.py:276 - API request failed: Cannot connect to host api.upstox.com:443 ssl:default [getaddrinfo failed]
+2025-09-08 11:45:20,325 - src.options.option_chain_manager - ERROR - option_chain_manager.py:132 - [ERROR] ALL spot price methods failed
+2025-09-08 11:45:20,325 - src.options.option_chain_manager - ERROR - option_chain_manager.py:64 - [ERROR] CRITICAL: Could not fetch spot price with ANY method
+2025-09-08 11:45:20,340 - src.upstox_api_client - ERROR - upstox_api_client.py:276 - API request failed: Cannot connect to host api.upstox.com:443 ssl:default [getaddrinfo failed]
+2025-09-08 11:45:20,340 - src.options.option_chain_manager - ERROR - option_chain_manager.py:132 - [ERROR] ALL spot price methods failed
+2025-09-08 11:45:20,341 - src.options.option_chain_manager - ERROR - option_chain_manager.py:64 - [ERROR] CRITICAL: Could not fetch spot price with ANY method
+2025-09-08 11:45:20,347 - src.upstox_api_client - ERROR - upstox_api_client.py:276 - API request failed: Cannot connect to host api.upstox.com:443 ssl:default [getaddrinfo failed]
+2025-09-08 11:45:20,348 - src.options.option_chain_manager - ERROR - option_chain_manager.py:132 - [ERROR] ALL spot price methods failed
+2025-09-08 11:45:20,349 - src.options.option_chain_manager - ERROR - option_chain_manager.py:64 - [ERROR] CRITICAL: Could not fetch spot price with ANY method
+2025-09-08 11:45:20,385 - src.upstox_api_client - ERROR - upstox_api_client.py:276 - API request failed: Cannot connect to host api.upstox.com:443 ssl:default [getaddrinfo failed]
+2025-09-08 11:45:20,386 - src.options.option_chain_manager - ERROR - option_chain_manager.py:132 - [ERROR] ALL spot price methods failed
+2025-09-08 11:45:20,386 - src.options.option_chain_manager - ERROR - option_chain_manager.py:64 - [ERROR] CRITICAL: Could not fetch spot price with ANY method
+2025-09-08 11:45:20,394 - src.upstox_api_client - ERROR - upstox_api_client.py:276 - API request failed: Cannot connect to host api.upstox.com:443 ssl:default [getaddrinfo failed]
+2025-09-08 11:45:20,394 - src.options.option_chain_manager - ERROR - option_chain_manager.py:132 - [ERROR] ALL spot price methods failed
+2025-09-08 11:45:20,395 - src.options.option_chain_manager - ERROR - option_chain_manager.py:64 - [ERROR] CRITICAL: Could not fetch spot price with ANY method
+2025-09-08 11:45:20,549 - src.upstox_api_client - ERROR - upstox_api_client.py:276 - API request failed: Cannot connect to host api.upstox.com:443 ssl:default [getaddrinfo failed]
+2025-09-08 11:45:20,550 - src.options.option_chain_manager - ERROR - option_chain_manager.py:132 - [ERROR] ALL spot price methods failed
+2025-09-08 11:45:20,551 - src.options.option_chain_manager - ERROR - option_chain_manager.py:64 - [ERROR] CRITICAL: Could not fetch spot price with ANY method
+2025-09-08 11:45:20,569 - src.upstox_api_client - ERROR - upstox_api_client.py:276 - API request failed: Cannot connect to host api.upstox.com:443 ssl:default [getaddrinfo failed]
+2025-09-08 11:45:20,575 - src.options.option_chain_manager - ERROR - option_chain_manager.py:132 - [ERROR] ALL spot price methods failed
+2025-09-08 11:45:20,577 - src.options.option_chain_manager - ERROR - option_chain_manager.py:64 - [ERROR] CRITICAL: Could not fetch spot price with ANY method
+2025-09-08 11:45:20,599 - src.upstox_api_client - ERROR - upstox_api_client.py:276 - API request failed: Cannot connect to host api.upstox.com:443 ssl:default [getaddrinfo failed]
+2025-09-08 11:45:20,600 - src.options.option_chain_manager - ERROR - option_chain_manager.py:132 - [ERROR] ALL spot price methods failed
+2025-09-08 11:45:20,601 - src.options.option_chain_manager - ERROR - option_chain_manager.py:64 - [ERROR] CRITICAL: Could not fetch spot price with ANY method
+2025-09-08 11:45:20,612 - src.upstox_api_client - ERROR - upstox_api_client.py:276 - API request failed: Cannot connect to host api.upstox.com:443 ssl:default [getaddrinfo failed]
+2025-09-08 11:45:20,613 - src.options.option_chain_manager - ERROR - option_chain_manager.py:132 - [ERROR] ALL spot price methods failed
+2025-09-08 11:45:20,614 - src.options.option_chain_manager - ERROR - option_chain_manager.py:64 - [ERROR] CRITICAL: Could not fetch spot price with ANY method
+2025-09-08 11:45:20,645 - src.upstox_api_client - ERROR - upstox_api_client.py:276 - API request failed: Cannot connect to host api.upstox.com:443 ssl:default [getaddrinfo failed]
+2025-09-08 11:45:20,646 - src.options.option_chain_manager - ERROR - option_chain_manager.py:132 - [ERROR] ALL spot price methods failed
+2025-09-08 11:45:20,647 - src.options.option_chain_manager - ERROR - option_chain_manager.py:64 - [ERROR] CRITICAL: Could not fetch spot price with ANY method
+2025-09-08 11:45:20,655 - src.upstox_api_client - ERROR - upstox_api_client.py:276 - API request failed: Cannot connect to host api.upstox.com:443 ssl:default [getaddrinfo failed]
+2025-09-08 11:45:20,656 - src.options.option_chain_manager - ERROR - option_chain_manager.py:132 - [ERROR] ALL spot price methods failed
+2025-09-08 11:45:20,656 - src.options.option_chain_manager - ERROR - option_chain_manager.py:64 - [ERROR] CRITICAL: Could not fetch spot price with ANY method
+2025-09-08 11:45:20,664 - src.upstox_api_client - ERROR - upstox_api_client.py:276 - API request failed: Cannot connect to host api.upstox.com:443 ssl:default [getaddrinfo failed]
+2025-09-08 11:45:20,665 - src.options.option_chain_manager - ERROR - option_chain_manager.py:132 - [ERROR] ALL spot price methods failed
+2025-09-08 11:45:20,666 - src.options.option_chain_manager - ERROR - option_chain_manager.py:64 - [ERROR] CRITICAL: Could not fetch spot price with ANY method
+2025-09-08 11:45:20,673 - src.upstox_api_client - ERROR - upstox_api_client.py:276 - API request failed: Cannot connect to host api.upstox.com:443 ssl:default [getaddrinfo failed]
+2025-09-08 11:45:20,674 - src.options.option_chain_manager - ERROR - option_chain_manager.py:132 - [ERROR] ALL spot price methods failed
+2025-09-08 11:45:20,675 - src.options.option_chain_manager - ERROR - option_chain_manager.py:64 - [ERROR] CRITICAL: Could not fetch spot price with ANY method
+2025-09-08 11:45:20,676 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:1343 - Could not fetch option premium for 24900PE
+2025-09-08 11:45:20,684 - src.upstox_api_client - ERROR - upstox_api_client.py:276 - API request failed: Cannot connect to host api.upstox.com:443 ssl:default [getaddrinfo failed]
+2025-09-08 11:45:20,685 - src.options.option_chain_manager - ERROR - option_chain_manager.py:132 - [ERROR] ALL spot price methods failed
+2025-09-08 11:45:20,686 - src.options.option_chain_manager - ERROR - option_chain_manager.py:64 - [ERROR] CRITICAL: Could not fetch spot price with ANY method
+2025-09-08 11:45:20,693 - src.upstox_api_client - ERROR - upstox_api_client.py:276 - API request failed: Cannot connect to host api.upstox.com:443 ssl:default [getaddrinfo failed]
+2025-09-08 11:45:20,693 - src.options.option_chain_manager - ERROR - option_chain_manager.py:132 - [ERROR] ALL spot price methods failed
+2025-09-08 11:45:20,694 - src.options.option_chain_manager - ERROR - option_chain_manager.py:64 - [ERROR] CRITICAL: Could not fetch spot price with ANY method
+2025-09-08 11:45:20,707 - src.upstox_api_client - ERROR - upstox_api_client.py:276 - API request failed: Cannot connect to host api.upstox.com:443 ssl:default [getaddrinfo failed]
+2025-09-08 11:45:20,708 - src.options.option_chain_manager - ERROR - option_chain_manager.py:132 - [ERROR] ALL spot price methods failed
+2025-09-08 11:45:20,708 - src.options.option_chain_manager - ERROR - option_chain_manager.py:64 - [ERROR] CRITICAL: Could not fetch spot price with ANY method
+2025-09-08 11:45:20,717 - src.upstox_api_client - ERROR - upstox_api_client.py:276 - API request failed: Cannot connect to host api.upstox.com:443 ssl:default [getaddrinfo failed]
+2025-09-08 11:45:20,717 - src.options.option_chain_manager - ERROR - option_chain_manager.py:132 - [ERROR] ALL spot price methods failed
+2025-09-08 11:45:20,718 - src.options.option_chain_manager - ERROR - option_chain_manager.py:64 - [ERROR] CRITICAL: Could not fetch spot price with ANY method
+2025-09-08 11:45:20,730 - src.upstox_api_client - ERROR - upstox_api_client.py:276 - API request failed: Cannot connect to host api.upstox.com:443 ssl:default [getaddrinfo failed]
+2025-09-08 11:45:20,731 - src.options.option_chain_manager - ERROR - option_chain_manager.py:132 - [ERROR] ALL spot price methods failed
+2025-09-08 11:45:20,731 - src.options.option_chain_manager - ERROR - option_chain_manager.py:64 - [ERROR] CRITICAL: Could not fetch spot price with ANY method
+2025-09-08 11:45:20,739 - src.upstox_api_client - ERROR - upstox_api_client.py:276 - API request failed: Cannot connect to host api.upstox.com:443 ssl:default [getaddrinfo failed]
+2025-09-08 11:45:20,739 - src.options.option_chain_manager - ERROR - option_chain_manager.py:132 - [ERROR] ALL spot price methods failed
+2025-09-08 11:45:20,740 - src.options.option_chain_manager - ERROR - option_chain_manager.py:64 - [ERROR] CRITICAL: Could not fetch spot price with ANY method
+2025-09-08 11:45:20,772 - src.upstox_api_client - ERROR - upstox_api_client.py:276 - API request failed: Cannot connect to host api.upstox.com:443 ssl:default [getaddrinfo failed]
+2025-09-08 11:45:20,772 - src.options.option_chain_manager - ERROR - option_chain_manager.py:132 - [ERROR] ALL spot price methods failed
+2025-09-08 11:45:20,773 - src.options.option_chain_manager - ERROR - option_chain_manager.py:64 - [ERROR] CRITICAL: Could not fetch spot price with ANY method
+2025-09-08 11:45:20,779 - src.upstox_api_client - ERROR - upstox_api_client.py:276 - API request failed: Cannot connect to host api.upstox.com:443 ssl:default [getaddrinfo failed]
+2025-09-08 11:45:20,780 - src.options.option_chain_manager - ERROR - option_chain_manager.py:132 - [ERROR] ALL spot price methods failed
+2025-09-08 11:45:20,781 - src.options.option_chain_manager - ERROR - option_chain_manager.py:64 - [ERROR] CRITICAL: Could not fetch spot price with ANY method
+2025-09-08 11:45:20,794 - src.upstox_api_client - ERROR - upstox_api_client.py:276 - API request failed: Cannot connect to host api.upstox.com:443 ssl:default [getaddrinfo failed]
+2025-09-08 11:45:20,794 - src.options.option_chain_manager - ERROR - option_chain_manager.py:132 - [ERROR] ALL spot price methods failed
+2025-09-08 11:45:20,795 - src.options.option_chain_manager - ERROR - option_chain_manager.py:64 - [ERROR] CRITICAL: Could not fetch spot price with ANY method
+2025-09-08 11:45:20,801 - src.upstox_api_client - ERROR - upstox_api_client.py:276 - API request failed: Cannot connect to host api.upstox.com:443 ssl:default [getaddrinfo failed]
+2025-09-08 11:45:20,802 - src.options.option_chain_manager - ERROR - option_chain_manager.py:132 - [ERROR] ALL spot price methods failed
+2025-09-08 11:45:20,803 - src.options.option_chain_manager - ERROR - option_chain_manager.py:64 - [ERROR] CRITICAL: Could not fetch spot price with ANY method
+2025-09-08 11:45:20,815 - src.upstox_api_client - ERROR - upstox_api_client.py:276 - API request failed: Cannot connect to host api.upstox.com:443 ssl:default [getaddrinfo failed]
+2025-09-08 11:45:20,816 - src.options.option_chain_manager - ERROR - option_chain_manager.py:132 - [ERROR] ALL spot price methods failed
+2025-09-08 11:45:20,817 - src.options.option_chain_manager - ERROR - option_chain_manager.py:64 - [ERROR] CRITICAL: Could not fetch spot price with ANY method
+2025-09-08 11:45:20,825 - src.upstox_api_client - ERROR - upstox_api_client.py:276 - API request failed: Cannot connect to host api.upstox.com:443 ssl:default [getaddrinfo failed]
+2025-09-08 11:45:20,826 - src.options.option_chain_manager - ERROR - option_chain_manager.py:132 - [ERROR] ALL spot price methods failed
+2025-09-08 11:45:20,827 - src.options.option_chain_manager - ERROR - option_chain_manager.py:64 - [ERROR] CRITICAL: Could not fetch spot price with ANY method
+2025-09-08 11:45:20,857 - src.upstox_api_client - ERROR - upstox_api_client.py:276 - API request failed: Cannot connect to host api.upstox.com:443 ssl:default [getaddrinfo failed]
+2025-09-08 11:45:20,858 - src.options.option_chain_manager - ERROR - option_chain_manager.py:132 - [ERROR] ALL spot price methods failed
+2025-09-08 11:45:20,858 - src.options.option_chain_manager - ERROR - option_chain_manager.py:64 - [ERROR] CRITICAL: Could not fetch spot price with ANY method
+2025-09-08 11:45:20,866 - src.upstox_api_client - ERROR - upstox_api_client.py:276 - API request failed: Cannot connect to host api.upstox.com:443 ssl:default [getaddrinfo failed]
+2025-09-08 11:45:20,866 - src.options.option_chain_manager - ERROR - option_chain_manager.py:132 - [ERROR] ALL spot price methods failed
+2025-09-08 11:45:20,867 - src.options.option_chain_manager - ERROR - option_chain_manager.py:64 - [ERROR] CRITICAL: Could not fetch spot price with ANY method
+2025-09-08 11:45:20,881 - src.upstox_api_client - ERROR - upstox_api_client.py:276 - API request failed: Cannot connect to host api.upstox.com:443 ssl:default [getaddrinfo failed]
+2025-09-08 11:45:20,881 - src.options.option_chain_manager - ERROR - option_chain_manager.py:132 - [ERROR] ALL spot price methods failed
+2025-09-08 11:45:20,882 - src.options.option_chain_manager - ERROR - option_chain_manager.py:64 - [ERROR] CRITICAL: Could not fetch spot price with ANY method
+2025-09-08 11:45:20,891 - src.upstox_api_client - ERROR - upstox_api_client.py:276 - API request failed: Cannot connect to host api.upstox.com:443 ssl:default [getaddrinfo failed]
+2025-09-08 11:45:20,891 - src.options.option_chain_manager - ERROR - option_chain_manager.py:132 - [ERROR] ALL spot price methods failed
+2025-09-08 11:45:20,892 - src.options.option_chain_manager - ERROR - option_chain_manager.py:64 - [ERROR] CRITICAL: Could not fetch spot price with ANY method
+2025-09-08 11:45:20,894 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:1343 - Could not fetch option premium for 24900CE
+2025-09-08 11:45:20,902 - src.upstox_api_client - ERROR - upstox_api_client.py:276 - API request failed: Cannot connect to host api.upstox.com:443 ssl:default [getaddrinfo failed]
+2025-09-08 11:45:20,903 - src.options.option_chain_manager - ERROR - option_chain_manager.py:132 - [ERROR] ALL spot price methods failed
+2025-09-08 11:45:20,903 - src.options.option_chain_manager - ERROR - option_chain_manager.py:64 - [ERROR] CRITICAL: Could not fetch spot price with ANY method
+2025-09-08 11:45:20,910 - src.upstox_api_client - ERROR - upstox_api_client.py:276 - API request failed: Cannot connect to host api.upstox.com:443 ssl:default [getaddrinfo failed]
+2025-09-08 11:45:20,911 - src.options.option_chain_manager - ERROR - option_chain_manager.py:132 - [ERROR] ALL spot price methods failed
+2025-09-08 11:45:20,912 - src.options.option_chain_manager - ERROR - option_chain_manager.py:64 - [ERROR] CRITICAL: Could not fetch spot price with ANY method
+2025-09-08 11:45:20,926 - src.upstox_api_client - ERROR - upstox_api_client.py:276 - API request failed: Cannot connect to host api.upstox.com:443 ssl:default [getaddrinfo failed]
+2025-09-08 11:45:20,927 - src.options.option_chain_manager - ERROR - option_chain_manager.py:132 - [ERROR] ALL spot price methods failed
+2025-09-08 11:45:20,928 - src.options.option_chain_manager - ERROR - option_chain_manager.py:64 - [ERROR] CRITICAL: Could not fetch spot price with ANY method
+2025-09-08 11:45:20,936 - src.upstox_api_client - ERROR - upstox_api_client.py:276 - API request failed: Cannot connect to host api.upstox.com:443 ssl:default [getaddrinfo failed]
+2025-09-08 11:45:20,936 - src.options.option_chain_manager - ERROR - option_chain_manager.py:132 - [ERROR] ALL spot price methods failed
+2025-09-08 11:45:20,937 - src.options.option_chain_manager - ERROR - option_chain_manager.py:64 - [ERROR] CRITICAL: Could not fetch spot price with ANY method
+2025-09-08 11:45:24,849 - websocket - ERROR - _logging.py:77 - [Errno 11001] getaddrinfo failed - goodbye
+2025-09-08 11:45:24,851 - websocket - ERROR - _logging.py:77 - [Errno 11001] getaddrinfo failed - goodbye
+2025-09-08 11:45:24,867 - websocket - ERROR - _logging.py:77 - [Errno 11001] getaddrinfo failed - goodbye
+2025-09-08 11:45:24,873 - websocket - ERROR - _logging.py:77 - [Errno 11001] getaddrinfo failed - goodbye
+2025-09-08 11:45:27,975 - websocket - ERROR - _logging.py:77 - [Errno 11001] getaddrinfo failed - goodbye
+2025-09-08 11:45:28,138 - websocket - ERROR - _logging.py:77 - [Errno 11001] getaddrinfo failed - goodbye
+2025-09-08 11:45:28,282 - websocket - ERROR - _logging.py:77 - [Errno 11001] getaddrinfo failed - goodbye
+2025-09-08 11:45:28,332 - websocket - ERROR - _logging.py:77 - [Errno 11001] getaddrinfo failed - goodbye
+2025-09-08 11:45:29,732 - src.websocket.websocket_manager - ERROR - websocket_manager.py:647 - Market websocket error: Handshake status 403 Forbidden -+-+- {'date': 'Mon, 08 Sep 2025 06:15:28 GMT', 'transfer-encoding': 'chunked', 'connection': 'keep-alive'} -+-+- None
+2025-09-08 11:45:33,541 - src.websocket.websocket_manager - ERROR - websocket_manager.py:647 - Market websocket error: Handshake status 403 Forbidden -+-+- {'date': 'Mon, 08 Sep 2025 06:15:33 GMT', 'transfer-encoding': 'chunked', 'connection': 'keep-alive'} -+-+- None
+2025-09-08 11:45:34,688 - src.websocket.websocket_manager - ERROR - websocket_manager.py:647 - Market websocket error: Handshake status 403 Forbidden -+-+- {'date': 'Mon, 08 Sep 2025 06:15:34 GMT', 'transfer-encoding': 'chunked', 'connection': 'keep-alive'} -+-+- None
+2025-09-08 11:45:39,766 - websocket - ERROR - _logging.py:77 - Handshake status 403 Forbidden -+-+- {'date': 'Mon, 08 Sep 2025 06:15:28 GMT', 'transfer-encoding': 'chunked', 'connection': 'keep-alive'} -+-+- None - goodbye
+2025-09-08 11:45:43,755 - websocket - ERROR - _logging.py:77 - Handshake status 403 Forbidden -+-+- {'date': 'Mon, 08 Sep 2025 06:15:33 GMT', 'transfer-encoding': 'chunked', 'connection': 'keep-alive'} -+-+- None - goodbye
+2025-09-08 11:45:44,702 - websocket - ERROR - _logging.py:77 - Handshake status 403 Forbidden -+-+- {'date': 'Mon, 08 Sep 2025 06:15:34 GMT', 'transfer-encoding': 'chunked', 'connection': 'keep-alive'} -+-+- None - goodbye
+2025-09-08 11:57:59,443 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:1343 - Could not fetch option premium for 24800CE
+2025-09-08 12:00:27,317 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:1384 - Could not fetch option premium for 24800PE
+2025-09-08 12:01:27,712 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:1343 - Could not fetch option premium for 24800CE
+2025-09-08 12:01:59,071 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:1384 - Could not fetch option premium for 24800CE
+2025-09-08 12:04:09,142 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:1384 - Could not fetch option premium for 24450PE
+2025-09-08 12:04:17,118 - src.upstox_api_client - ERROR - upstox_api_client.py:262 - HTTP error 400: 400, message='Bad Request', url='https://api.upstox.com/v2/portfolio/long-term-positions'
+2025-09-08 12:07:28,816 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:1384 - Could not fetch option premium for 24850CE
+2025-09-08 12:08:21,354 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:1384 - Could not fetch option premium for 24850CE
+2025-09-08 12:09:13,682 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:1384 - Could not fetch option premium for 24850CE
+2025-09-08 12:15:18,257 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:1384 - Could not fetch option premium for 24850CE
+2025-09-08 12:16:05,989 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:1384 - Could not fetch option premium for 24850CE
+2025-09-08 12:18:04,104 - src.websocket.websocket_manager - ERROR - websocket_manager.py:669 - Portfolio websocket error: Connection to remote host was lost.
+2025-09-08 12:18:04,105 - src.websocket.websocket_manager - ERROR - websocket_manager.py:669 - Portfolio websocket error: Connection to remote host was lost.
+2025-09-08 12:18:04,106 - websocket - ERROR - _logging.py:77 - Connection to remote host was lost. - goodbye
+2025-09-08 12:18:04,107 - websocket - ERROR - _logging.py:77 - Connection to remote host was lost. - goodbye
+2025-09-08 12:18:04,110 - src.websocket.websocket_manager - ERROR - websocket_manager.py:669 - Portfolio websocket error: [Errno 11001] getaddrinfo failed
+2025-09-08 12:18:04,111 - src.websocket.websocket_manager - ERROR - websocket_manager.py:669 - Portfolio websocket error: [Errno 11001] getaddrinfo failed
+2025-09-08 12:18:05,063 - src.websocket.websocket_manager - ERROR - websocket_manager.py:647 - Market websocket error: Connection to remote host was lost.
+2025-09-08 12:18:05,064 - websocket - ERROR - _logging.py:77 - Connection to remote host was lost. - goodbye
+2025-09-08 12:18:05,066 - src.websocket.websocket_manager - ERROR - websocket_manager.py:647 - Market websocket error: [Errno 11001] getaddrinfo failed
+2025-09-08 12:18:05,078 - src.websocket.websocket_manager - ERROR - websocket_manager.py:647 - Market websocket error: Connection to remote host was lost.
+2025-09-08 12:18:05,082 - websocket - ERROR - _logging.py:77 - Connection to remote host was lost. - goodbye
+2025-09-08 12:18:05,084 - src.websocket.websocket_manager - ERROR - websocket_manager.py:647 - Market websocket error: [Errno 11001] getaddrinfo failed
+2025-09-08 12:18:14,113 - websocket - ERROR - _logging.py:77 - [Errno 11001] getaddrinfo failed - goodbye
+2025-09-08 12:18:14,113 - src.websocket.websocket_manager - ERROR - websocket_manager.py:669 - Portfolio websocket error: [Errno 11001] getaddrinfo failed
+2025-09-08 12:18:14,114 - websocket - ERROR - _logging.py:77 - [Errno 11001] getaddrinfo failed - goodbye
+2025-09-08 12:18:14,114 - src.websocket.websocket_manager - ERROR - websocket_manager.py:669 - Portfolio websocket error: [Errno 11001] getaddrinfo failed
+2025-09-08 12:18:15,069 - websocket - ERROR - _logging.py:77 - [Errno 11001] getaddrinfo failed - goodbye
+2025-09-08 12:18:15,069 - src.websocket.websocket_manager - ERROR - websocket_manager.py:647 - Market websocket error: [Errno 11001] getaddrinfo failed
+2025-09-08 12:18:15,087 - websocket - ERROR - _logging.py:77 - [Errno 11001] getaddrinfo failed - goodbye
+2025-09-08 12:18:15,087 - src.websocket.websocket_manager - ERROR - websocket_manager.py:647 - Market websocket error: [Errno 11001] getaddrinfo failed
+2025-09-08 12:18:24,116 - websocket - ERROR - _logging.py:77 - [Errno 11001] getaddrinfo failed - goodbye
+2025-09-08 12:18:24,116 - src.websocket.websocket_manager - ERROR - websocket_manager.py:669 - Portfolio websocket error: [Errno 11001] getaddrinfo failed
+2025-09-08 12:18:24,117 - websocket - ERROR - _logging.py:77 - [Errno 11001] getaddrinfo failed - goodbye
+2025-09-08 12:18:24,118 - src.websocket.websocket_manager - ERROR - websocket_manager.py:669 - Portfolio websocket error: [Errno 11001] getaddrinfo failed
+2025-09-08 12:18:24,118 - websocket - ERROR - _logging.py:77 - [Errno 11001] getaddrinfo failed - goodbye
+2025-09-08 12:18:24,119 - websocket - ERROR - _logging.py:77 - [Errno 11001] getaddrinfo failed - goodbye
+2025-09-08 12:18:25,071 - websocket - ERROR - _logging.py:77 - [Errno 11001] getaddrinfo failed - goodbye
+2025-09-08 12:18:25,071 - src.websocket.websocket_manager - ERROR - websocket_manager.py:647 - Market websocket error: [Errno 11001] getaddrinfo failed
+2025-09-08 12:18:25,072 - websocket - ERROR - _logging.py:77 - [Errno 11001] getaddrinfo failed - goodbye
+2025-09-08 12:18:25,088 - websocket - ERROR - _logging.py:77 - [Errno 11001] getaddrinfo failed - goodbye
+2025-09-08 12:18:25,089 - src.websocket.websocket_manager - ERROR - websocket_manager.py:647 - Market websocket error: [Errno 11001] getaddrinfo failed
+2025-09-08 12:18:25,090 - websocket - ERROR - _logging.py:77 - [Errno 11001] getaddrinfo failed - goodbye
+2025-09-08 12:22:10,304 - src.websocket.websocket_manager - ERROR - websocket_manager.py:647 - Market websocket error: [Errno 11001] getaddrinfo failed
+2025-09-08 12:22:10,306 - websocket - ERROR - _logging.py:77 - [Errno 11001] getaddrinfo failed - goodbye
+2025-09-08 12:22:10,310 - src.websocket.websocket_manager - ERROR - websocket_manager.py:647 - Market websocket error: [Errno 11001] getaddrinfo failed
+2025-09-08 12:22:10,314 - src.websocket.websocket_manager - ERROR - websocket_manager.py:669 - Portfolio websocket error: [Errno 11001] getaddrinfo failed
+2025-09-08 12:22:10,315 - websocket - ERROR - _logging.py:77 - [Errno 11001] getaddrinfo failed - goodbye
+2025-09-08 12:22:10,318 - src.websocket.websocket_manager - ERROR - websocket_manager.py:669 - Portfolio websocket error: [Errno 11001] getaddrinfo failed
+2025-09-08 12:22:20,312 - websocket - ERROR - _logging.py:77 - [Errno 11001] getaddrinfo failed - goodbye
+2025-09-08 12:22:20,312 - src.websocket.websocket_manager - ERROR - websocket_manager.py:647 - Market websocket error: [Errno 11001] getaddrinfo failed
+2025-09-08 12:22:20,320 - websocket - ERROR - _logging.py:77 - [Errno 11001] getaddrinfo failed - goodbye
+2025-09-08 12:22:20,320 - src.websocket.websocket_manager - ERROR - websocket_manager.py:669 - Portfolio websocket error: [Errno 11001] getaddrinfo failed
+2025-09-08 12:22:30,315 - websocket - ERROR - _logging.py:77 - [Errno 11001] getaddrinfo failed - goodbye
+2025-09-08 12:22:30,315 - src.websocket.websocket_manager - ERROR - websocket_manager.py:647 - Market websocket error: [Errno 11001] getaddrinfo failed
+2025-09-08 12:22:30,316 - websocket - ERROR - _logging.py:77 - [Errno 11001] getaddrinfo failed - goodbye
+2025-09-08 12:22:30,322 - websocket - ERROR - _logging.py:77 - [Errno 11001] getaddrinfo failed - goodbye
+2025-09-08 12:22:30,322 - src.websocket.websocket_manager - ERROR - websocket_manager.py:669 - Portfolio websocket error: [Errno 11001] getaddrinfo failed
+2025-09-08 12:22:30,324 - websocket - ERROR - _logging.py:77 - [Errno 11001] getaddrinfo failed - goodbye
+2025-09-08 12:27:27,407 - src.websocket.websocket_manager - ERROR - websocket_manager.py:647 - Market websocket error: [Errno 11001] getaddrinfo failed
+2025-09-08 12:27:27,409 - websocket - ERROR - _logging.py:77 - [Errno 11001] getaddrinfo failed - goodbye
+2025-09-08 12:27:27,413 - src.websocket.websocket_manager - ERROR - websocket_manager.py:647 - Market websocket error: [Errno 11001] getaddrinfo failed
+2025-09-08 12:27:27,416 - src.websocket.websocket_manager - ERROR - websocket_manager.py:669 - Portfolio websocket error: [Errno 11001] getaddrinfo failed
+2025-09-08 12:27:27,418 - websocket - ERROR - _logging.py:77 - [Errno 11001] getaddrinfo failed - goodbye
+2025-09-08 12:27:27,421 - src.websocket.websocket_manager - ERROR - websocket_manager.py:669 - Portfolio websocket error: [Errno 11001] getaddrinfo failed
+2025-09-08 12:27:37,415 - websocket - ERROR - _logging.py:77 - [Errno 11001] getaddrinfo failed - goodbye
+2025-09-08 12:27:37,415 - src.websocket.websocket_manager - ERROR - websocket_manager.py:647 - Market websocket error: [Errno 11001] getaddrinfo failed
+2025-09-08 12:27:37,423 - websocket - ERROR - _logging.py:77 - [Errno 11001] getaddrinfo failed - goodbye
+2025-09-08 12:27:37,424 - src.websocket.websocket_manager - ERROR - websocket_manager.py:669 - Portfolio websocket error: [Errno 11001] getaddrinfo failed
+2025-09-08 12:27:47,418 - websocket - ERROR - _logging.py:77 - [Errno 11001] getaddrinfo failed - goodbye
+2025-09-08 12:27:47,418 - src.websocket.websocket_manager - ERROR - websocket_manager.py:647 - Market websocket error: [Errno 11001] getaddrinfo failed
+2025-09-08 12:27:47,419 - websocket - ERROR - _logging.py:77 - [Errno 11001] getaddrinfo failed - goodbye
+2025-09-08 12:27:47,426 - websocket - ERROR - _logging.py:77 - [Errno 11001] getaddrinfo failed - goodbye
+2025-09-08 12:27:47,426 - src.websocket.websocket_manager - ERROR - websocket_manager.py:669 - Portfolio websocket error: [Errno 11001] getaddrinfo failed
+2025-09-08 12:27:47,428 - websocket - ERROR - _logging.py:77 - [Errno 11001] getaddrinfo failed - goodbye
+2025-09-08 12:32:44,488 - src.websocket.websocket_manager - ERROR - websocket_manager.py:647 - Market websocket error: [Errno 11001] getaddrinfo failed
+2025-09-08 12:32:44,489 - websocket - ERROR - _logging.py:77 - [Errno 11001] getaddrinfo failed - goodbye
+2025-09-08 12:32:44,492 - src.websocket.websocket_manager - ERROR - websocket_manager.py:647 - Market websocket error: [Errno 11001] getaddrinfo failed
+2025-09-08 12:32:44,495 - src.websocket.websocket_manager - ERROR - websocket_manager.py:669 - Portfolio websocket error: [Errno 11001] getaddrinfo failed
+2025-09-08 12:32:44,498 - websocket - ERROR - _logging.py:77 - [Errno 11001] getaddrinfo failed - goodbye
+2025-09-08 12:32:44,503 - src.websocket.websocket_manager - ERROR - websocket_manager.py:669 - Portfolio websocket error: [Errno 11001] getaddrinfo failed
+2025-09-08 12:32:54,494 - websocket - ERROR - _logging.py:77 - [Errno 11001] getaddrinfo failed - goodbye
+2025-09-08 12:32:54,495 - src.websocket.websocket_manager - ERROR - websocket_manager.py:647 - Market websocket error: [Errno 11001] getaddrinfo failed
+2025-09-08 12:32:54,506 - websocket - ERROR - _logging.py:77 - [Errno 11001] getaddrinfo failed - goodbye
+2025-09-08 12:32:54,506 - src.websocket.websocket_manager - ERROR - websocket_manager.py:669 - Portfolio websocket error: [Errno 11001] getaddrinfo failed
+2025-09-08 12:33:04,498 - websocket - ERROR - _logging.py:77 - [Errno 11001] getaddrinfo failed - goodbye
+2025-09-08 12:33:04,498 - src.websocket.websocket_manager - ERROR - websocket_manager.py:647 - Market websocket error: [Errno 11001] getaddrinfo failed
+2025-09-08 12:33:04,499 - websocket - ERROR - _logging.py:77 - [Errno 11001] getaddrinfo failed - goodbye
+2025-09-08 12:33:04,508 - websocket - ERROR - _logging.py:77 - [Errno 11001] getaddrinfo failed - goodbye
+2025-09-08 12:33:04,509 - src.websocket.websocket_manager - ERROR - websocket_manager.py:669 - Portfolio websocket error: [Errno 11001] getaddrinfo failed
+2025-09-08 12:33:04,510 - websocket - ERROR - _logging.py:77 - [Errno 11001] getaddrinfo failed - goodbye
+2025-09-08 12:38:01,597 - src.websocket.websocket_manager - ERROR - websocket_manager.py:647 - Market websocket error: [Errno 11001] getaddrinfo failed
+2025-09-08 12:38:01,599 - websocket - ERROR - _logging.py:77 - [Errno 11001] getaddrinfo failed - goodbye
+2025-09-08 12:38:01,602 - src.websocket.websocket_manager - ERROR - websocket_manager.py:647 - Market websocket error: [Errno 11001] getaddrinfo failed
+2025-09-08 12:38:01,605 - src.websocket.websocket_manager - ERROR - websocket_manager.py:669 - Portfolio websocket error: [Errno 11001] getaddrinfo failed
+2025-09-08 12:38:01,606 - websocket - ERROR - _logging.py:77 - [Errno 11001] getaddrinfo failed - goodbye
+2025-09-08 12:38:01,610 - src.websocket.websocket_manager - ERROR - websocket_manager.py:669 - Portfolio websocket error: [Errno 11001] getaddrinfo failed
+2025-09-08 12:38:11,604 - websocket - ERROR - _logging.py:77 - [Errno 11001] getaddrinfo failed - goodbye
+2025-09-08 12:38:11,604 - src.websocket.websocket_manager - ERROR - websocket_manager.py:647 - Market websocket error: [Errno 11001] getaddrinfo failed
+2025-09-08 12:38:11,614 - websocket - ERROR - _logging.py:77 - [Errno 11001] getaddrinfo failed - goodbye
+2025-09-08 12:38:11,614 - src.websocket.websocket_manager - ERROR - websocket_manager.py:669 - Portfolio websocket error: [Errno 11001] getaddrinfo failed
+2025-09-08 12:38:21,606 - websocket - ERROR - _logging.py:77 - [Errno 11001] getaddrinfo failed - goodbye
+2025-09-08 12:38:21,607 - src.websocket.websocket_manager - ERROR - websocket_manager.py:647 - Market websocket error: [Errno 11001] getaddrinfo failed
+2025-09-08 12:38:21,607 - websocket - ERROR - _logging.py:77 - [Errno 11001] getaddrinfo failed - goodbye
+2025-09-08 12:38:21,616 - websocket - ERROR - _logging.py:77 - [Errno 11001] getaddrinfo failed - goodbye
+2025-09-08 12:38:21,616 - src.websocket.websocket_manager - ERROR - websocket_manager.py:669 - Portfolio websocket error: [Errno 11001] getaddrinfo failed
+2025-09-08 12:38:21,617 - websocket - ERROR - _logging.py:77 - [Errno 11001] getaddrinfo failed - goodbye
+2025-09-08 13:28:30,970 - src.upstox_api_client - ERROR - upstox_api_client.py:262 - HTTP error 400: 400, message='Bad Request', url='https://api.upstox.com/v2/portfolio/long-term-positions'
+2025-09-08 13:33:36,999 - src.utils.optimized_option_manager - ERROR - optimized_option_manager.py:95 - option_chain_manager not found in upstox_client
+2025-09-08 13:33:36,999 - src.utils.optimized_option_manager - ERROR - optimized_option_manager.py:28 - Could not get option chain
+2025-09-08 13:35:25,509 - src.utils.optimized_option_manager - ERROR - optimized_option_manager.py:95 - option_chain_manager not found in upstox_client
+2025-09-08 13:35:25,510 - src.utils.optimized_option_manager - ERROR - optimized_option_manager.py:28 - Could not get option chain
+2025-09-08 13:37:08,145 - src.utils.optimized_option_manager - ERROR - optimized_option_manager.py:95 - option_chain_manager not found in upstox_client
+2025-09-08 13:37:08,146 - src.utils.optimized_option_manager - ERROR - optimized_option_manager.py:28 - Could not get option chain
+2025-09-08 13:39:03,129 - src.utils.optimized_option_manager - ERROR - optimized_option_manager.py:95 - option_chain_manager not found in upstox_client
+2025-09-08 13:39:03,130 - src.utils.optimized_option_manager - ERROR - optimized_option_manager.py:28 - Could not get option chain
+2025-09-08 13:41:00,090 - src.upstox_api_client - ERROR - upstox_api_client.py:262 - HTTP error 400: 400, message='Bad Request', url='https://api.upstox.com/v2/portfolio/long-term-positions'
+2025-09-08 13:46:17,903 - src.utils.optimized_option_manager - ERROR - optimized_option_manager.py:95 - option_chain_manager not found in upstox_client
+2025-09-08 13:46:17,903 - src.utils.optimized_option_manager - ERROR - optimized_option_manager.py:28 - Could not get option chain
+2025-09-08 14:18:06,177 - src.upstox_api_client - ERROR - upstox_api_client.py:262 - HTTP error 400: 400, message='Bad Request', url='https://api.upstox.com/v2/portfolio/long-term-positions'
+2025-09-08 14:40:58,943 - src.websocket.websocket_manager - ERROR - websocket_manager.py:647 - Market websocket error: Connection to remote host was lost.
+2025-09-08 14:40:58,946 - websocket - ERROR - _logging.py:77 - Connection to remote host was lost. - goodbye
+2025-09-08 14:40:58,953 - src.websocket.websocket_manager - ERROR - websocket_manager.py:647 - Market websocket error: Connection to remote host was lost.
+2025-09-08 14:40:58,956 - websocket - ERROR - _logging.py:77 - Connection to remote host was lost. - goodbye
+2025-09-08 14:43:47,991 - src.websocket.websocket_manager - ERROR - websocket_manager.py:647 - Market websocket error: Connection to remote host was lost.
+2025-09-08 14:43:47,993 - websocket - ERROR - _logging.py:77 - Connection to remote host was lost. - goodbye
+2025-09-08 14:43:48,004 - src.websocket.websocket_manager - ERROR - websocket_manager.py:647 - Market websocket error: Connection to remote host was lost.
+2025-09-08 14:43:48,012 - websocket - ERROR - _logging.py:77 - Connection to remote host was lost. - goodbye
+2025-09-08 14:46:44,193 - src.websocket.websocket_manager - ERROR - websocket_manager.py:647 - Market websocket error: Connection to remote host was lost.
+2025-09-08 14:46:44,199 - websocket - ERROR - _logging.py:77 - Connection to remote host was lost. - goodbye
+2025-09-08 14:46:44,204 - src.websocket.websocket_manager - ERROR - websocket_manager.py:647 - Market websocket error: Connection to remote host was lost.
+2025-09-08 14:46:44,209 - websocket - ERROR - _logging.py:77 - Connection to remote host was lost. - goodbye
+2025-09-08 15:12:30,965 - src.upstox_api_client - ERROR - upstox_api_client.py:262 - HTTP error 400: 400, message='Bad Request', url='https://api.upstox.com/v2/portfolio/long-term-positions'
+2025-09-10 00:56:41,274 - src.upstox_api_client - ERROR - upstox_api_client.py:262 - HTTP error 401: 401, message='Unauthorized', url='https://api.upstox.com/v2/user/profile'
+2025-09-10 00:59:09,796 - src.upstox_api_client - ERROR - upstox_api_client.py:262 - HTTP error 400: 400, message='Bad Request', url='https://api.upstox.com/v2/portfolio/long-term-positions'
+2025-09-10 01:04:22,342 - strategy.option_pine_v5 - ERROR - option_integrated_pine_script.py:1518 - Could not fetch option premium for 24600CE
+2025-09-10 01:04:27,270 - src.upstox_api_client - ERROR - upstox_api_client.py:262 - HTTP error 400: 400, message='Bad Request', url='https://api.upstox.com/v2/portfolio/long-term-positions'
+2025-09-10 10:19:46,576 - src.upstox_api_client - ERROR - upstox_api_client.py:262 - HTTP error 401: 401, message='Unauthorized', url='https://api.upstox.com/v2/user/profile'
+2025-09-10 10:21:20,867 - src.upstox_api_client - ERROR - upstox_api_client.py:262 - HTTP error 400: 400, message='Bad Request', url='https://api.upstox.com/v2/portfolio/long-term-positions'
+2025-09-10 10:37:28,160 - src.upstox_api_client - ERROR - upstox_api_client.py:262 - HTTP error 400: 400, message='Bad Request', url='https://api.upstox.com/v2/portfolio/long-term-positions'

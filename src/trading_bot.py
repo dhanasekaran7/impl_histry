@@ -1593,12 +1593,28 @@ Strategy: {order.strategy_name}"""
     async def place_order(self, order: Order) -> bool:
         """Enhanced order placement with proper notifications"""
         try:
+            
+            self.logger.info(f"ATTEMPTING TO PLACE ORDER: {order.symbol}")
+            self.logger.info(f"  Type: {order.transaction_type.value}")
+            self.logger.info(f"  Quantity: {order.quantity}")
+            self.logger.info(f"  Price: Rs.{order.price:.2f}")
+            
             if self.paper_trading:
                 # Enhanced paper trading simulation
                 order.status = OrderStatus.FILLED
                 order.filled_price = order.price
                 order.filled_quantity = order.quantity
                 order.order_id = f"PAPER_{datetime.now().strftime('%Y%m%d_%H%M%S')}"
+
+                lot_size = getattr(order, 'lot_size', 75)
+                total_investment = order.price * order.quantity * lot_size
+
+                self.logger.info("=== PAPER TRADE EXECUTED ===")
+                self.logger.info(f"Order ID: {order.order_id}")
+                self.logger.info(f"Symbol: {order.symbol}")
+                self.logger.info(f"Investment: Rs.{total_investment:,.2f}")
+                self.logger.info("============================")
+
                 
                 # Extract option details
                 #strike_price = getattr(order, 'strike_price', 0)
@@ -2249,16 +2265,22 @@ Strategy: {order.strategy_name}"""
     
     
     async def run(self):
-        """Enhanced main bot execution loop with all fixes"""
+        """Enhanced main bot execution loop with optimized API monitoring"""
         self.logger.info("Starting enhanced trading bot...")
-    
+
         # Authenticate
         if not await self.authenticate():
             return
-    
+
         # Setup websockets
         websocket_success = await self.setup_websockets()
-    
+
+        # RECOVER LOST POSITIONS
+        self.logger.info("Checking for lost positions...")
+        for strategy in self.strategies:
+            if hasattr(strategy, 'recover_lost_positions'):
+                await strategy.recover_lost_positions()
+                    
         # Send startup notification
         await self.notifier.send_message(f"""🚀 *AstraRise Trading Bot Started - NIFTY Focus*
 
@@ -2284,11 +2306,12 @@ Strategy: {order.strategy_name}"""
 🛡️ Liquidity and premium checks
 
 Bot ready for NIFTY option trading! 🚀""")
-    
+
         self.is_running = True
         last_hourly_report = datetime.now()
         last_square_off_check = datetime.now()
-    
+        last_optimized_monitoring = datetime.now()  # New monitoring tracker
+
         try:
             while self.is_running:
                 current_time = datetime.now()
@@ -2305,11 +2328,37 @@ Bot ready for NIFTY option trading! 🚀""")
                         await self.send_hourly_report()
                         last_hourly_report = current_time
                 
-                    for strategy in self.strategies:
-                        if hasattr(strategy, 'monitor_option_prices'):
-                            await strategy.monitor_option_prices()
+                    # OPTIMIZED POSITION MONITORING (every 90 seconds)
+                    if (current_time - last_optimized_monitoring).total_seconds() >= 90:
+                        self.logger.info("=== OPTIMIZED POSITION MONITORING ===")
+                        monitoring_success = False
                         
-                    # Regular operations
+                        for strategy in self.strategies:
+                            if hasattr(strategy, 'monitor_positions_simple'):
+                                try:
+                                    position_data = await strategy.monitor_positions_simple()
+                                    if position_data:
+                                        self.logger.info(f"SUCCESS: Monitored {len(position_data)} positions")
+                                        monitoring_success = True
+                                    else:
+                                        self.logger.warning("No position data received")
+                                except Exception as e:
+                                    self.logger.error(f"Error in optimized monitoring: {e}")
+                        
+                        if not monitoring_success:
+                            self.logger.warning("Optimized monitoring failed - using fallback")
+                            # Fallback to old monitoring if needed
+                            for strategy in self.strategies:
+                                if hasattr(strategy, 'monitor_option_prices'):
+                                    try:
+                                        await strategy.monitor_option_prices()
+                                    except Exception as e:
+                                        self.logger.error(f"Fallback monitoring error: {e}")
+                        
+                        last_optimized_monitoring = current_time
+                        self.logger.info("=== MONITORING CYCLE COMPLETE ===")
+                    
+                    # Regular operations (reduced frequency)
                     await self.check_websocket_health()
                     await self.log_market_status_with_analysis()
                     await self.update_positions()
@@ -2319,7 +2368,8 @@ Bot ready for NIFTY option trading! 🚀""")
                     # Check trailing stops for all positions
                     await self.update_trailing_stops()
                 
-                    await asyncio.sleep(30)
+                    # Increased sleep time to reduce overall API pressure
+                    await asyncio.sleep(45)  # Increased from 30 to 45 seconds
                 else:
                     # Send end-of-day summary
                     if current_time.time() >= time(15, 30) and current_time.time() < time(15, 31):

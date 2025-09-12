@@ -61,6 +61,18 @@ class OptionIntegratedPineScript(CompletePineScriptStrategy):
         
         # Upstox client reference (will be set by trading bot)
         self.upstox_client = None
+
+        # UPDATED PARAMETERS FOR 1-MIN TRADING
+        self.adx_length = 12
+        self.adx_threshold = 20  # Increased from 18
+        self.strong_candle_threshold = 0.45  # Reduced from 0.60
+    
+        # UPDATED EXIT PARAMETERS
+        self.stop_loss_pct = 20  # Reduced from 30
+        self.profit_target_pct = 40  # Reduced from 50
+    
+        # More aggressive exit for 1-min
+        self.early_loss_exit_pct = 15  # NEW: Exit at 15% loss
         
         # Advanced features configuration
         self.enable_premium_monitoring = config.get('enable_premium_monitoring', True) if config else True
@@ -105,17 +117,17 @@ class OptionIntegratedPineScript(CompletePineScriptStrategy):
     
     async def should_exit(self, position: Position, market_data: Dict) -> Optional[Order]:
         """
-        SIMPLIFIED EXIT STRATEGY - Only Essential Exits
-        
-        Priority Order:
+        FIXED EXIT STRATEGY - Pure Candle Pattern (No Trend Check)
+        Priority:
         1. Mandatory exits (stop loss, market close)
-        2. Profit target (50%)  
-        3. Pine Script technical reversal
+        2. Early loss protection (15%)
+        3. Profit target (40%)
+        4. Pure candle pattern exit (45% body)
         """
         try:
-            self.logger.info(f"Checking exits for {position.symbol}")
+            self.logger.info(f"=== EXIT CHECK START for {position.symbol} ===")
             
-            # Get current option premium with fallback
+            # Get current option premium
             current_premium = await self._get_current_premium_safe(position)
             if current_premium is None:
                 self.logger.warning(f"Could not get premium for {position.symbol} - skipping exit check")
@@ -125,33 +137,318 @@ class OptionIntegratedPineScript(CompletePineScriptStrategy):
             entry_price = position.average_price
             pnl_pct = ((current_premium - entry_price) / entry_price) * 100 if entry_price > 0 else 0
             
-            self.logger.debug(f"{position.symbol}: Premium Rs.{current_premium:.2f} -> P&L: {pnl_pct:+.2f}%")
+            self.logger.info(f"POSITION STATUS: {position.symbol}")
+            self.logger.info(f"  Entry: Rs.{entry_price:.2f} | Current: Rs.{current_premium:.2f} | P&L: {pnl_pct:+.2f}%")
             
-            # === PRIORITY 1: MANDATORY EXITS (Always execute) ===
+            # === PRIORITY 1: MANDATORY EXITS ===
+            self.logger.info("Checking MANDATORY exits...")
             mandatory_exit = await self._check_mandatory_exits(position, current_premium)
             if mandatory_exit:
+                self.logger.info(f"MANDATORY EXIT triggered: {mandatory_exit.exit_reason}")
                 await self._cleanup_position_after_exit(position.symbol)
                 return mandatory_exit
+            else:
+                self.logger.info("No mandatory exits required")
             
-            # === PRIORITY 2: PROFIT TARGET (Secure gains) ===
-            if pnl_pct >= 50:
-                self.logger.info(f"PROFIT TARGET HIT: {pnl_pct:.1f}% profit achieved")
-                exit_order = self._create_exit_order(position, current_premium, "PROFIT_TARGET_50%", pnl_pct)
+            # === PRIORITY 2: EARLY LOSS PROTECTION ===
+            self.logger.info("Checking EARLY LOSS protection...")
+            if pnl_pct <= -15:
+                self.logger.info(f"EARLY LOSS EXIT triggered: {pnl_pct:.1f}% <= -15%")
+                exit_order = self._create_exit_order(position, current_premium, "EARLY_LOSS_15%", pnl_pct)
                 await self._cleanup_position_after_exit(position.symbol)
                 return exit_order
+            else:
+                self.logger.info(f"Early loss check passed: {pnl_pct:.1f}% > -15%")
             
-            # === PRIORITY 3: PINE SCRIPT TECHNICAL REVERSAL ===
-            # Only check technical exits if we're not in profit target range
-            if pnl_pct < 40:  # Only check technical exits if profit < 40%
-                pine_exit = await self._check_pine_script_exit(position, market_data, current_premium)
-                if pine_exit:
+            # === PRIORITY 3: PROFIT TARGET ===
+            self.logger.info("Checking PROFIT target...")
+            if pnl_pct >= 40:
+                self.logger.info(f"PROFIT TARGET hit: {pnl_pct:.1f}% >= 40%")
+                exit_order = self._create_exit_order(position, current_premium, "PROFIT_TARGET_40%", pnl_pct)
+                await self._cleanup_position_after_exit(position.symbol)
+                return exit_order
+            else:
+                self.logger.info(f"Profit target not reached: {pnl_pct:.1f}% < 40%")
+            
+            # === PRIORITY 4: PURE CANDLE PATTERN EXIT ===
+            self.logger.info("Checking PURE CANDLE pattern exit...")
+            # Only check if loss is not too severe (protect from major losses)
+            if pnl_pct > -10:
+                candle_exit = await self._check_pure_candle_exit(position, market_data, current_premium)
+                if candle_exit:
+                    self.logger.info(f"CANDLE PATTERN EXIT triggered: {candle_exit.exit_reason}")
                     await self._cleanup_position_after_exit(position.symbol)
-                    return pine_exit
+                    return candle_exit
+                else:
+                    self.logger.info("No candle pattern exit signal")
+            else:
+                self.logger.info(f"Skipping candle exit due to severe loss: {pnl_pct:.1f}% <= -10%")
             
+            self.logger.info("=== EXIT CHECK COMPLETE: No exit conditions met ===")
             return None
             
         except Exception as e:
             self.logger.error(f"Error in exit check for {position.symbol}: {e}")
+            import traceback
+            self.logger.error(f"Full traceback: {traceback.format_exc()}")
+            return None
+
+    async def _check_pure_candle_exit(self, position: Position, market_data: Dict, current_premium: float) -> Optional[Order]:
+        """
+        PURE CANDLE PATTERN EXIT - No trend line check
+        Exit based solely on opposing candle strength (45%+ body)
+        """
+        try:
+            self.logger.info("--- PURE CANDLE EXIT ANALYSIS ---")
+            
+            # Get candle data
+            ha_candles = market_data.get('ha_candles_history', [])
+            if len(ha_candles) < 3:
+                self.logger.warning(f"Insufficient candle data: {len(ha_candles)} candles")
+                return None
+            
+            current_candle = ha_candles[-1]
+            option_type = getattr(position, 'option_type', 'CE')
+            
+            self.logger.info(f"Position type: {option_type}")
+            self.logger.info(f"Current candle: {current_candle}")
+            
+            # Calculate candle strength
+            ha_open = current_candle.get('ha_open', 0)
+            ha_close = current_candle.get('ha_close', 0)
+            ha_high = current_candle.get('ha_high', 0)
+            ha_low = current_candle.get('ha_low', 0)
+            
+            if ha_high == ha_low or ha_high == 0 or ha_low == 0:
+                self.logger.warning("Invalid candle data - skipping candle exit")
+                return None
+            
+            body = abs(ha_close - ha_open)
+            candle_range = ha_high - ha_low
+            body_pct = body / candle_range if candle_range > 0 else 0
+            
+            self.logger.info(f"Candle analysis:")
+            self.logger.info(f"  Open: {ha_open:.2f} | Close: {ha_close:.2f}")
+            self.logger.info(f"  High: {ha_high:.2f} | Low: {ha_low:.2f}")
+            self.logger.info(f"  Body: {body:.2f} | Range: {candle_range:.2f}")
+            self.logger.info(f"  Body %: {body_pct:.1%} (Required: >45%)")
+            
+            # Check candle strength threshold
+            if body_pct < 0.45:
+                self.logger.info(f"Weak candle: {body_pct:.1%} < 45% - no exit")
+                return None
+            
+            # Check for opposing candle direction
+            exit_signal = False
+            exit_reason = ""
+            
+            if option_type == 'CE':
+                # For Call options: Exit on strong RED candle
+                is_red = ha_close < ha_open
+                self.logger.info(f"CE position - checking for RED candle: {is_red}")
+                
+                if is_red and body_pct > 0.45:
+                    exit_signal = True
+                    exit_reason = f"STRONG_RED_CANDLE_{body_pct:.0%}"
+                    self.logger.info(f"CE EXIT SIGNAL: Strong red candle {body_pct:.1%}")
+                else:
+                    self.logger.info(f"CE no exit: Red={is_red}, Strong={body_pct > 0.45}")
+                    
+            elif option_type == 'PE':
+                # For Put options: Exit on strong GREEN candle
+                is_green = ha_close > ha_open
+                self.logger.info(f"PE position - checking for GREEN candle: {is_green}")
+                
+                if is_green and body_pct > 0.45:
+                    exit_signal = True
+                    exit_reason = f"STRONG_GREEN_CANDLE_{body_pct:.0%}"
+                    self.logger.info(f"PE EXIT SIGNAL: Strong green candle {body_pct:.1%}")
+                else:
+                    self.logger.info(f"PE no exit: Green={is_green}, Strong={body_pct > 0.45}")
+            
+            # Create exit order if signal detected
+            if exit_signal:
+                pnl_pct = self._calculate_pnl_pct(current_premium, position.average_price)
+                self.logger.info(f"CREATING EXIT ORDER: {exit_reason} at {pnl_pct:+.2f}% P&L")
+                return self._create_exit_order(position, current_premium, exit_reason, pnl_pct)
+            
+            self.logger.info("--- NO CANDLE EXIT SIGNAL ---")
+            return None
+            
+        except Exception as e:
+            self.logger.error(f"Error in pure candle exit: {e}")
+            import traceback
+            self.logger.error(f"Candle exit traceback: {traceback.format_exc()}")
+            return None
+
+    def _get_candle_body_percentage(self, candle: Dict) -> float:
+        """Helper method to calculate candle body percentage"""
+        try:
+            ha_open = candle.get('ha_open', 0)
+            ha_close = candle.get('ha_close', 0)
+            ha_high = candle.get('ha_high', 0)
+            ha_low = candle.get('ha_low', 0)
+            
+            if ha_high == ha_low:
+                return 0
+            
+            body = abs(ha_close - ha_open)
+            candle_range = ha_high - ha_low
+            
+            return body / candle_range if candle_range > 0 else 0
+            
+        except Exception:
+            return 0
+
+    async def _check_technical_exit_relaxed(self, position: Position, market_data: Dict, current_premium: float) -> Optional[Order]:
+        """Relaxed technical exit for 1-min trading"""
+        try:
+            ha_candles = market_data.get('ha_candles_history', [])
+            if len(ha_candles) < 10:
+                return None
+            
+            current_candle = ha_candles[-1]
+            option_type = getattr(position, 'option_type', 'CE')
+            
+            # Get candle strength
+            ha_open = current_candle.get('ha_open', 0)
+            ha_close = current_candle.get('ha_close', 0)
+            ha_high = current_candle.get('ha_high', 0)
+            ha_low = current_candle.get('ha_low', 0)
+            
+            if ha_high == ha_low:
+                return None
+            
+            body = abs(ha_close - ha_open)
+            candle_range = ha_high - ha_low
+            body_pct = body / candle_range if candle_range > 0 else 0
+            
+            # RELAXED CONDITIONS for 1-min
+            if option_type == 'CE':
+                # Exit CE on strong red candle (45% body)
+                is_red = ha_close < ha_open
+                strong_red = is_red and body_pct > 0.45  # Reduced threshold
+                
+                if strong_red:
+                    self.logger.info(f"TECHNICAL EXIT (CE): Strong red candle {body_pct:.1%}")
+                    return self._create_exit_order(position, current_premium, "TECH_RED_CANDLE", 
+                                                self._calculate_pnl_pct(current_premium, position.average_price))
+            
+            elif option_type == 'PE':
+                # Exit PE on strong green candle (45% body)
+                is_green = ha_close > ha_open
+                strong_green = is_green and body_pct > 0.45
+                
+                if strong_green:
+                    self.logger.info(f"TECHNICAL EXIT (PE): Strong green candle {body_pct:.1%}")
+                    return self._create_exit_order(position, current_premium, "TECH_GREEN_CANDLE",
+                                                self._calculate_pnl_pct(current_premium, position.average_price))
+            
+            return None
+            
+        except Exception as e:
+            self.logger.error(f"Error in technical exit: {e}")
+            return None
+
+    async def _check_pine_script_exit_before(self, position: Position, market_data: Dict, current_premium: float) -> Optional[Order]:
+        """Pine Script exit with stricter conditions - no minimum hold time"""
+        try:
+            ha_candles = market_data.get('ha_candles_history', [])
+            if len(ha_candles) < 15:
+                return None
+            
+            current_candle = ha_candles[-1]
+            trend_line = self.calculate_trend_line()
+            
+            if not trend_line:
+                return None
+            
+            current_price = current_candle.get('ha_close', 0)
+            option_type = getattr(position, 'option_type', 'CE')
+            
+            # Calculate current P&L first for profit protection
+            current_pnl_pct = ((current_premium - position.average_price) / position.average_price) * 100
+            
+            # STRICTER TREND CHECK - price must be meaningfully below trend
+            price_below_trend = current_price < (trend_line * 0.998)  # 0.2% below trend line
+            
+            # STRONGER RED CANDLE REQUIREMENTS
+            ha_open = current_candle.get('ha_open', 0)
+            ha_close = current_candle.get('ha_close', 0)
+            ha_high = current_candle.get('ha_high', 0)
+            ha_low = current_candle.get('ha_low', 0)
+            
+            if ha_high == ha_low:
+                return None
+            
+            body = abs(ha_close - ha_open)
+            candle_range = ha_high - ha_low
+            body_pct = body / candle_range if candle_range > 0 else 0
+            
+            is_red = ha_close < ha_open
+            strong_red = is_red and body_pct > 0.45  # 40% body requirement
+            
+            # For CE positions
+            if option_type == 'CE':
+                
+                # LOG ALL CONDITIONS FOR DEBUGGING
+                self.logger.info(f"Pine Script Exit Analysis:")
+                self.logger.info(f"  Current P&L: {current_pnl_pct:.2f}%")
+                self.logger.info(f"  Price below trend: {price_below_trend} (Price: {current_price:.2f}, Trend: {trend_line:.2f})")
+                self.logger.info(f"  Strong red candle: {strong_red} (Body: {body_pct:.1%}, Required: >60%)")
+                
+                # PROFIT PROTECTION - don't exit if profit > 5%
+                if current_pnl_pct > 5:
+                    self.logger.info(f"  PROFIT PROTECTION: P&L {current_pnl_pct:.2f}% > 5% - not exiting")
+                    return None
+                
+                # BOTH CONDITIONS MUST BE TRUE
+                both_conditions_met = price_below_trend and strong_red
+                
+                if both_conditions_met:
+                    exit_reason = "PINE_MAJOR_REVERSAL"
+                    self.logger.info(f"PINE SCRIPT EXIT TRIGGERED: Both conditions met")
+                    self.logger.info(f"  Exiting with P&L: {current_pnl_pct:.2f}%")
+                    
+                    return self._create_exit_order(position, current_premium, exit_reason, current_pnl_pct)
+                
+                else:
+                    # LOG WHY NOT EXITING
+                    missing_conditions = []
+                    if not price_below_trend:
+                        missing_conditions.append("price still above trend")
+                    if not strong_red:
+                        missing_conditions.append(f"weak red candle ({body_pct:.1%} < 60%)")
+                    
+                    self.logger.info(f"  NOT EXITING: Missing - {', '.join(missing_conditions)}")
+            
+            # For PE positions (similar logic but inverted)
+            elif option_type == 'PE':
+                price_above_trend = current_price > (trend_line * 1.002)  # 0.2% above trend
+                is_green = ha_close > ha_open
+                strong_green = is_green and body_pct > 0.60
+                
+                self.logger.info(f"Pine Script Exit Analysis (PE):")
+                self.logger.info(f"  Current P&L: {current_pnl_pct:.2f}%")
+                self.logger.info(f"  Price above trend: {price_above_trend}")
+                self.logger.info(f"  Strong green candle: {strong_green} (Body: {body_pct:.1%})")
+                
+                if current_pnl_pct > 5:
+                    self.logger.info(f"  PROFIT PROTECTION: P&L {current_pnl_pct:.2f}% > 5% - not exiting")
+                    return None
+                
+                both_conditions_met = price_above_trend and strong_green
+                
+                if both_conditions_met:
+                    exit_reason = "PINE_MAJOR_REVERSAL_PE"
+                    self.logger.info(f"PINE SCRIPT EXIT TRIGGERED (PE): Both conditions met")
+                    
+                    return self._create_exit_order(position, current_premium, exit_reason, current_pnl_pct)
+            
+            return None
+            
+        except Exception as e:
+            self.logger.error(f"Error in Pine Script exit: {e}")
             return None
 
     async def _get_current_premium_safe(self, position: Position) -> Optional[float]:
@@ -265,7 +562,7 @@ class OptionIntegratedPineScript(CompletePineScriptStrategy):
             body_pct = body / candle_range if candle_range > 0 else 0
             
             is_red = ha_close < ha_open
-            is_strong = body_pct > 0.7  # 70% body for exit (stricter than entry)
+            is_strong = body_pct > 0.4  # 40% body for exit (stricter than entry)
             
             return is_red and is_strong
             
@@ -798,17 +1095,23 @@ class OptionIntegratedPineScript(CompletePineScriptStrategy):
             
     async def should_enter(self, market_data: Dict) -> Optional[Order]:
         """
-        FIXED: Enhanced entry logic with proper HA candle handling
-        Process:
-        1. Check available candles from ALL sources
-        2. Run Pine Script analysis on NIFTY spot
-        3. If signal detected, determine option type (CE/PE)
-        4. Calculate appropriate strike (ATM/OTM)
-        5. Fetch real option premium from Upstox
-        6. Validate premium and liquidity
-        7. Create option order
+        FIXED: Enhanced entry logic with detailed debugging
         """
         try:
+            # FORCE CONSISTENT PRICING
+            if 'ha_candle' in market_data and market_data['ha_candle']:
+                consistent_price = market_data['ha_candle']['ha_close']
+            elif 'current_price' in market_data:
+                consistent_price = market_data['current_price']
+            else:
+                consistent_price = market_data.get('price', 0)
+        
+            # Override all price references with consistent price
+            market_data['current_price'] = consistent_price
+            market_data['price'] = consistent_price
+        
+            self.logger.info(f"Using consistent price: Rs.{consistent_price:.2f}")    
+
             # Add current candle data - FIXED to handle HA format
             if not self.add_candle_data(market_data):
                 return None
@@ -886,23 +1189,95 @@ class OptionIntegratedPineScript(CompletePineScriptStrategy):
                 self.logger.warning("Could not calculate ADX")
                 return None
 
-            # Determine market direction and option type
+            # ==================== DEBUG LOGGING SECTION ====================
+            self.logger.info("=" * 60)
+            self.logger.info("ENTRY SIGNAL DEBUG ANALYSIS")
+            self.logger.info("=" * 60)
+            
+            # Log current settings
+            self.logger.info(f"SETTINGS: ADX threshold: {self.adx_threshold}, Candle threshold: {self.strong_candle_threshold:.0%}")
+            
+            # Log all calculated values
+            self.logger.info(f"1. Current Price: Rs.{spot_price:.2f}")
+            self.logger.info(f"2. Trend Line: Rs.{trend_line:.2f}")
+            
+            # Check each condition individually
             price_above_trend = spot_price > trend_line
             trend_strength_ok = adx > self.adx_threshold
+            trend_diff = spot_price - trend_line
+            
+            self.logger.info(f"3. Price Above Trend: {'PASS' if price_above_trend else 'FAIL'} (Diff: Rs.{trend_diff:+.2f})")
+            self.logger.info(f"4. Candle Body Strength: {body_pct:.1%}")
+            self.logger.info(f"5. Strong Green Required: >{self.strong_candle_threshold:.0%}")
+            self.logger.info(f"6. Strong Green Result: {'PASS' if strong_green else 'FAIL'}")
+            self.logger.info(f"7. Strong Red Result: {'PASS' if strong_red else 'FAIL'}")
+            self.logger.info(f"8. ADX Value: {adx:.1f}")
+            self.logger.info(f"9. ADX Required: >{self.adx_threshold}")
+            self.logger.info(f"10. ADX Check: {'PASS' if trend_strength_ok else 'FAIL'}")
+            self.logger.info(f"11. In Trade: {'FAIL' if self.in_trade else 'PASS'} (Currently: {self.in_trade})")
+            
+            # Count conditions for bullish signal
+            bullish_conditions = [
+                ("Price above trend", price_above_trend),
+                ("Strong green candle", strong_green),
+                ("ADX strength OK", trend_strength_ok),
+                ("Not in trade", not self.in_trade)
+            ]
+            
+            # Count conditions for bearish signal
+            bearish_conditions = [
+                ("Price below trend", not price_above_trend),
+                ("Strong red candle", strong_red),
+                ("ADX strength OK", trend_strength_ok),
+                ("Not in trade", not self.in_trade)
+            ]
+            
+            bullish_passed = sum(1 for _, condition in bullish_conditions if condition)
+            bearish_passed = sum(1 for _, condition in bearish_conditions if condition)
+            
+            self.logger.info(f"BULLISH CONDITIONS: {bullish_passed}/4 passed")
+            for name, passed in bullish_conditions:
+                self.logger.info(f"  - {name}: {'PASS' if passed else 'FAIL'}")
+            
+            self.logger.info(f"BEARISH CONDITIONS: {bearish_passed}/4 passed")
+            for name, passed in bearish_conditions:
+                self.logger.info(f"  - {name}: {'PASS' if passed else 'FAIL'}")
+            
+            # Show what's blocking if no signal
+            if bullish_passed < 4 and bearish_passed < 4:
+                blocking_reasons = []
+                if not trend_line:
+                    blocking_reasons.append("Trend calculation failed")
+                if not trend_strength_ok:
+                    blocking_reasons.append(f"ADX too weak ({adx:.1f} <= {self.adx_threshold})")
+                if not strong_green and not strong_red:
+                    blocking_reasons.append(f"Weak candle ({body_pct:.1%} < {self.strong_candle_threshold:.0%})")
+                if self.in_trade:
+                    blocking_reasons.append("Already in trade")
+                
+                self.logger.info(f"BLOCKING REASONS: {', '.join(blocking_reasons)}")
+            
+            self.logger.info("=" * 60)
+            # ==================== END DEBUG LOGGING SECTION ====================
 
+            # Determine market direction and option type
             option_type = None
             signal_direction = None
 
             # *** PINE SCRIPT SIGNAL DETECTION ***
             if price_above_trend and strong_green and trend_strength_ok:
+                # Additional confirmation: ensure we're not in a ranging market
+                price_momentum = ((spot_price - trend_line) / trend_line) * 100 #1st
+                if price_momentum > 0.1:  # At least 0.1% above trend   2nd
+                    self.logger.info(f"Price momentum above trend: {price_momentum:.2f}%")
                 option_type = 'CE'  # Call option for uptrend
                 signal_direction = 'BULLISH'
-                self.logger.info(f"BULLISH SIGNAL DETECTED: Price above trend + Strong green + ADX>{self.adx_threshold}")
+                self.logger.info(f"*** BULLISH SIGNAL DETECTED *** Price above trend + Strong green + ADX>{self.adx_threshold}")
                 
             elif not price_above_trend and strong_red and trend_strength_ok:
                 option_type = 'PE'  # Put option for downtrend  
                 signal_direction = 'BEARISH'
-                self.logger.info(f"BEARISH SIGNAL DETECTED: Price below trend + Strong red + ADX>{self.adx_threshold}")
+                self.logger.info(f"*** BEARISH SIGNAL DETECTED *** Price below trend + Strong red + ADX>{self.adx_threshold}")
 
             if not option_type:
                 # Log analysis for debugging
@@ -921,13 +1296,13 @@ class OptionIntegratedPineScript(CompletePineScriptStrategy):
                 
                 conditions.append(f"ADX: {adx:.1f} ({'OK' if trend_strength_ok else 'WEAK'})")
                 
-                self.logger.debug(f"No signal: {', '.join(conditions)}")
+                self.logger.info(f"*** NO SIGNAL GENERATED *** Current state: {', '.join(conditions)}")
                 return None
 
             # *** OPTION TRADING LOGIC ***
             if self.option_trading_enabled:
                 self.logger.info(f"Creating {option_type} option order for {signal_direction} signal...")
-                return await self.create_option_order(
+                return await self.create_option_order( #previously create_option_order - create_option_order_optimized
                     spot_price=spot_price,
                     option_type=option_type,
                     signal_direction=signal_direction,
@@ -973,6 +1348,146 @@ class OptionIntegratedPineScript(CompletePineScriptStrategy):
         except Exception as e:
             self.logger.error(f"Error in re-entry check: {e}")
             return None
+
+    async def create_option_order_optimized(self, spot_price, option_type, signal_direction, signal_strength, trend_line, adx_value, market_data):
+        """Optimized option order creation with REAL prices, not estimates"""
+        try:
+            self.logger.info(f"Creating {option_type} option order for {signal_direction} signal...")
+            
+            # Calculate optimal strike using the original method
+            strike_price = await self.calculate_option_strike(spot_price, option_type)
+            
+            # Get proper expiry
+            expiry_date = await self.get_nearest_expiry()
+            
+            # Generate correct symbol
+            option_symbol = self.get_option_symbol(strike_price, option_type, expiry_date)
+            
+            self.logger.info(f"OPTION SIGNAL: {signal_direction} - {option_type} Strategy")
+            self.logger.info(f"   NIFTY Spot: Rs.{spot_price:.2f}")
+            self.logger.info(f"   Trend Line: Rs.{trend_line:.2f} ({'+' if spot_price > trend_line else '-'}{abs(spot_price-trend_line):.2f})")
+            self.logger.info(f"   Target Strike: {strike_price}{option_type}")
+            
+            # Fetch REAL option premium - NO ESTIMATES
+            self.logger.info(f"Fetching real market price for {strike_price}{option_type}...")
+            option_premium = await self.fetch_option_ltp(strike_price, option_type)
+            
+            if option_premium is None:
+                self.logger.error(f"Could not fetch option premium for {strike_price}{option_type}")
+                return None  # Don't trade with estimates
+            
+            # Validate premium
+            if not self.validate_option_premium(option_premium, strike_price, spot_price):
+                self.logger.warning(f"Option premium Rs.{option_premium:.2f} failed validation - skip trade")
+                return None
+            
+            # Get detailed quote for bid-ask analysis
+            detailed_quote = await self.get_option_quote_detailed(strike_price, option_type)
+            
+            if detailed_quote:
+                spread = detailed_quote.get('spread', 0)
+                bid = detailed_quote.get('bid', 0)
+                ask = detailed_quote.get('ask', 0)
+                
+                self.logger.info(f"Option Quote: LTP=Rs.{option_premium:.2f}, Bid=Rs.{bid:.2f}, Ask=Rs.{ask:.2f}, Spread=Rs.{spread:.2f}")
+                
+                # Check liquidity (spread should be reasonable)
+                if spread > option_premium * 0.1:  # Spread > 10% of premium
+                    self.logger.warning(f"Wide spread ({spread:.2f}) for {strike_price}{option_type}")
+            
+            # Calculate position size
+            lot_size = 75  # NIFTY lot size
+            max_lots = int(self.risk_per_trade / (option_premium * lot_size))
+            lots = max(1, min(max_lots, 3))  # 1-3 lots
+            
+            total_investment = option_premium * lot_size * lots
+
+            self.logger.info(f"OPTION ORDER DETAILS:")
+            self.logger.info(f"   Symbol: NIFTY {strike_price}{option_type}")
+            self.logger.info(f"   Premium: Rs.{option_premium:.2f} per share")
+            self.logger.info(f"   Quantity: {lots} lots ({lots * lot_size} shares)")
+            self.logger.info(f"   Investment: Rs.{total_investment:,.2f}")
+            
+            # Create option order with REAL prices
+            option_symbol = self.get_option_symbol(strike_price, option_type, expiry_date)
+            instrument_key = await self.get_option_instrument_key(strike_price, option_type)
+            
+            order = Order(
+                symbol=option_symbol,
+                quantity=lots,
+                price=option_premium,  # REAL PRICE, NOT ESTIMATE
+                order_type=OrderType.MARKET,
+                transaction_type=TransactionType.BUY,
+                strategy_name=self.name,
+                instrument_key=instrument_key
+            )
+            
+            # Add option-specific details
+            order.option_type = option_type
+            order.strike_price = strike_price
+            order.spot_price = spot_price
+            order.signal_direction = signal_direction
+            order.trend_line = trend_line
+            order.adx_value = adx_value
+            order.signal_strength = signal_strength
+            order.total_investment = total_investment
+            order.lot_size = lot_size
+            order.strike_symbol = f"{strike_price}{option_type}"
+            order.entry_time = datetime.now()
+
+            # Add market data for tracking
+            if detailed_quote:
+                order.bid_price = detailed_quote.get('bid', 0)
+                order.ask_price = detailed_quote.get('ask', 0)
+                order.spread = detailed_quote.get('spread', 0)
+                order.volume = detailed_quote.get('volume', 0)
+                order.open_interest = detailed_quote.get('oi', 0)
+            
+            self.logger.info(f"OPTION ORDER CREATED: {option_symbol} @ Rs.{option_premium:.2f}")
+            return order
+            
+        except Exception as e:
+            self.logger.error(f"Error in optimized option order creation: {e}")
+            return None
+
+    async def recover_lost_positions(self):
+        """Recover positions that were lost due to bot restart"""
+        try:
+            if not hasattr(self, 'position_recovery'):
+                from src.utils.position_recovery import PositionRecoveryManager
+                self.position_recovery = PositionRecoveryManager(self.upstox_client)
+            
+            self.logger.info("=== POSITION RECOVERY STARTED ===")
+            
+            recovered_positions = await self.position_recovery.recover_all_option_positions()
+            
+            if not recovered_positions:
+                self.logger.info("No positions to recover")
+                return
+            
+            # Initialize active_option_positions if not exists
+            if not hasattr(self, 'active_option_positions'):
+                self.active_option_positions = {}
+            
+            # Add recovered positions to tracking
+            for pos_data in recovered_positions:
+                symbol = pos_data['symbol']
+                self.active_option_positions[symbol] = pos_data
+                
+                self.logger.info(f"RECOVERED: {symbol}")
+                self.logger.info(f"  Strike: {pos_data['strike_price']}")
+                self.logger.info(f"  Type: {pos_data['option_type']}")
+                self.logger.info(f"  Quantity: {pos_data['quantity']}")
+                self.logger.info(f"  Entry Premium: Rs.{pos_data['entry_premium']:.2f}")
+            
+            self.logger.info(f"=== RECOVERY COMPLETE: {len(recovered_positions)} positions restored ===")
+            
+            # Set in_trade flag if positions exist
+            if recovered_positions:
+                self.in_trade = True
+                
+        except Exception as e:
+            self.logger.error(f"Error in position recovery: {e}")
 
     async def create_option_order(self, spot_price: float, option_type: str, signal_direction: str,
                             signal_strength: float, trend_line: float, adx_value: float,
@@ -1073,7 +1588,7 @@ class OptionIntegratedPineScript(CompletePineScriptStrategy):
                 order.open_interest = detailed_quote.get('oi', 0)
         
             # Set trade state
-            self.in_trade = True
+            self.in_trade = False
         
             self.logger.info(f"OPTION ORDER CREATED: {option_symbol} @ Rs.{option_premium:.2f}")
         
@@ -1097,13 +1612,61 @@ class OptionIntegratedPineScript(CompletePineScriptStrategy):
                 instrument_key=market_data.get('instrument_key', '')
             )
             
-            self.in_trade = True
+            self.in_trade = False
             return order
             
         except Exception as e:
             self.logger.error(f"Error creating spot order: {e}")
             return None
-        
+    
+    async def monitor_positions_simple(self):
+        """Simple optimized position monitoring"""
+        try:
+            # Initialize optimized manager if not exists
+            if not hasattr(self, 'opt_manager'):
+                from src.utils.optimized_option_manager import OptimizedOptionManager
+                self.opt_manager = OptimizedOptionManager(self.upstox_client)
+            
+            # Collect all positions to monitor
+            positions_to_monitor = []
+            
+            # From active_option_positions
+            if hasattr(self, 'active_option_positions'):
+                for pos_data in self.active_option_positions.values():
+                    # Create simple position object
+                    class SimplePosition:
+                        def __init__(self, data):
+                            self.symbol = data.get('symbol', '')
+                            self.strike_price = data.get('strike_price', 0)
+                            self.option_type = data.get('option_type', 'CE')
+                            self.average_price = data.get('entry_premium', 0)
+                    
+                    positions_to_monitor.append(SimplePosition(pos_data))
+            
+            if not positions_to_monitor:
+                self.logger.debug("No positions to monitor")
+                return
+            
+            self.logger.info(f"Monitoring {len(positions_to_monitor)} positions...")
+            
+            # Single API call for all positions
+            position_ltps = await self.opt_manager.get_all_position_ltps(positions_to_monitor)
+            
+            # Display results
+            for symbol, data in position_ltps.items():
+                ltp = data['ltp']
+                pnl_pct = data['pnl_pct']
+                self.logger.info(f"{symbol}: Rs.{ltp:.2f} -> P&L: {pnl_pct:+.2f}%")
+            
+            if not position_ltps:
+                self.logger.warning("No LTP data received - positions unmonitored")
+            
+            return position_ltps
+            
+        except Exception as e:
+            self.logger.error(f"Error in simple monitoring: {e}")
+            return {}
+
     async def monitor_option_prices(self):
         """
         SIMPLIFIED: Basic position monitoring without complex features
@@ -1727,15 +2290,15 @@ Position Details:"""
             
             # 2. Stop loss (30% loss)
             loss_pct = ((entry_price - current_premium) / entry_price) * 100 if entry_price > 0 else 0
-            if loss_pct >= 30:
-                self.logger.info(f"MANDATORY EXIT: 30% stop loss hit ({loss_pct:.1f}%)")
-                return self._create_exit_order(position, current_premium, "STOP_LOSS_30%", -loss_pct)
+            if loss_pct >= 20:
+                self.logger.info(f"MANDATORY EXIT: 20% stop loss hit ({loss_pct:.1f}%)")
+                return self._create_exit_order(position, current_premium, "STOP_LOSS_20%", -loss_pct)
             
             # 3. Emergency exit for very low premium (avoid worthless options)
-            if current_premium < 2:
-                self.logger.info(f"MANDATORY EXIT: Premium too low (Rs.{current_premium:.2f})")
-                return self._create_exit_order(position, current_premium, "LOW_PREMIUM", 
-                                            self._calculate_pnl_pct(current_premium, entry_price))
+            #if current_premium < 2:
+            #    self.logger.info(f"MANDATORY EXIT: Premium too low (Rs.{current_premium:.2f})")
+            #    return self._create_exit_order(position, current_premium, "LOW_PREMIUM", 
+            #                                self._calculate_pnl_pct(current_premium, entry_price))
             
             return None
             
